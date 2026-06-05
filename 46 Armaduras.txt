@@ -1,0 +1,181 @@
+{
+  "armaduras": [
+    {
+      "id": "ninguna",
+      "nombre": "Ninguna",
+      "tipo": "armadura",
+      "ca": 10,
+      "costo": 0,
+      "pesoNum": 0,
+      "movimiento": 12,
+      "restriccionClase": ["Todas"]
+    },
+    {
+      "id": "acolchada",
+      "nombre": "Armadura acolchada",
+      "tipo": "armadura",
+      "ca": 8,
+      "costo": 4,
+      "pesoNum": 10,
+      "movimiento": 12,
+      "restriccionClase": ["Guerrero", "Clérigo", "Pícaro"],
+      "nota": "Silenciosa, no penaliza habilidades de ladrón"
+    },
+    {
+      "id": "cuero",
+      "nombre": "Armadura de cuero",
+      "tipo": "armadura",
+      "ca": 8,
+      "costo": 5,
+      "pesoNum": 15,
+      "movimiento": 12,
+      "restriccionClase": ["Guerrero", "Clérigo", "Pícaro", "Druida"]
+    },
+    {
+      "id": "cuero_tachonado",
+      "nombre": "Armadura de cuero tachonado",
+      "tipo": "armadura",
+      "ca": 7,
+      "costo": 15,
+      "pesoNum": 20,
+      "movimiento": 12,
+      "restriccionClase": ["Guerrero", "Clérigo", "Pícaro"]
+    },
+    {
+      "id": "cota_anillas",
+      "nombre": "Cota de anillas",
+      "tipo": "armadura",
+      "ca": 7,
+      "costo": 100,
+      "pesoNum": 30,
+      "movimiento": 9,
+      "restriccionClase": ["Guerrero", "Clérigo"]
+    },
+    {
+      "id": "cota_escamas",
+      "nombre": "Cota de escamas",
+      "tipo": "armadura",
+      "ca": 6,
+      "costo": 45,
+      "pesoNum": 40,
+      "movimiento": 9,
+      "restriccionClase": ["Guerrero", "Clérigo"]
+    },
+    {
+      "id": "piel",
+      "nombre": "Armadura de piel",
+      "tipo": "armadura",
+      "ca": 6,
+      "costo": 5,
+      "pesoNum": 25,
+      "movimiento": 9,
+      "restriccionClase": ["Bárbaro", "Druida"]
+    },
+    {
+      "id": "cota_malla",
+      "nombre": "Cota de malla",
+      "tipo": "armadura",
+      "ca": 5,
+      "costo": 75,
+      "pesoNum": 40,
+      "movimiento": 9,
+      "restriccionClase": ["Guerrero", "Clérigo", "Bardo"]
+    },
+    {
+      "id": "cota_elfica",
+      "nombre": "Cota élfica",
+      "tipo": "armadura",
+      "ca": 5,
+      "costo": 1500,
+      "pesoNum": 20,
+      "movimiento": 12,
+      "restriccionClase": ["Guerrero", "Clérigo", "Pícaro", "Mago"],
+      "nota": "Los magos no pueden lanzar hechizos con ella puesta"
+    },
+    {
+      "id": "cota_bandas",
+      "nombre": "Cota de bandas",
+      "tipo": "armadura",
+      "ca": 4,
+      "costo": 90,
+      "pesoNum": 35,
+      "movimiento": 9,
+      "restriccionClase": ["Guerrero", "Clérigo"]
+    },
+    {
+      "id": "placas",
+      "nombre": "Armadura de placas",
+      "tipo": "armadura",
+      "ca": 3,
+      "costo": 300,
+      "pesoNum": 50,
+      "movimiento": 9,
+      "restriccionClase": ["Guerrero"]
+    },
+    {
+      "id": "placas_campana",
+      "nombre": "Armadura de placas de campaña",
+      "tipo": "armadura",
+      "ca": 2,
+      "costo": 2000,
+      "pesoNum": 60,
+      "movimiento": 6,
+      "restriccionClase": ["Guerrero"]
+    },
+    {
+      "id": "placas_completa",
+      "nombre": "Armadura completa de placas",
+      "tipo": "armadura",
+      "ca": 1,
+      "costo": 4000,
+      "pesoNum": 70,
+      "movimiento": 6,
+      "restriccionClase": ["Guerrero"],
+      "nota": "Costo base de 4000+"
+    },
+    {
+      "id": "rodela",
+      "nombre": "Escudo Rodela",
+      "tipo": "escudo",
+      "caBonus": 1,
+      "costo": 3,
+      "pesoNum": 5,
+      "movimiento": 0,
+      "restriccionClase": ["Todas"],
+      "nota": "Bonificación +1 a CA"
+    },
+    {
+      "id": "escudo_pequeño",
+      "nombre": "Escudo Pequeño",
+      "tipo": "escudo",
+      "caBonus": 2,
+      "costo": 7,
+      "pesoNum": 10,
+      "movimiento": 0,
+      "restriccionClase": ["Todas"],
+      "nota": "Bonificación +1 a CA"
+    },
+    {
+      "id": "escudo_mediano",
+      "nombre": "Escudo Mediano",
+      "tipo": "escudo",
+      "caBonus": 3,
+      "costo": 10,
+      "pesoNum": 15,
+      "movimiento": 0,
+      "restriccionClase": ["Guerrero", "Clérigo"],
+      "nota": "Bonificación +1 a CA y +2 a CA contra proyectiles"
+    },
+    {
+      "id": "escudo_corporal",
+      "nombre": "Escudo Corporal",
+      "tipo": "escudo",
+      "caBonus": 4,
+      "costo": 25,
+      "pesoNum": 25,
+      "movimiento": -3,
+      "restriccionClase": ["Guerrero"],
+      "nota": "Proporciona cobertura total, reduce movimiento"
+    }
+  ]
+}

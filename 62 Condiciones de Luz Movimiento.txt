@@ -1,0 +1,122 @@
+{
+  "source": "PHB Tablas 62-67 — Visibilidad, Fuentes de Luz, Movimiento Base, Escalada",
+
+  "table62_visibilityRanges": {
+    "description": "Tabla 62 PHB: Rangos de visibilidad según condiciones",
+    "note": "Distancias en yardas. El infravision funciona dentro de sus límites raciales en oscuridad, pero no en oscuridad mágica.",
+    "conditions": [
+      { "condition": "Plena luz del día, terreno abierto",        "rangeYards": 10000, "note": "Horizonte (~6 km en llano)" },
+      { "condition": "Plena luz del día, bosque denso",           "rangeYards": 30,    "note": "Arbustos y árboles cortan la visión" },
+      { "condition": "Nublado / Sobrecubierto",                   "rangeYards": 6000  },
+      { "condition": "Lluvia ligera / niebla suave",              "rangeYards": 1000  },
+      { "condition": "Lluvia moderada / niebla moderada",         "rangeYards": 500   },
+      { "condition": "Lluvia intensa / niebla densa",             "rangeYards": 100   },
+      { "condition": "Tormenta severa",                           "rangeYards": 50    },
+      { "condition": "Noche con luna llena y cielo despejado",    "rangeYards": 300   },
+      { "condition": "Noche con luna nueva / sin luna",           "rangeYards": 30    },
+      { "condition": "Oscuridad total (mazmorra sin luz)",        "rangeYards": 0,    "note": "Ciego sin infravision o luz artificial" },
+      { "condition": "Infravision Enano/Elfo/Gnomo (60 pies)",    "rangeYards": 20,   "note": "~60 pies = 20 yardas; sólo en oscuridad" },
+      { "condition": "Infravision profundo (120 pies)",           "rangeYards": 40,   "note": "Gnomo Oscuro (Svirfneblin)" }
+    ]
+  },
+
+  "table63_lightSources": {
+    "description": "Tabla 63 PHB: Fuentes de luz artificiales — radio iluminado y duración",
+    "note": "El radio es en pies. Las criaturas con infravision pierden su ventaja si hay luz artificial presente (sus ojos se adaptan a la luz).",
+    "sources": [
+      { "id": "candle",        "nameEs": "Vela",                   "radiusFeet": 5,  "duration": "1 hora",            "cost": "1 cp" },
+      { "id": "torch",         "nameEs": "Antorcha",               "radiusFeet": 20, "duration": "1 hora",            "cost": "1 cp" },
+      { "id": "bullseyeLantern","nameEs": "Farol de ojo de buey",  "radiusFeet": 60, "duration": "2 horas / frasco",  "cost": "12 gp (farol) + 1 sp/frasco aceite", "shape": "Cono de 60 pies de largo y 20 pies de ancho" },
+      { "id": "hoodedLantern", "nameEs": "Farol encapuchado",      "radiusFeet": 30, "duration": "2 horas / frasco",  "cost": "7 gp (farol) + 1 sp/frasco aceite" },
+      { "id": "continualLight","nameEs": "Luz continua (conjuro)", "radiusFeet": 60, "duration": "Permanente (hasta cancelar)", "cost": "Conjuro" },
+      { "id": "lightSpell",    "nameEs": "Luz (conjuro)",          "radiusFeet": 20, "duration": "1 hora / nivel",   "cost": "Conjuro" },
+      { "id": "campfire",      "nameEs": "Hoguera",                "radiusFeet": 35, "duration": "Variable (leña)",  "cost": "—" },
+      { "id": "firefly",       "nameEs": "Luz de luciérnaga (objeto bioluminiscente)", "radiusFeet": 5, "duration": "Variable", "cost": "—" }
+    ],
+    "combatPenalties": {
+      "attackingLitToUnlit": "El objetivo en oscuridad y el atacante en zona iluminada: el objetivo recibe -2 a ataques vs. el atacante (deslumbramiento).",
+      "attackingUnlitToLit": "Sin modificador por defecto — el DM puede aplicar bonos al objetivo en luz."
+    }
+  },
+
+  "table64_baseMovementRates": {
+    "description": "Tabla 64 PHB: Tasas de movimiento base por raza/criatura. Unidad = movimiento por turno (1 turno = 10 minutos en exploración, 1 round = 1 minuto en combate).",
+    "movementScale": {
+      "explorationTurn": "×10 yardas / turno de exploración (10 min)",
+      "combatRound":     "×10 yardas / round de combate",
+      "overland":        "Millas por día = tasa de movimiento (marcha normal)"
+    },
+    "races": [
+      { "race": "Humano",    "baseMove": 12, "yardsPerRound": 120, "milesPerDay": 12 },
+      { "race": "Enano",     "baseMove": 6,  "yardsPerRound": 60,  "milesPerDay": 6  },
+      { "race": "Elfo",      "baseMove": 12, "yardsPerRound": 120, "milesPerDay": 12 },
+      { "race": "Gnomo",     "baseMove": 6,  "yardsPerRound": 60,  "milesPerDay": 6  },
+      { "race": "Semielfo",  "baseMove": 12, "yardsPerRound": 120, "milesPerDay": 12 },
+      { "race": "Halfling",  "baseMove": 6,  "yardsPerRound": 60,  "milesPerDay": 6  }
+    ],
+    "movementTypes": {
+      "walk":       { "multiplier": 1,   "description": "Marcha normal" },
+      "jog":        { "multiplier": 2,   "description": "Trote — doble de movimiento. Sostenible CON rounds = CON score" },
+      "run":        { "multiplier": 3,   "description": "Carrera — triple. Limitado a 2d6+5 rounds" },
+      "sprint":     { "multiplier": 4,   "description": "Esprint — cuádruple. Máximo 3 rounds seguidos" },
+      "forceMarch": { "note": "-1 a todos los ataques por día de marcha forzada (>12 h)" }
+    },
+    "terrainModifiers": [
+      { "terrain": "Carretera / camino duro",    "modifier": "×1   (sin cambio)" },
+      { "terrain": "Terreno llano / pradera",    "modifier": "×3/4 (75%)" },
+      { "terrain": "Colinas suaves / bosque claro", "modifier": "×2/3 (66%)" },
+      { "terrain": "Bosque denso / pantano",     "modifier": "×1/2 (50%)" },
+      { "terrain": "Montaña / desierto",         "modifier": "×1/3 (33%)" },
+      { "terrain": "Nieve profunda / barro",     "modifier": "×1/2 (50%)" }
+    ]
+  },
+
+  "table65_baseClimbingRates": {
+    "description": "Tabla 65 PHB: Probabilidades base de éxito en escalada sin equipo",
+    "mechanic": "Tirada de 1d100 ≤ puntuación = éxito. La puntuación base depende de si el personaje tiene la proficiencia Escalada o no.",
+    "baseRates": [
+      { "surface": "Acantilado natural con salientes",                   "withoutProficiency": 40, "withProficiency": 75 },
+      { "surface": "Muro de piedra con mortero (castillo, mazmorra)",    "withoutProficiency": 25, "withProficiency": 60 },
+      { "surface": "Muro de piedra perfectamente pulida",               "withoutProficiency": 10, "withProficiency": 35 },
+      { "surface": "Muro de madera con apoyos",                         "withoutProficiency": 60, "withProficiency": 90 },
+      { "surface": "Árbol",                                              "withoutProficiency": 55, "withProficiency": 85 },
+      { "surface": "Cuerda con apoyos",                                  "withoutProficiency": 70, "withProficiency": 95 },
+      { "surface": "Cuerda sin apoyos",                                  "withoutProficiency": 50, "withProficiency": 75 }
+    ]
+  },
+
+  "table66_climbingModifiers": {
+    "description": "Tabla 66 PHB: Modificadores a la tirada de escalada",
+    "modifiers": [
+      { "condition": "Con equipo de escalada (piolets, cuerdas, clavos)", "modifier": "+20" },
+      { "condition": "Superficie mojada / helada",                        "modifier": "-20" },
+      { "condition": "Pendiente mayor de 80°",                           "modifier": "-20" },
+      { "condition": "Pendiente entre 60°-80°",                          "modifier": "-10" },
+      { "condition": "Pendiente menor de 45°",                           "modifier": "+20" },
+      { "condition": "Cargando peso ≥ encumbramiento moderado",          "modifier": "-20" },
+      { "condition": "Guantes (sin tacto fino)",                         "modifier": "-10" },
+      { "condition": "Armadura completa de placas",                      "modifier": "-30" },
+      { "condition": "Armadura de malla / escamas",                      "modifier": "-20" },
+      { "condition": "Armadura de cuero",                                "modifier": "-5"  },
+      { "condition": "Con compañero de seguridad (belay)",               "modifier": "+10" },
+      { "condition": "Viento fuerte",                                    "modifier": "-10 a -30 según intensidad" }
+    ]
+  },
+
+  "table67_climbingRates": {
+    "description": "Tabla 67 PHB: Tasa de movimiento durante la escalada según la dificultad",
+    "note": "La tasa de movimiento de escalada es una fracción del movimiento base del personaje.",
+    "rates": [
+      { "surface": "Escalada con cuerdas y equipo (vertical fácil)",   "moveRate": "1/3 del movimiento base" },
+      { "surface": "Escalada libre en superficie natural",              "moveRate": "1/4 del movimiento base" },
+      { "surface": "Escalada en muro liso / difícil",                  "moveRate": "1/6 del movimiento base" },
+      { "surface": "Escalada con equipo en superficie muy difícil",    "moveRate": "1/3 del movimiento base" },
+      { "surface": "Descenso rápido por cuerda (rappel)",              "moveRate": "Hasta 1/1 del movimiento base" }
+    ],
+    "fallRules": {
+      "failedClimbRoll": "Si falla la tirada de escalada, el personaje cae desde su posición actual.",
+      "fallDamage":      "1d6 por cada 10 pies caídos (se redondea hacia arriba).",
+      "maxFallDamage":   "Sin límite teórico, pero criaturas muy robustas pueden sobrevivir con salvaciones."
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "source": "PHB Tablas 42 y 43 — Tipos de cambio estándar y Fondos iniciales por clase",
+
+  "table42_exchangeRates": {
+    "description": "Tabla 42 PHB: Tasas de cambio estándar entre monedas en AD&D 2ª Edición",
+    "coins": [
+      { "id": "PP", "nameEs": "Pieza de Platino",  "nameEn": "Platinum Piece",  "abbreviation": "pp" },
+      { "id": "GP", "nameEs": "Pieza de Oro",      "nameEn": "Gold Piece",      "abbreviation": "gp" },
+      { "id": "EP", "nameEs": "Pieza de Electrum", "nameEn": "Electrum Piece",  "abbreviation": "ep" },
+      { "id": "SP", "nameEs": "Pieza de Plata",    "nameEn": "Silver Piece",    "abbreviation": "sp" },
+      { "id": "CP", "nameEs": "Pieza de Cobre",    "nameEn": "Copper Piece",    "abbreviation": "cp" }
+    ],
+    "conversionTable": {
+      "description": "Valor en GP de cada moneda",
+      "PP": { "valueInGP": 5,    "note": "1 pp = 5 gp" },
+      "GP": { "valueInGP": 1,    "note": "Moneda de referencia" },
+      "EP": { "valueInGP": 0.5,  "note": "1 ep = 1/2 gp = 5 sp" },
+      "SP": { "valueInGP": 0.1,  "note": "1 sp = 1/10 gp = 2 cp" },
+      "CP": { "valueInGP": 0.01, "note": "1 cp = 1/100 gp" }
+    },
+    "crossRates": [
+      { "from": "1 PP", "equals": [ "5 GP",  "10 EP", "50 SP",  "500 CP" ] },
+      { "from": "1 GP", "equals": [ "2 EP",  "10 SP", "100 CP"           ] },
+      { "from": "1 EP", "equals": [ "5 SP",  "50 CP"                     ] },
+      { "from": "1 SP", "equals": [ "10 CP"                              ] }
+    ],
+    "weight": {
+      "coinsPerPound": 50,
+      "note": "Todas las monedas pesan lo mismo: 50 monedas = 1 libra (approx. 0.45 kg)"
+    }
+  },
+
+  "table43_startingFunds": {
+    "description": "Tabla 43 PHB: Fondos iniciales del personaje según clase. El jugador tira los dados indicados y multiplica por 10 para obtener las monedas de oro iniciales.",
+    "note": "Los fondos se usan para comprar equipo inicial. Lo que sobre es el dinero de partida del personaje.",
+    "classes": [
+      {
+        "class": "Fighter",
+        "nameEs": "Guerrero",
+        "roll": "5d4",
+        "multiplier": 10,
+        "rangeGP": "50-200 gp",
+        "averageGP": 125
+      },
+      {
+        "class": "Paladin",
+        "nameEs": "Paladín",
+        "roll": "5d4",
+        "multiplier": 10,
+        "rangeGP": "50-200 gp",
+        "averageGP": 125,
+        "note": "El paladín no puede poseer más de 10 objetos mágicos ni acumular riqueza más allá de lo necesario."
+      },
+      {
+        "class": "Ranger",
+        "nameEs": "Explorador",
+        "roll": "5d4",
+        "multiplier": 10,
+        "rangeGP": "50-200 gp",
+        "averageGP": 125
+      },
+      {
+        "class": "Mage",
+        "nameEs": "Mago",
+        "roll": "2d4",
+        "multiplier": 10,
+        "rangeGP": "20-80 gp",
+        "averageGP": 50,
+        "note": "Incluye Mago y todos los Especialistas (Ilusionista, etc.)."
+      },
+      {
+        "class": "Cleric",
+        "nameEs": "Clérigo",
+        "roll": "3d6",
+        "multiplier": 10,
+        "rangeGP": "30-180 gp",
+        "averageGP": 105
+      },
+      {
+        "class": "Druid",
+        "nameEs": "Druida",
+        "roll": "3d6",
+        "multiplier": 10,
+        "rangeGP": "30-180 gp",
+        "averageGP": 105
+      },
+      {
+        "class": "Thief",
+        "nameEs": "Ladrón",
+        "roll": "2d6",
+        "multiplier": 10,
+        "rangeGP": "20-120 gp",
+        "averageGP": 70
+      },
+      {
+        "class": "Bard",
+        "nameEs": "Bardo",
+        "roll": "2d6",
+        "multiplier": 10,
+        "rangeGP": "20-120 gp",
+        "averageGP": 70
+      }
+    ],
+    "specialRules": [
+      "El paladín dona el 10% de sus ingresos a su iglesia o causa benéfica.",
+      "El druida no puede acumular más riqueza personal que la necesaria para su mantenimiento básico.",
+      "El ranger prefiere objetos funcionales y rara vez acumula riqueza innecesaria.",
+      "Los objetos mágicos encontrados NO cuentan como fondos iniciales — se determinan en la hoja de personaje aparte."
+    ]
+  }
+}

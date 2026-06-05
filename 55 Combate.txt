@@ -1,0 +1,155 @@
+{
+  "source": "PHB Tablas 51-59 — Modificadores de Combate, Iniciativa, Lucha y Cobertura",
+
+  "table51_combatModifiers": {
+    "description": "Tabla 51 PHB: Modificadores estándar a las tiradas de ataque en combate",
+    "attackRollModifiers": [
+      { "condition": "Atacando a un enemigo dormido, inmovilizado o inconsciente",  "modifier": "Impacto automático (se puede degollar)" },
+      { "condition": "Atacante en retaguardia (behind)",                            "modifier": "+2 al ataque" },
+      { "condition": "Atacante invisible",                                           "modifier": "+4 al ataque" },
+      { "condition": "Objetivo no puede ver al atacante",                           "modifier": "+4 al ataque" },
+      { "condition": "Objetivo herido y en el suelo",                               "modifier": "+4 al ataque" },
+      { "condition": "Objetivo aturdido o a la defensiva",                          "modifier": "+4 al ataque" },
+      { "condition": "Atacante cargando",                                            "modifier": "+2 al ataque, -1 CA hasta el inicio de su siguiente turno" },
+      { "condition": "Atacante usando arco en rango corto",                         "modifier": "Sin modificador" },
+      { "condition": "Atacante usando arma de proyectil a rango medio",             "modifier": "-2 al ataque" },
+      { "condition": "Atacante usando arma de proyectil a rango largo",             "modifier": "-5 al ataque" },
+      { "condition": "Objetivo tiene cobertura del 25%",                            "modifier": "-2 al ataque (ver T59)" },
+      { "condition": "Objetivo tiene cobertura del 50%",                            "modifier": "-4 al ataque (ver T59)" },
+      { "condition": "Objetivo tiene cobertura del 75%",                            "modifier": "-7 al ataque (ver T59)" },
+      { "condition": "Objetivo tiene cobertura del 90%",                            "modifier": "-10 al ataque (ver T59)" },
+      { "condition": "Ataque desde una posición elevada (high ground)",             "modifier": "+1 al ataque" },
+      { "condition": "Atacante obstaculizado (difficult terrain, herido grave)",    "modifier": "-2 al ataque (a discreción del DM)" }
+    ]
+  },
+
+  "table52_weaponVsArmor": {
+    "description": "Tabla 52 PHB (OPCIONAL): Modificadores de tipo de arma vs. tipo de armadura. Regla opcional — el DM decide si se usa.",
+    "weaponTypes": {
+      "B": "Contundente (Bludgeoning) — mazas, martillos, mangos de hacha",
+      "P": "Perforante (Piercing) — picas, estocadas, flechas",
+      "S": "Cortante (Slashing) — espadas, hachas, dagas"
+    },
+    "armorTypes": [
+      { "id": "none",      "nameEs": "Sin armadura",          "nameEn": "No Armor / Robes" },
+      { "id": "leather",   "nameEs": "Cuero",                 "nameEn": "Leather / Padded" },
+      { "id": "studded",   "nameEs": "Cuero tachonado",       "nameEn": "Studded Leather / Ring Mail" },
+      { "id": "scale",     "nameEs": "Cota de escamas",       "nameEn": "Scale Mail / Hide" },
+      { "id": "chain",     "nameEs": "Cota de malla",         "nameEn": "Chain Mail" },
+      { "id": "splint",    "nameEs": "Armadura de láminas",   "nameEn": "Splint / Banded / Bronze Plate" },
+      { "id": "plate",     "nameEs": "Armadura de placas",    "nameEn": "Plate Mail" },
+      { "id": "fullPlate", "nameEs": "Armadura completa",     "nameEn": "Full Plate" }
+    ],
+    "modifierTable": [
+      { "weaponType": "B (Contundente)", "none": 0, "leather": 0, "studded": 0, "scale": 0,  "chain": 0,  "splint": 0,  "plate": +1, "fullPlate": +3 },
+      { "weaponType": "P (Perforante)",  "none": 0, "leather": 0, "studded": 0, "scale": -1, "chain": -1, "splint": -1, "plate": -3, "fullPlate": -3 },
+      { "weaponType": "S (Cortante)",    "none": 0, "leather": 0, "studded": 0, "scale": 0,  "chain": +2, "splint": -2, "plate": -2, "fullPlate": -4 }
+    ],
+    "note": "Positivo = bonus al atacante; negativo = penalización al atacante. Estos modificadores se aplican a la tirada de ataque."
+  },
+
+  "table55_standardInitiative": {
+    "description": "Tabla 55 PHB: Modificadores estándar a la iniciativa",
+    "baseRoll": "1d10 (cada bando tira 1d10; menor = actúa primero)",
+    "modifiers": [
+      { "condition": "Hechizo de 1 segmento",                "modifier": "+1 a la iniciativa del lanzador" },
+      { "condition": "Hechizo de X segmentos",               "modifier": "+X a la iniciativa del lanzador" },
+      { "condition": "Velocidad del arma (weapon speed)",    "modifier": "+velocidad del arma en iniciativa" },
+      { "condition": "Cargando (charging)",                  "modifier": "-2 a iniciativa (actúa antes)" },
+      { "condition": "Sin arma equipada / cambiando arma",   "modifier": "+1 a iniciativa" },
+      { "condition": "Usando escudo grande (tower shield)",  "modifier": "+1 a iniciativa" },
+      { "condition": "Lanzando desde rollo de hechizo",      "modifier": "+2 a iniciativa" },
+      { "condition": "Usando poción",                        "modifier": "+1 a iniciativa" },
+      { "condition": "Sorprendido",                          "modifier": "Pierde todos sus segmentos del turno de sorpresa" }
+    ],
+    "weaponSpeeds": {
+      "description": "La velocidad del arma se suma a la tirada de iniciativa del portador",
+      "reference": "Ver campo 'weaponSpeed' en 10_Armas.json"
+    }
+  },
+
+  "table56_optionalInitiative": {
+    "description": "Tabla 56 PHB: Modificadores OPCIONALES a la iniciativa (regla adicional)",
+    "note": "El DM decide si usa estas reglas adicionales junto con la T55.",
+    "additionalModifiers": [
+      { "condition": "Atacante ha recibido daño este turno",           "modifier": "+1 a iniciativa" },
+      { "condition": "Terreno difícil (barro, agua hasta la cintura)", "modifier": "+2 a iniciativa" },
+      { "condition": "Atacante intenta acción especial compleja",       "modifier": "+1 a +3 según DM" },
+      { "condition": "Desenfundar arma",                               "modifier": "+1 a iniciativa" },
+      { "condition": "Arma larga atacando a arma corta (1ª ronda)",    "modifier": "El arma larga actúa primero en la primera ronda de combate" },
+      { "condition": "Conjunto de armas desemparejadas (opcional)",     "modifier": "El arma secundaria ataca con +2 a iniciativa sobre el arma principal" }
+    ]
+  },
+
+  "table57_wrestlingArmorMods": {
+    "description": "Tabla 57 PHB: Modificadores de CA para la lucha cuerpo a cuerpo sin armas (Punching & Wrestling)",
+    "note": "En combate de lucha (wrestling), la CA del objetivo se modifica según su armadura porque la agilidad es más importante que la protección.",
+    "armorModifiers": [
+      { "armor": "Sin armadura",               "acModifier": 0  },
+      { "armor": "Cuero / Acolchada",          "acModifier": +2 },
+      { "armor": "Cuero tachonado / Cota de anillas", "acModifier": +4 },
+      { "armor": "Cota de escamas / Hide",     "acModifier": +6 },
+      { "armor": "Cota de malla",              "acModifier": +8 },
+      { "armor": "Láminas / Bandas",           "acModifier": +9 },
+      { "armor": "Placas",                     "acModifier": +10},
+      { "armor": "Armadura completa",          "acModifier": +10}
+    ],
+    "note2": "Un valor más alto de CA en lucha significa que el luchador CON armadura es más difícil de atrapar, porque la armadura estorba al atacante en agarres."
+  },
+
+  "table58_punchingWrestling": {
+    "description": "Tabla 58 PHB: Resultados de Puñetazos y Lucha — determina el efecto especial de un impacto exitoso.",
+    "mechanic": "Al impactar en combate sin armas, tira 1d100 y consulta la tabla según tipo de ataque.",
+    "punchingResults": {
+      "description": "Resultados de puñetazo (Punching Attack)",
+      "damageDie": "1d2 + modificador de FUE (daño no letal por defecto; se vuelve letal si el atacante lo elige o con reglas avanzadas)",
+      "table": [
+        { "roll": "01-25", "effect": "Golpe normal — sólo daño" },
+        { "roll": "26-50", "effect": "Objetivo aturdido 1d3 segmentos (pierde próximas acciones)" },
+        { "roll": "51-65", "effect": "Objetivo cae al suelo" },
+        { "roll": "66-75", "effect": "Objetivo suelta lo que lleva en la mano no dominante" },
+        { "roll": "76-85", "effect": "Objetivo suelta lo que lleva en la mano dominante" },
+        { "roll": "86-95", "effect": "Objetivo inconsciente 1d10 rounds" },
+        { "roll": "96-00", "effect": "Objetivo knockout: inconsciente 1d10 turns" }
+      ]
+    },
+    "wrestlingResults": {
+      "description": "Resultados de lucha agarrada (Wrestling)",
+      "mechanic": "Ambos luchadores oponen tiradas de ataque modificadas. El que gana controla el agarre.",
+      "table": [
+        { "roll": "01-25", "effect": "Agarre fallido — sin efecto" },
+        { "roll": "26-35", "effect": "Agarre exitoso — inmovilizado hasta próxima ronda" },
+        { "roll": "36-50", "effect": "Objetivo derribado — caído al suelo" },
+        { "roll": "51-65", "effect": "Objetivo desarmado — suelta su arma principal" },
+        { "roll": "66-75", "effect": "Objetivo en llave dolorosa — -2 a ataques hasta liberarse" },
+        { "roll": "76-85", "effect": "Objetivo inmovilizado completamente — no puede actuar" },
+        { "roll": "86-90", "effect": "Articulación dañada — 1d6 daño y -2 permanente al uso de esa extremidad hasta curación" },
+        { "roll": "91-00", "effect": "Llave al cuello — 1d6 daño, objetivo inconsciente en 1d4 rounds si no se libera" }
+      ]
+    }
+  },
+
+  "table59_coverConcealment": {
+    "description": "Tabla 59 PHB: Modificadores a la tirada de ataque por Cobertura y Ocultamiento",
+    "distinction": {
+      "cover":       "Cobertura FÍSICA (muro, árbol, roquerío) — protege de verdad; el ataque puede fallar aunque 'impacte'.",
+      "concealment": "Ocultamiento VISUAL (niebla, oscuridad, humo) — el atacante no puede ver bien; el ataque puede fallar por puntería."
+    },
+    "table": [
+      { "hiddenPct": "25%", "coverPenalty": -2,  "concealmentPenalty": -1 },
+      { "hiddenPct": "50%", "coverPenalty": -4,  "concealmentPenalty": -2 },
+      { "hiddenPct": "75%", "coverPenalty": -7,  "concealmentPenalty": -3 },
+      { "hiddenPct": "90%", "coverPenalty": -10, "concealmentPenalty": -4 }
+    ],
+    "examples": {
+      "cover25":       "Esquina de muro, árbol delgado, barandilla",
+      "cover50":       "Detrás de carro, muro hasta la cintura, puerta entreabierta",
+      "cover75":       "Sólo cabeza y hombros visibles, aspillera, escotilla",
+      "cover90":       "Casi completamente protegido — sólo un extremo visible",
+      "concealment25": "Humo ligero, niebla fina, lluvia suave, oscuridad tenue",
+      "concealment50": "Humo moderado, niebla espesa, oscuridad (sin infravision)",
+      "concealment75": "Humo denso, oscuridad total con infravision parcial",
+      "concealment90": "Oscuridad absoluta, niebla impenetrable"
+    }
+  }
+}

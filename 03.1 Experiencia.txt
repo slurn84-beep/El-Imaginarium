@@ -1,0 +1,186 @@
+/* =====================================================================
+   TABLA DE EXPERIENCIA POR NIVEL — AD&D 2e
+   Fuente: Player's Handbook (PHB) + Complete Psionics Handbook
+   
+   RAMAS Y CLASES:
+   - Warrior (Guerrero rama): Fighter, Paladin, Ranger, Bárbaro, Runecaster, Gladiador, Berserker
+     • Fighter       → columna FIGHTER
+     • Paladin       → columna WARRIOR (Pal/Ran)
+     • Ranger        → columna WARRIOR
+     • Bárbaro       → columna FIGHTER
+     • Runecaster    → columna FIGHTER
+     • Gladiador     → columna FIGHTER
+     • Berserker     → columna FIGHTER
+   - Wizard (Hechicero rama): Mago, Brujo, Wu Jen
+     • Mago          → columna WIZARD
+     • Brujo         → columna WIZARD
+     • Wu Jen        → columna WIZARD
+   - Priest (Sacerdote rama): Clérigo, Druida, Cruzado, Monje-Conjurador, Chamán, Templario
+     • Clérigo       → columna PRIEST
+     • Druida        → columna DRUID (progresión propia)
+     • Cruzado       → columna PRIEST
+     • Monje-Conjurador → columna PRIEST
+     • Chamán        → columna PRIEST
+     • Templario     → columna PRIEST
+   - Rogue (Pícaro rama): Ladrón, Bardo, Asesino, Monje-Luchador, Ninja
+     • Ladrón        → columna ROGUE
+     • Bardo         → columna ROGUE
+     • Asesino       → columna ROGUE
+     • Monje-Luchador → columna ROGUE
+     • Ninja         → columna ROGUE
+   - Psionicist (Psiónico): Psiónico
+     • Psiónico      → columna PSIONICIST (progresión propia)
+
+   NOTA DRUIDA niveles 17-20: La progresión "reinicia" intencionalmente.
+   En AD&D 2e el Druida Gran Druida (nivel 15) es único; los niveles
+   16-20 representan rangos especiales (Archidruida, Gran Druida, etc.)
+   con requisitos de XP adicionales desde cero relativo al rango anterior.
+
+   NOTA PSIONICIST: Fuente Complete Psionics Handbook, Table 2.
+   El Psiónico tiene su propia progresión de XP, diferente a cualquier
+   otro grupo. Usa d6 de Hit Dice y THAC0/salvaciones propias.
+   ===================================================================== */
+
+const XP_POR_NIVEL = [
+  //  nivel  Fighter  Warrior*  Wizard   Priest   Druid    Rogue    Psionicist
+  //         (Fighter) (Pal/Ran) (Mag/Ilu) (Clé/Mon) (Druida) (Lad/Bar) (Psiónico)
+  { level:  1, fighter:       0, warrior:       0, wizard:       0, priest:      0, druid:       0, rogue:      0, psionicist:       0 },
+  { level:  2, fighter:    2000, warrior:    2250, wizard:    2500, priest:   1500, druid:    2000, rogue:   1250, psionicist:    2200 },
+  { level:  3, fighter:    4000, warrior:    4500, wizard:    5000, priest:   3000, druid:    4000, rogue:   2500, psionicist:    4400 },
+  { level:  4, fighter:    8000, warrior:    9000, wizard:   10000, priest:   6000, druid:    7500, rogue:   5000, psionicist:    8800 },
+  { level:  5, fighter:   16000, warrior:   18000, wizard:   20000, priest:  13000, druid:   12500, rogue:  10000, psionicist:   16500 },
+  { level:  6, fighter:   32000, warrior:   32000, wizard:   40000, priest:  27500, druid:   20000, rogue:  20000, psionicist:   30000 },
+  { level:  7, fighter:   64000, warrior:   75000, wizard:   60000, priest:  55000, druid:   35000, rogue:  40000, psionicist:   55000 },
+  { level:  8, fighter:  125000, warrior:  150000, wizard:   90000, priest: 110000, druid:   60000, rogue:  70000, psionicist:  100000 },
+  { level:  9, fighter:  250000, warrior:  300000, wizard:  135000, priest: 225000, druid:   90000, rogue: 110000, psionicist:  200000 },
+  { level: 10, fighter:  500000, warrior:  600000, wizard:  250000, priest: 450000, druid:  125000, rogue: 160000, psionicist:  400000 },
+  { level: 11, fighter:  750000, warrior:  900000, wizard:  375000, priest: 675000, druid:  200000, rogue: 220000, psionicist:  600000 },
+  { level: 12, fighter: 1000000, warrior: 1200000, wizard:  750000, priest: 900000, druid:  300000, rogue: 440000, psionicist:  800000 },
+  { level: 13, fighter: 1250000, warrior: 1500000, wizard: 1125000, priest:1125000, druid:  750000, rogue: 660000, psionicist: 1000000 },
+  { level: 14, fighter: 1500000, warrior: 1800000, wizard: 1500000, priest:1350000, druid: 1500000, rogue: 880000, psionicist: 1200000 },
+  { level: 15, fighter: 1750000, warrior: 2100000, wizard: 1875000, priest:1575000, druid: 3000000, rogue:1100000, psionicist: 1500000 },
+  { level: 16, fighter: 2000000, warrior: 2400000, wizard: 2250000, priest:1800000, druid: 3500000, rogue:1320000, psionicist: 1800000 },
+  { level: 17, fighter: 2250000, warrior: 2700000, wizard: 2625000, priest:2025000, druid:  500000, rogue:1540000, psionicist: 2100000 },
+  { level: 18, fighter: 2500000, warrior: 3000000, wizard: 3000000, priest:2250000, druid: 1000000, rogue:1760000, psionicist: 2400000 },
+  { level: 19, fighter: 2750000, warrior: 3300000, wizard: 3375000, priest:2475000, druid: 1500000, rogue:1980000, psionicist: 2700000 },
+  { level: 20, fighter: 3000000, warrior: 3600000, wizard: 3750000, priest:2700000, druid: 2000000, rogue:2200000, psionicist: 3000000 },
+];
+
+/* -----------------------------------------------------------------------
+   MAPA DE CLASE → COLUMNA XP
+   Permite que el código busque la columna correcta dado el nombre de clase
+   ----------------------------------------------------------------------- */
+const CLASS_XP_TABLE = {
+  // Warrior group
+  'Guerrero':      'fighter',   // Fighter puro
+  'Paladín':       'warrior',   // Rama Warrior (Pal/Ran)
+  'Ranger':        'warrior',
+  'Bárbaro':       'fighter',   // Complete Barbarian's Handbook
+  'Runecaster':    'fighter',   // Vikings Campaign Sourcebook
+  'Gladiador':     'fighter',   // Dark Sun / Combat & Tactics
+  'Berserker':     'fighter',   // Complete Fighter's Handbook
+  // Wizard group
+  'Mago':          'wizard',
+  'Ilusionista':   'wizard',
+  'Brujo':         'wizard',    // Complete Wizard's Handbook
+  'Wu Jen':        'wizard',    // Complete Wizard's Handbook
+  // Priest group
+  'Clérigo':       'priest',
+  'Druida':        'druid',     // Progresión propia
+  'Cruzado':       'priest',    // Warriors and Priests of the Realms
+  'Monje-Conjurador': 'priest', // Regla de mesa: usa tabla Priest
+  'Chamán':        'priest',    // Complete Shaman's Handbook
+  'Templario':     'priest',    // Dark Sun
+  // Rogue group
+  'Ladrón':        'rogue',
+  'Bardo':         'rogue',
+  'Asesino':       'rogue',     // Complete Thief's Handbook
+  'Monje-Luchador': 'rogue',    // Regla de mesa: usa tabla Rogue
+  'Ninja':         'rogue',     // Complete Ninja's Handbook
+  // Psionicist group
+  'Psiónico':      'psionicist', // Complete Psionics Handbook — tabla propia
+};
+
+/* -----------------------------------------------------------------------
+   FUNCIONES DE CONSULTA
+   ----------------------------------------------------------------------- */
+
+/**
+ * Devuelve la XP necesaria para alcanzar un nivel dado, según la clase.
+ * @param {string} className  - nombre de clase (ej: 'Guerrero')
+ * @param {number} level      - nivel objetivo (1-20)
+ * @returns {number|null}     - XP necesaria, o null si no se encuentra
+ */
+function getXpForLevel(className, level) {
+  const col = CLASS_XP_TABLE[className];
+  if (!col) return null;
+  const row = XP_POR_NIVEL.find(r => r.level === level);
+  return row ? row[col] : null;
+}
+
+/**
+ * Dado un total de XP y una clase, devuelve el nivel actual del personaje.
+ * @param {string} className
+ * @param {number} xpTotal
+ * @returns {number} nivel (1-20)
+ */
+function getLevelFromXp(className, xpTotal) {
+  const col = CLASS_XP_TABLE[className];
+  if (!col) return 1;
+  // Druida: niveles 17-20 reinician la escala, se trata aparte
+  if (col === 'druid' && xpTotal >= 3000000) {
+    // Nivel 15 = Gran Druida (3.000.000 XP base)
+    // A partir de ahí la XP es relativa al rango anterior
+    // Para la app tratamos 15-20 linealmente por simplicidad
+    const highRows = XP_POR_NIVEL.filter(r => r.level >= 15 && r.level <= 20);
+    let found = 15;
+    for (const row of highRows) {
+      if (xpTotal >= row[col]) found = row.level;
+    }
+    return found;
+  }
+  let currentLevel = 1;
+  for (const row of XP_POR_NIVEL) {
+    if (xpTotal >= row[col]) currentLevel = row.level;
+  }
+  return currentLevel;
+}
+
+/**
+ * Devuelve cuánta XP falta para el siguiente nivel.
+ * @param {string} className
+ * @param {number} xpTotal
+ * @returns {{ current: number, next: number|null, needed: number|null }}
+ */
+function getXpProgress(className, xpTotal) {
+  const currentLevel = getLevelFromXp(className, xpTotal);
+  if (currentLevel >= 20) return { current: 20, next: null, needed: null };
+  const nextXp = getXpForLevel(className, currentLevel + 1);
+  return {
+    current: currentLevel,
+    next: currentLevel + 1,
+    needed: nextXp !== null ? Math.max(0, nextXp - xpTotal) : null,
+  };
+}
+
+/* -----------------------------------------------------------------------
+   XP POR NIVEL ADICIONAL (niveles 21+)
+   En AD&D 2e, a partir del nivel 20 se suma una cantidad fija por nivel.
+   ----------------------------------------------------------------------- */
+const XP_PER_EXTRA_LEVEL = {
+  fighter:     250000,
+  warrior:     300000,
+  wizard:      375000,
+  priest:      225000,
+  druid:       500000,
+  rogue:       220000,
+  psionicist:  300000,  // Complete Psionics Handbook: +300,000 por nivel extra
+};
+
+function getXpForExtraLevel(className, level) {
+  if (level <= 20) return getXpForLevel(className, level);
+  const col = CLASS_XP_TABLE[className];
+  if (!col) return null;
+  const base = XP_POR_NIVEL.find(r => r.level === 20)[col];
+  return base + (level - 20) * XP_PER_EXTRA_LEVEL[col];
+}

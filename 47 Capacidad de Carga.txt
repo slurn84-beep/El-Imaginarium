@@ -1,0 +1,101 @@
+{
+  "source": "PHB Tablas 47-50 — Encumbramiento, Movimiento Modificado, Animales y Capacidad de Almacenaje",
+
+  "table47_characterEncumbrance": {
+    "description": "Tabla 47 PHB: Categorías de encumbramiento por FUE (en libras). Los pesos son el máximo de cada categoría.",
+    "encumbranceCategories": ["Unencumbered", "Light", "Moderate", "Heavy", "Severe"],
+    "encumbranceCategoriesEs": ["Sin carga", "Ligero", "Moderado", "Pesado", "Severo"],
+    "movementPenalties": {
+      "unencumbered": "Movimiento completo",
+      "light":        "-1 al movimiento base",
+      "moderate":     "-2 al movimiento base",
+      "heavy":        "-3 al movimiento base; -2 a tiradas de ataque y daño de FUE",
+      "severe":       "-4 al movimiento base; -4 a tiradas de ataque y daño de FUE; -2 DEX"
+    },
+    "table": [
+      { "str": "2",       "unencumbered": "0-1",   "light": "2",      "moderate": "3",      "heavy": "4",      "severe": "5-6",    "maxLbs": 6   },
+      { "str": "3",       "unencumbered": "0-5",   "light": "6",      "moderate": "7",      "heavy": "8-9",    "severe": "10",     "maxLbs": 10  },
+      { "str": "4-5",     "unencumbered": "0-10",  "light": "11-13",  "moderate": "14-16",  "heavy": "17-19",  "severe": "20-25",  "maxLbs": 25  },
+      { "str": "6-7",     "unencumbered": "0-20",  "light": "21-29",  "moderate": "30-38",  "heavy": "39-46",  "severe": "47-55",  "maxLbs": 55  },
+      { "str": "8-9",     "unencumbered": "0-35",  "light": "36-50",  "moderate": "51-65",  "heavy": "66-80",  "severe": "81-90",  "maxLbs": 90  },
+      { "str": "10-11",   "unencumbered": "0-40",  "light": "41-58",  "moderate": "59-76",  "heavy": "77-96",  "severe": "97-110", "maxLbs": 110 },
+      { "str": "12-13",   "unencumbered": "0-45",  "light": "46-69",  "moderate": "70-93",  "heavy": "94-117", "severe": "118-140","maxLbs": 140 },
+      { "str": "14-15",   "unencumbered": "0-55",  "light": "56-85",  "moderate": "86-115", "heavy": "116-145","severe": "146-170","maxLbs": 170 },
+      { "str": "16",      "unencumbered": "0-70",  "light": "71-100", "moderate": "101-130","heavy": "131-160","severe": "161-195","maxLbs": 195 },
+      { "str": "17",      "unencumbered": "0-85",  "light": "86-121", "moderate": "122-157","heavy": "158-193","severe": "194-220","maxLbs": 220 },
+      { "str": "18",      "unencumbered": "0-110", "light": "111-149","moderate": "150-188","heavy": "189-227","severe": "228-255","maxLbs": 255 },
+      { "str": "18/01-50","unencumbered": "0-135", "light": "136-174","moderate": "175-213","heavy": "214-252","severe": "253-280","maxLbs": 280 },
+      { "str": "18/51-75","unencumbered": "0-160", "light": "161-199","moderate": "200-238","heavy": "239-277","severe": "278-305","maxLbs": 305 },
+      { "str": "18/76-90","unencumbered": "0-185", "light": "186-224","moderate": "225-263","heavy": "264-302","severe": "303-330","maxLbs": 330 },
+      { "str": "18/91-99","unencumbered": "0-235", "light": "236-274","moderate": "275-313","heavy": "314-352","severe": "353-380","maxLbs": 380 },
+      { "str": "18/00",   "unencumbered": "0-335", "light": "336-374","moderate": "375-413","heavy": "414-452","severe": "453-480","maxLbs": 480 }
+    ]
+  },
+
+  "table48_modifiedMovementRates": {
+    "description": "Tabla 48 PHB: Peso máximo transportable (en libras) para cada tasa de movimiento modificada, por FUE. Las columnas son las tasas de movimiento (12, 11, 10... 1). Las filas son la FUE base.",
+    "note": "Encuentra la FUE del personaje en la columna izquierda, luego el peso total que lleva, y lee el movimiento resultante. O bien: busca el movimiento deseado y lee el peso máximo.",
+    "movementRates": [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+    "halfRates":     [6,  5,  5,  4, 4, 3, 3, 2, 2, 1, 1, 1],
+    "table": [
+      { "str": "2",       "weights": [1,   null, 2,   null, null, 3,   null, null, 4,   null, null, 5   ] },
+      { "str": "3",       "weights": [5,   null, 6,   null, 7,   null, null, 8,   null, 9,   null, null] },
+      { "str": "4-5",     "weights": [10,  11,   12,  13,  14,  15,  16,  17,  18,  19,  20,  21  ] },
+      { "str": "6-7",     "weights": [20,  23,   26,  29,  32,  35,  38,  41,  44,  47,  50,  53  ] },
+      { "str": "8-9",     "weights": [35,  40,   45,  50,  55,  60,  65,  70,  75,  80,  85,  89  ] },
+      { "str": "10-11",   "weights": [40,  46,   52,  58,  64,  70,  76,  82,  88,  94,  100, 106 ] },
+      { "str": "12-13",   "weights": [45,  53,   61,  69,  77,  85,  93,  101, 109, 117, 125, 133 ] },
+      { "str": "14-15",   "weights": [55,  65,   75,  85,  95,  105, 115, 125, 135, 145, 155, 165 ] },
+      { "str": "16",      "weights": [70,  80,   90,  100, 110, 120, 130, 140, 150, 160, 170, 180 ] },
+      { "str": "17",      "weights": [85,  97,   109, 121, 133, 145, 157, 169, 181, 193, 205, 217 ] },
+      { "str": "18",      "weights": [110, 123,  136, 149, 162, 175, 188, 201, 214, 227, 240, 253 ] },
+      { "str": "18/01-50","weights": [135, 148,  161, 174, 187, 200, 213, 226, 239, 252, 265, 278 ] },
+      { "str": "18/51-75","weights": [160, 173,  186, 199, 212, 225, 238, 251, 264, 277, 290, 303 ] },
+      { "str": "18/76-90","weights": [185, 198,  211, 224, 237, 250, 263, 276, 289, 302, 315, 328 ] },
+      { "str": "18/91-99","weights": [235, 248,  261, 274, 287, 300, 313, 326, 339, 352, 365, 378 ] },
+      { "str": "18/00",   "weights": [335, 348,  361, 374, 387, 400, 413, 426, 439, 452, 465, 478 ] }
+    ]
+  },
+
+  "table49_animalCarryingCapacity": {
+    "description": "Tabla 49 PHB: Capacidad de carga de animales (en libras). Más allá del límite de ½ movimiento el animal no puede moverse.",
+    "table": [
+      { "mount": "Camello",          "mountEn": "Camel",         "fullMoveLbs": "0-330",   "halfMoveLbs": "331-500",   "quarterMoveLbs": "501-660"   },
+      { "mount": "Perro",            "mountEn": "Dog",           "fullMoveLbs": "0-15",    "halfMoveLbs": "16-20",     "quarterMoveLbs": "21-30"     },
+      { "mount": "Elefante",         "mountEn": "Elephant",      "fullMoveLbs": "0-500",   "halfMoveLbs": "501-750",   "quarterMoveLbs": "751-1000"  },
+      { "mount": "Caballo de tiro",  "mountEn": "Horse, draft",  "fullMoveLbs": "0-260",   "halfMoveLbs": "261-390",   "quarterMoveLbs": "391-520"   },
+      { "mount": "Caballo pesado",   "mountEn": "Horse, heavy",  "fullMoveLbs": "0-260",   "halfMoveLbs": "261-390",   "quarterMoveLbs": "391-520"   },
+      { "mount": "Caballo ligero",   "mountEn": "Horse, light",  "fullMoveLbs": "0-170",   "halfMoveLbs": "171-255",   "quarterMoveLbs": "256-340"   },
+      { "mount": "Caballo mediano",  "mountEn": "Horse, medium", "fullMoveLbs": "0-220",   "halfMoveLbs": "221-330",   "quarterMoveLbs": "331-440"   },
+      { "mount": "Caballo de montar","mountEn": "Horse, riding", "fullMoveLbs": "0-180",   "halfMoveLbs": "181-270",   "quarterMoveLbs": "271-360"   },
+      { "mount": "Mula",             "mountEn": "Mule",          "fullMoveLbs": "0-250",   "halfMoveLbs": "251-375",   "quarterMoveLbs": "376-500"   },
+      { "mount": "Buey",             "mountEn": "Ox",            "fullMoveLbs": "0-220",   "halfMoveLbs": "221-330",   "quarterMoveLbs": "331-440"   },
+      { "mount": "Yak",              "mountEn": "Yak",           "fullMoveLbs": "0-220",   "halfMoveLbs": "221-330",   "quarterMoveLbs": "331-440"   }
+    ]
+  },
+
+  "table50_stowageCapacity": {
+    "description": "Tabla 50 PHB: Capacidad de almacenaje de contenedores (peso máximo y volumen).",
+    "table": [
+      { "item": "Mochila",                  "itemEn": "Backpack",           "maxWeightLbs": 50,  "volume": "3'×2'×1'" },
+      { "item": "Cesta grande",             "itemEn": "Basket, large",      "maxWeightLbs": 20,  "volume": "2'×2'×2'" },
+      { "item": "Cesta pequeña",            "itemEn": "Basket, small",      "maxWeightLbs": 10,  "volume": "1'×1'×1'" },
+      { "item": "Bolsa de cinturón grande", "itemEn": "Belt pouch, large",  "maxWeightLbs": 8,   "volume": "6\"×8\"×2\"" },
+      { "item": "Bolsa de cinturón pequeña","itemEn": "Belt pouch, small",  "maxWeightLbs": 5,   "volume": "4\"×6\"×2\"" },
+      { "item": "Cofre grande",             "itemEn": "Chest, large",       "maxWeightLbs": 100, "volume": "3'×2'×2'" },
+      { "item": "Cofre pequeño",            "itemEn": "Chest, small",       "maxWeightLbs": 40,  "volume": "2'×1'×1'" },
+      { "item": "Saco grande",              "itemEn": "Sack, large",        "maxWeightLbs": 30,  "volume": "2'×2'×1'" },
+      { "item": "Saco pequeño",             "itemEn": "Sack, small",        "maxWeightLbs": 15,  "volume": "1'×1'×8\"" },
+      { "item": "Alforjas grandes",         "itemEn": "Saddle bags, large", "maxWeightLbs": 30,  "volume": "18\"×1'×6\"" },
+      { "item": "Alforjas pequeñas",        "itemEn": "Saddle bags, small", "maxWeightLbs": 20,  "volume": "1'×1'×6\"" }
+    ]
+  },
+
+  "encumbranceRules": {
+    "basicRule": "Regla de torneo: el personaje puede llevar hasta 80 libras sin penalización. Por cada 20 lbs adicionales pierde 3 de movimiento hasta el límite que su FUE permita.",
+    "specificRule": "Regla opcional: usar la T47 con la FUE exacta del personaje para determinar la categoría de carga.",
+    "magicArmor": "La armadura mágica pesa la mitad de lo indicado en la lista de equipo a efectos de encumbramiento.",
+    "mountedEncumbrance": "El peso del jinete + equipo se suma para calcular la categoría de la montura (ver T49).",
+    "coinsWeight": "50 monedas = 1 libra. Todas las denominaciones pesan igual."
+  }
+}

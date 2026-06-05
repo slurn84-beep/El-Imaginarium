@@ -1,0 +1,147 @@
+{
+  "source": "PHB Tabla 22 — Requisitos del Especialista en Magia",
+  "description": "Requisitos de raza, puntuaciones de habilidad y escuelas opuestas para cada especialista de mago en AD&D 2ª Edición.",
+
+  "generalRules": {
+    "baseIntRequirement": 9,
+    "note": "Todos los especialistas necesitan el mínimo de INT del Mago (9) más el requisito adicional de su escuela.",
+    "multiclassRestriction": "Los personajes multiclase no pueden ser especialistas, EXCEPTO los gnomos que pueden especializarse en Ilusión.",
+    "dualClassAllowed": "Los humanos de doble clase SÍ pueden elegir ser especialistas.",
+    "bonuses": {
+      "extraSpellPerLevel": "El especialista memoriza 1 conjuro extra por nivel siempre que sea de su escuela.",
+      "savingThrowBonus": "+1 a salvaciones propias vs. conjuros de su escuela. Los enemigos sufren -1 a salvaciones vs. sus conjuros de escuela.",
+      "learnSpellBonus": "+15% al aprender conjuros de su escuela; -15% al aprender conjuros de otras escuelas.",
+      "automaticSpell": "Al alcanzar un nuevo nivel de conjuro, el especialista aprende automáticamente 1 conjuro de su escuela sin tirada.",
+      "newSpellResearch": "Al investigar nuevos conjuros de su escuela, se cuentan como un nivel menos para determinar la dificultad."
+    }
+  },
+
+  "schools": [
+    {
+      "id": "abjuration",
+      "specialistNameEs": "Abjurador",
+      "specialistNameEn": "Abjurer",
+      "schoolNameEs": "Abjuración",
+      "schoolNameEn": "Abjuration",
+      "allowedRaces": ["Humano"],
+      "abilityRequirement": { "ability": "SAB", "minimum": 15 },
+      "oppositionSchools": ["Alteración", "Ilusión"],
+      "description": "Especialista en magia protectora: escudos, destierros, cancelaciones mágicas y conjuros de protección.",
+      "notableSpells": ["Protection from Evil", "Minor Globe of Invulnerability", "Dispel Magic", "Globe of Invulnerability", "Antimagic Shell"]
+    },
+    {
+      "id": "conjuration",
+      "specialistNameEs": "Conjurador",
+      "specialistNameEn": "Conjurer",
+      "schoolNameEs": "Conjuración/Invocación",
+      "schoolNameEn": "Conjuration/Summoning",
+      "allowedRaces": ["Humano", "Semielfo"],
+      "abilityRequirement": { "ability": "CON", "minimum": 15 },
+      "oppositionSchools": ["Adivinación (Mayor)", "Invocación/Evocación"],
+      "description": "Especialista en traer criaturas y materias de otros planos o lugares distantes.",
+      "notableSpells": ["Unseen Servant", "Melf's Acid Arrow", "Monster Summoning I-VII", "Conjure Elemental", "Gate"]
+    },
+    {
+      "id": "divination",
+      "specialistNameEs": "Adivino",
+      "specialistNameEn": "Diviner",
+      "schoolNameEs": "Adivinación Mayor",
+      "schoolNameEn": "Greater Divination",
+      "allowedRaces": ["Humano", "Semielfo", "Elfo"],
+      "abilityRequirement": { "ability": "SAB", "minimum": 16 },
+      "oppositionSchools": ["Conjuración/Invocación"],
+      "note": "La Adivinación Menor (detect magic, read magic, etc.) NO está disponible como especialidad — todos los magos tienen acceso a ella.",
+      "errataNote": "La wiki del Complete Wizard's Handbook indica que los gnomos NO pueden ser Adivinos a pesar de que la T22 del PHB original puede dar a entender otra cosa.",
+      "description": "Especialista en obtener información: ver el futuro, detectar mentiras, localizar objetos y personas.",
+      "notableSpells": ["Detect Magic", "Identify", "Wizard Eye", "True Seeing", "Foresight"]
+    },
+    {
+      "id": "enchantment",
+      "specialistNameEs": "Encantador",
+      "specialistNameEn": "Enchanter",
+      "schoolNameEs": "Encantamiento/Encanto",
+      "schoolNameEn": "Enchantment/Charm",
+      "allowedRaces": ["Humano", "Semielfo", "Elfo"],
+      "abilityRequirement": { "ability": "CAR", "minimum": 16 },
+      "oppositionSchools": ["Invocación/Evocación", "Nigromancia"],
+      "description": "Especialista en manipular mentes, emociones y voluntad. Conjuros de encanto, confusión, miedo y control.",
+      "notableSpells": ["Charm Person", "Sleep", "Hold Person", "Suggestion", "Charm Monster", "Mass Suggestion", "Otto's Irresistible Dance"]
+    },
+    {
+      "id": "illusion",
+      "specialistNameEs": "Ilusionista",
+      "specialistNameEn": "Illusionist",
+      "schoolNameEs": "Ilusión",
+      "schoolNameEn": "Illusion",
+      "allowedRaces": ["Humano", "Gnomo"],
+      "abilityRequirement": { "ability": "DES", "minimum": 16 },
+      "oppositionSchools": ["Nigromancia", "Invocación/Evocación", "Abjuración"],
+      "gnomeNote": "El gnomo puede ser Ilusionista aunque no puede ser Mago normal. Además puede multiclasarse (ej. Fighter/Illusionist) a diferencia de los humanos especialistas.",
+      "description": "Especialista en crear ilusiones, engaños visuales y auditivos, y alterar percepciones.",
+      "notableSpells": ["Color Spray", "Mirror Image", "Invisibility", "Phantasmal Force", "Shadow Magic", "Shades", "Weird"]
+    },
+    {
+      "id": "invocation",
+      "specialistNameEs": "Invocador",
+      "specialistNameEn": "Invoker",
+      "schoolNameEs": "Invocación/Evocación",
+      "schoolNameEn": "Invocation/Evocation",
+      "allowedRaces": ["Humano"],
+      "abilityRequirement": { "ability": "CON", "minimum": 16 },
+      "oppositionSchools": ["Encantamiento/Encanto", "Conjuración/Invocación"],
+      "description": "Especialista en magia de daño directo: bolas de fuego, rayos, vientos helados y energías puras.",
+      "notableSpells": ["Magic Missile", "Fireball", "Lightning Bolt", "Ice Storm", "Cone of Cold", "Meteor Swarm"]
+    },
+    {
+      "id": "necromancy",
+      "specialistNameEs": "Nigromante",
+      "specialistNameEn": "Necromancer",
+      "schoolNameEs": "Nigromancia",
+      "schoolNameEn": "Necromancy",
+      "allowedRaces": ["Humano"],
+      "abilityRequirement": { "ability": "SAB", "minimum": 16 },
+      "oppositionSchools": ["Ilusión", "Encantamiento/Encanto"],
+      "description": "Especialista en magia de muerte, no-muertos y energía negativa. Drena vida, anima muertos, controla espectros.",
+      "notableSpells": ["Chill Touch", "Vampiric Touch", "Animate Dead", "Enervation", "Death Spell", "Energy Drain"]
+    },
+    {
+      "id": "alteration",
+      "specialistNameEs": "Transmutador",
+      "specialistNameEn": "Transmuter",
+      "schoolNameEs": "Alteración",
+      "schoolNameEn": "Alteration",
+      "allowedRaces": ["Humano", "Semielfo"],
+      "abilityRequirement": { "ability": "DES", "minimum": 15 },
+      "oppositionSchools": ["Abjuración", "Nigromancia"],
+      "description": "Especialista en transformar materia, energía y forma. Volar, polimorfia, aceleración, ralentización.",
+      "notableSpells": ["Enlarge", "Levitate", "Fly", "Haste", "Slow", "Polymorph Other", "Disintegrate"]
+    }
+  ],
+
+  "schoolsOppositionDiagram": {
+    "description": "Diagrama de escuelas opuestas. Las escuelas directamente opuestas (y adyacentes según cada caso) están prohibidas.",
+    "pairs": [
+      { "school": "Abjuración",           "directOpposite": "Alteración" },
+      { "school": "Conjuración/Invocación","directOpposite": "Adivinación Mayor" },
+      { "school": "Encantamiento/Encanto", "directOpposite": "Invocación/Evocación" },
+      { "school": "Ilusión",               "directOpposite": "Nigromancia" }
+    ]
+  },
+
+  "lesserDivination": {
+    "nameEs": "Adivinación Menor",
+    "nameEn": "Lesser Divination",
+    "note": "NO es una especialidad válida. Sus conjuros (detect magic, read magic, identify básico) están disponibles para TODOS los magos sin excepción.",
+    "spells": ["Detect Magic", "Read Magic"]
+  },
+
+  "raceAbilityMatrix": {
+    "description": "Resumen rápido de qué especialidades puede elegir cada raza",
+    "human":    ["Abjuración", "Conjuración", "Adivinación", "Encantamiento", "Ilusión", "Invocación", "Nigromancia", "Alteración"],
+    "halfElf":  ["Conjuración", "Adivinación", "Encantamiento", "Alteración"],
+    "elf":      ["Adivinación", "Encantamiento"],
+    "gnome":    ["Ilusión"],
+    "dwarf":    [],
+    "halfling": []
+  }
+}

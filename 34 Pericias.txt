@@ -1,0 +1,650 @@
+[
+  {
+    "name": "Agriculture",
+    "group": "General",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Alertness",
+    "group": "General",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": 1,
+    "source": "The Complete Ranger's Handbook"
+  },
+  {
+    "name": "Animal Handling",
+    "group": "General",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": -1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Animal Training",
+    "group": "General",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": 0,
+    "source": "The Complete Book of Dwarves"
+  },
+  {
+    "name": "Artistic Ability",
+    "group": "General",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Blacksmithing",
+    "group": "General",
+    "slots": 1,
+    "ability": "Strength",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Boating",
+    "group": "General",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": 1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Brewing",
+    "group": "General",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Carpentry",
+    "group": "General",
+    "slots": 1,
+    "ability": "Strength",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Cobbling",
+    "group": "General",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Cooking",
+    "group": "General",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Dancing",
+    "group": "General",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Direction Sense",
+    "group": "General",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": 1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Etiquette",
+    "group": "General",
+    "slots": 1,
+    "ability": "Charisma",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Fire-building",
+    "group": "General",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": -1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Fishing",
+    "group": "General",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": -1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Heraldry",
+    "group": "General",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Languages, Modern",
+    "group": "General",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Leatherworking",
+    "group": "General",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Mining",
+    "group": "General",
+    "slots": 2,
+    "ability": "Wisdom",
+    "modifier": -3,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Navigation",
+    "group": "General",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": -2,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Pottery",
+    "group": "General",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": -2,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Riding, Land-based",
+    "group": "General",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": 3,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Rope Use",
+    "group": "General",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Seamanship",
+    "group": "General",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": 1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Sewing",
+    "group": "General",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": -1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Smelting",
+    "group": "General",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 0,
+    "source": "The Complete Book of Dwarves"
+  },
+  {
+    "name": "Stonemasonry",
+    "group": "General",
+    "slots": 1,
+    "ability": "Strength",
+    "modifier": -2,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Swimming",
+    "group": "General",
+    "slots": 1,
+    "ability": "Strength",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Weather Sense",
+    "group": "General",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": -1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Weaving",
+    "group": "General",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": -1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Armorer",
+    "group": "Warrior",
+    "slots": 2,
+    "ability": "Intelligence",
+    "modifier": -2,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Bowyer/Fletcher",
+    "group": "Warrior",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": -1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Charioteering",
+    "group": "Warrior",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": 2,
+    "source": "The Complete Barbarian's Handbook"
+  },
+  {
+    "name": "Endurance",
+    "group": "Warrior",
+    "slots": 1,
+    "ability": "Constitution",
+    "modifier": 0,
+    "source": "The Complete Fighter's Handbook"
+  },
+  {
+    "name": "Engineering",
+    "group": "Warrior",
+    "slots": 2,
+    "ability": "Intelligence",
+    "modifier": -3,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Gaming",
+    "group": "General",
+    "slots": 1,
+    "ability": "Charisma",
+    "modifier": 0,
+    "source": "The Complete Fighter's Handbook"
+  },
+  {
+    "name": "Hunting",
+    "group": "Warrior",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": 1,
+    "source": "The Complete Ranger's Handbook"
+  },
+  {
+    "name": "Land-based Riding",
+    "group": "Warrior",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": 3,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Running",
+    "group": "Warrior",
+    "slots": 1,
+    "ability": "Constitution",
+    "modifier": -2,
+    "source": "The Complete Fighter's Handbook"
+  },
+  {
+    "name": "Set Snares",
+    "group": "Warrior",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": -1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Tracking",
+    "group": "Warrior",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Weaponsmithing",
+    "group": "Warrior",
+    "slots": 2,
+    "ability": "Intelligence",
+    "modifier": -3,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Blind-fighting",
+    "group": "Rogue",
+    "slots": 2,
+    "ability": "NA",
+    "modifier": "NA",
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Disguise",
+    "group": "Rogue",
+    "slots": 1,
+    "ability": "Charisma",
+    "modifier": 1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Escape",
+    "group": "Rogue",
+    "slots": 2,
+    "ability": "Dexterity",
+    "modifier": 0,
+    "source": "The Complete Thief's Handbook"
+  },
+  {
+    "name": "Forgery",
+    "group": "Rogue",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": -1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Gem Cutting",
+    "group": "Rogue",
+    "slots": 2,
+    "ability": "Dexterity",
+    "modifier": -2,
+    "source": "The Complete Thief's Handbook"
+  },
+  {
+    "name": "Jumping",
+    "group": "Rogue",
+    "slots": 1,
+    "ability": "Strength",
+    "modifier": 0,
+    "source": "The Complete Thief's Handbook"
+  },
+  {
+    "name": "Looting",
+    "group": "Rogue",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 0,
+    "source": "The Complete Thief's Handbook"
+  },
+  {
+    "name": "Observation",
+    "group": "Rogue",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 0,
+    "source": "The Complete Thief's Handbook"
+  },
+  {
+    "name": "Reading Lips",
+    "group": "Rogue",
+    "slots": 2,
+    "ability": "Intelligence",
+    "modifier": -2,
+    "source": "The Complete Thief's Handbook"
+  },
+  {
+    "name": "Set Snares",
+    "group": "Rogue",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": -1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Tightrope Walking",
+    "group": "Rogue",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": 0,
+    "source": "The Complete Thief's Handbook"
+  },
+  {
+    "name": "Tumbling",
+    "group": "Rogue",
+    "slots": 1,
+    "ability": "Dexterity",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Ventriloquism",
+    "group": "Rogue",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": -2,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Ancient History",
+    "group": "Priest",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": -1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Astrology",
+    "group": "Priest",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": 0,
+    "source": "The Complete Priest's Handbook"
+  },
+  {
+    "name": "Healing",
+    "group": "Priest",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": -2,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Herbalism",
+    "group": "Priest",
+    "slots": 2,
+    "ability": "Intelligence",
+    "modifier": -2,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Local History",
+    "group": "Priest",
+    "slots": 1,
+    "ability": "Charisma",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Reading/Writing",
+    "group": "Priest",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Religion",
+    "group": "Priest",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Spiritualism",
+    "group": "Priest",
+    "slots": 2,
+    "ability": "Wisdom",
+    "modifier": -1,
+    "source": "The Complete Priest's Handbook"
+  },
+  {
+    "name": "Alchemy",
+    "group": "Wizard",
+    "slots": 2,
+    "ability": "Intelligence",
+    "modifier": -3,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Ancient History",
+    "group": "Wizard",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": -1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Astrology",
+    "group": "Wizard",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": 0,
+    "source": "The Complete Wizard's Handbook"
+  },
+  {
+    "name": "Engineering",
+    "group": "Wizard",
+    "slots": 2,
+    "ability": "Intelligence",
+    "modifier": -3,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Herbalism",
+    "group": "Wizard",
+    "slots": 2,
+    "ability": "Intelligence",
+    "modifier": -2,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Languages, Ancient",
+    "group": "Wizard",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Reading/Writing",
+    "group": "Wizard",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 1,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Research",
+    "group": "Wizard",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 0,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Spellcraft",
+    "group": "Wizard",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": -2,
+    "source": "Player's Handbook"
+  },
+  {
+    "name": "Clairsentience",
+    "group": "Psionicist",
+    "slots": 2,
+    "ability": "Wisdom",
+    "modifier": -1,
+    "source": "The Complete Psionics Handbook"
+  },
+  {
+    "name": "Concentration",
+    "group": "Psionicist",
+    "slots": 1,
+    "ability": "Constitution",
+    "modifier": 0,
+    "source": "The Complete Psionics Handbook"
+  },
+  {
+    "name": "Hypnosis",
+    "group": "Psionicist",
+    "slots": 1,
+    "ability": "Charisma",
+    "modifier": -2,
+    "source": "The Complete Psionics Handbook"
+  },
+  {
+    "name": "Meditation",
+    "group": "Psionicist",
+    "slots": 1,
+    "ability": "Wisdom",
+    "modifier": -1,
+    "source": "The Complete Psionics Handbook"
+  },
+  {
+    "name": "Psychometabolism",
+    "group": "Psionicist",
+    "slots": 2,
+    "ability": "Constitution",
+    "modifier": -1,
+    "source": "The Complete Psionics Handbook"
+  },
+  {
+    "name": "Rejuvenation",
+    "group": "Psionicist",
+    "slots": 1,
+    "ability": "Constitution",
+    "modifier": -2,
+    "source": "The Complete Psionics Handbook"
+  },
+  {
+    "name": "Sciencespeak",
+    "group": "Psionicist",
+    "slots": 1,
+    "ability": "Intelligence",
+    "modifier": 0,
+    "source": "The Complete Psionics Handbook"
+  },
+  {
+    "name": "Telepathy",
+    "group": "Psionicist",
+    "slots": 2,
+    "ability": "Charisma",
+    "modifier": -1,
+    "source": "The Complete Psionics Handbook"
+  }
+]

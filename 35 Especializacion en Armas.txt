@@ -1,0 +1,221 @@
+{
+  "weaponProficiencySystem": {
+    "description": "Sistema completo de proficiencias y maestría de armas para el Guerrero (Fighter) en AD&D 2ª Edición",
+    "source": "PHB + Player's Option: Combat & Tactics (POCT)",
+
+    "levels": [
+      {
+        "id": "proficiency",
+        "nameEs": "Proficiencia",
+        "nameEn": "Weapon Proficiency",
+        "cost": 1,
+        "minimumFighterLevel": null,
+        "minimumPreviousLevel": null,
+        "availableTo": ["Fighter", "Paladin", "Ranger", "Bárbaro", "Gladiador", "Berserker", "Templario", "Cruzado", "Clérigo", "Druida", "Ladrón", "Bardo", "Mago", "Ilusionista", "Monje"],
+        "bonuses": {
+          "meleeAttack": 0,
+          "meleeDamage": 0,
+          "missileAttack": 0,
+          "missileDamage": 0,
+          "attacksPerRound": "Normal (ver tabla guerreros base)"
+        },
+        "penaltyWithout": -2,
+        "notes": "Sin proficiencia se aplica penalización de -2 a las tiradas de impacto."
+      },
+      {
+        "id": "specialization",
+        "nameEs": "Especialización",
+        "nameEn": "Weapon Specialization",
+        "cost": 1,
+        "minimumFighterLevel": 1,
+        "minimumPreviousLevel": "proficiency",
+        "availableTo": ["Fighter (clase única PHB)"],
+        "availableViaExpertise": ["Paladin", "Ranger", "Fighter multiclase (POCT, sin bonos de ataque/daño)"],
+        "source": "PHB (solo Fighter clase única) / POCT (Weapon Expertise para subclases)",
+        "bonuses": {
+          "meleeAttack": 1,
+          "meleeDamage": 2,
+          "missileAttack": 1,
+          "missileDamage": 0,
+          "attacksPerRound": "Ver tabla especialistas (PHB Tabla 35)"
+        },
+        "bowSpecialist": {
+          "bonusAttack": 1,
+          "bonusDamage": 0,
+          "extraAttacks": false,
+          "pointBlank": "6-30 pies: +2 a tiradas de ataque",
+          "canFireFirst": true,
+          "notes": "Bow PHB: sin ataques extra. POCT: sí gana ataques extra."
+        },
+        "crossbowSpecialist": {
+          "bonusAttack": 1,
+          "fasterRateOfFire": true,
+          "pointBlank": "6-60 pies: +2 a tiradas de ataque",
+          "canFireFirst": true
+        },
+        "swappingCost": {
+          "firstSwap": 2,
+          "secondSwap": 3,
+          "subsequentSwaps": 3,
+          "notes": "POCT: cambiar especialización cuesta slots adicionales y la antigua baja a proficiencia."
+        },
+        "notes": "Solo Fighters de clase única pueden especializarse (PHB). Multiclase y subclases usan Weapon Expertise (POCT)."
+      },
+      {
+        "id": "weaponMastery",
+        "nameEs": "Maestría de Armas",
+        "nameEn": "Weapon Master",
+        "cost": 1,
+        "minimumFighterLevel": 5,
+        "minimumPreviousLevel": "specialization",
+        "availableTo": ["Fighter (clase única)"],
+        "source": "Player's Option: Combat & Tactics",
+        "bonuses": {
+          "meleeAttack": 3,
+          "meleeDamage": 3,
+          "note": "Reemplaza los bonos de especialización"
+        },
+        "bowCrossbowMaster": {
+          "pointBlankAttack": 3,
+          "pointBlankDamage": 3,
+          "otherRangesAttack": 2,
+          "notes": "Punto ciego: +3 ataque y daño. Otros rangos: +2 ataque."
+        },
+        "firearmMaster": {
+          "bonusAttack": 2,
+          "ignoresHeavyArmor": true,
+          "notes": "Ignora penalización de armadura pesada como si disparara a corto alcance."
+        },
+        "notes": "Se necesitan meses o años de estudio. Solo disponible en POCT."
+      },
+      {
+        "id": "highMastery",
+        "nameEs": "Alta Maestría",
+        "nameEn": "High Master",
+        "cost": 1,
+        "minimumFighterLevel": 6,
+        "minimumPreviousLevel": "weaponMastery",
+        "availableTo": ["Fighter (clase única)"],
+        "source": "Player's Option: Combat & Tactics",
+        "bonuses": {
+          "speedFactor": "Mejora la categoría de velocidad del arma en 1 (sistema POCT)",
+          "criticalHitThreshold": 16,
+          "criticalHitCondition": "Solo si supera el número necesario para impactar por 5 o más",
+          "extremeRange": {
+            "applies": ["arcos", "ballestas", "hondas", "armas de fuego"],
+            "distance": "1/3 más allá del alcance largo"
+          }
+        },
+        "notes": "Los críticos a 16+ solo aplican si el atacante supera por 5+ el valor de impacto necesario."
+      },
+      {
+        "id": "grandMastery",
+        "nameEs": "Gran Maestría",
+        "nameEn": "Grand Master",
+        "cost": 1,
+        "minimumFighterLevel": 9,
+        "minimumPreviousLevel": "highMastery",
+        "availableTo": ["Fighter (clase única)"],
+        "source": "Player's Option: Combat & Tactics",
+        "bonuses": {
+          "extraAttackPerRound": 1,
+          "note": "1 ataque adicional por ronda sobre la tasa del especialista para su nivel",
+          "damageDieIncrease": "El dado base de daño sube al siguiente tamaño (ej. 1d8 → 1d10)",
+          "knockdownDieIncrease": "El dado de derribo sube al siguiente tamaño",
+          "multiDiceWeapons": "Todos los dados de daño se incrementan"
+        },
+        "examples": [
+          { "weapon": "Espada larga", "normalDamage": "1d8/1d12", "grandMasterDamage": "1d10/1d20" }
+        ]
+      }
+    ],
+
+    "weaponExpertise": {
+      "id": "weaponExpertise",
+      "nameEs": "Pericia con Arma",
+      "nameEn": "Weapon Expertise",
+      "source": "Player's Option: Combat & Tactics",
+      "cost": 1,
+      "minimumPreviousLevel": "proficiency",
+      "availableTo": ["Paladin", "Ranger", "Fighter multiclase"],
+      "description": "Versión reducida de la especialización para no-Fighters puros. Otorga la tasa de ataques del especialista pero SIN los bonos de impacto y daño.",
+      "bonuses": {
+        "meleeAttack": 0,
+        "meleeDamage": 0,
+        "attacksPerRound": "Igual que especialista (ver tabla PHB Tabla 35)"
+      },
+      "notes": "El Paladin o Ranger con Weapon Expertise en su arma de elección (Weapon of Choice) puede además recibir +1 a impactar con ella."
+    },
+
+    "weaponOfChoice": {
+      "id": "weaponOfChoice",
+      "nameEs": "Arma Favorita",
+      "nameEn": "Weapon of Choice",
+      "source": "Player's Option: Combat & Tactics",
+      "description": "Un personaje con proficiencia puede declarar un arma específica como su favorita. Si además tiene Weapon Expertise con esa arma, gana +1 a impactar.",
+      "availableTo": ["Paladin", "Ranger", "Fighter multiclase", "Cualquier clase con proficiencia"],
+      "bonuses": {
+        "attackIfExpertise": 1
+      }
+    },
+
+    "fightingStyleSpecialization": {
+      "id": "fightingStyleSpec",
+      "nameEs": "Especialización en Estilo de Combate",
+      "nameEn": "Fighting Style Specialization",
+      "source": "Player's Option: Combat & Tactics",
+      "cost": 1,
+      "availableTo": ["Fighter (cualquier estilo)", "Paladin", "Ranger", "Bárbaro", "Gladiador"],
+      "styles": [
+        { "id": "singleWeapon",    "nameEs": "Arma única",             "nameEn": "Single Weapon Style" },
+        { "id": "twoHandedWeapon", "nameEs": "Arma a dos manos",       "nameEn": "Two-handed Weapon Style" },
+        { "id": "weaponShield",    "nameEs": "Arma y escudo",          "nameEn": "Weapon and Shield Style" },
+        { "id": "twoWeapon",       "nameEs": "Dos armas",              "nameEn": "Two Weapon Style" },
+        { "id": "unarmed",         "nameEs": "Combate sin armas",      "nameEn": "Unarmed Style" },
+        { "id": "missileThrown",   "nameEs": "Proyectiles/Arrojadizas","nameEn": "Missile/Thrown Weapons Style" },
+        { "id": "horseArcher",     "nameEs": "Arquero a caballo",      "nameEn": "Horse Archer Style" }
+      ],
+      "notes": "Los Fighters conocen todos los estilos sin costo. Solo pagan 1 slot si ESPECIALIZAN en uno."
+    },
+
+    "proficiencySlotsPerClass": {
+      "description": "Slots de proficiencia en armas por clase (al inicio y ganados por nivel)",
+      "source": "PHB Tabla 34",
+      "classes": [
+        { "class": "Guerrero / Fighter",     "initial": 4, "gainEvery": 3 },
+        { "class": "Paladín / Paladin",      "initial": 4, "gainEvery": 3 },
+        { "class": "Ranger",                 "initial": 4, "gainEvery": 3 },
+        { "class": "Bárbaro",                "initial": 4, "gainEvery": 3 },
+        { "class": "Gladiador",              "initial": 4, "gainEvery": 3 },
+        { "class": "Berserker",              "initial": 4, "gainEvery": 3 },
+        { "class": "Templario",              "initial": 4, "gainEvery": 3 },
+        { "class": "Cruzado",               "initial": 4, "gainEvery": 3 },
+        { "class": "Clérigo / Cleric",      "initial": 2, "gainEvery": 4 },
+        { "class": "Druida / Druid",        "initial": 2, "gainEvery": 4 },
+        { "class": "Chamán / Shaman",       "initial": 2, "gainEvery": 4 },
+        { "class": "Ladrón / Thief",        "initial": 2, "gainEvery": 4 },
+        { "class": "Bardo / Bard",          "initial": 2, "gainEvery": 4 },
+        { "class": "Asesino / Assassin",    "initial": 2, "gainEvery": 4 },
+        { "class": "Monje / Monk",          "initial": 2, "gainEvery": 4 },
+        { "class": "Ninja",                 "initial": 2, "gainEvery": 4 },
+        { "class": "Mago / Mage",           "initial": 1, "gainEvery": 6 },
+        { "class": "Ilusionista",           "initial": 1, "gainEvery": 6 },
+        { "class": "Brujo / Warlock",       "initial": 1, "gainEvery": 6 },
+        { "class": "Psiónico / Psionicist", "initial": 2, "gainEvery": 4 }
+      ]
+    },
+
+    "masterySummary": {
+      "description": "Resumen de costos y requisitos de nivel para subir categorías de maestría",
+      "progression": [
+        { "from": null,            "to": "proficiency",   "cost": 1, "minFighterLevel": null, "availableTo": "Todas las clases" },
+        { "from": "proficiency",   "to": "specialization","cost": 1, "minFighterLevel": 1,    "availableTo": "Solo Fighter clase única (PHB)" },
+        { "from": "specialization","to": "weaponMastery", "cost": 1, "minFighterLevel": 5,    "availableTo": "Solo Fighter clase única (POCT)" },
+        { "from": "weaponMastery", "to": "highMastery",   "cost": 1, "minFighterLevel": 6,    "availableTo": "Solo Fighter clase única (POCT)" },
+        { "from": "highMastery",   "to": "grandMastery",  "cost": 1, "minFighterLevel": 9,    "availableTo": "Solo Fighter clase única (POCT)" }
+      ],
+      "totalSlotsForGrandMastery": 5,
+      "notes": "Para llegar a Gran Maestría se necesitan 5 slots en total en la misma arma: 1 proficiencia + 1 especialización + 1 maestría + 1 alta maestría + 1 gran maestría."
+    }
+  }
+}

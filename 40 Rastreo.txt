@@ -1,0 +1,113 @@
+{
+  "source": "PHB Tablas 39 y 40 — Modificadores de Rastreo y Movimiento mientras Rastrear",
+  "description": "Sistema de rastreo para Rangers y personajes con la proficiencia Rastreo (Tracking). La puntuación base de Rastreo es la SAB del personaje.",
+
+  "trackingSystem": {
+    "baseScore": "Sabiduría (SAB) del rastreador",
+    "mechanic": "Tirada 1d20 ≤ Puntuación de Rastreo modificada = éxito. Si el resultado es 20 siempre falla. Si la puntuación modificada llega a 0 o menos, es imposible rastrear.",
+    "nonNaturalPenalty": "En entornos no naturales (ciudades, mazmorras) las probabilidades se reducen a la mitad.",
+    "lossOfTrail": [
+      "El rastreador supera su tasa de movimiento permitida (ver T40).",
+      "El terreno cambia y requiere nuevos modificadores.",
+      "Cae la noche o las condiciones de visibilidad cambian significativamente."
+    ]
+  },
+
+  "table39_trackingModifiers": {
+    "description": "Tabla 39 PHB: Modificadores a la puntuación de Rastreo según condiciones",
+    "modifiers": [
+      {
+        "category": "Número de criaturas rastreadas",
+        "entries": [
+          { "condition": "1 criatura",                        "modifier": 0   },
+          { "condition": "2-3 criaturas",                     "modifier": +2  },
+          { "condition": "4-8 criaturas",                     "modifier": +4  },
+          { "condition": "9-15 criaturas",                    "modifier": +6  },
+          { "condition": "16+ criaturas",                     "modifier": +8  }
+        ]
+      },
+      {
+        "category": "Terreno",
+        "entries": [
+          { "condition": "Tierra blanda, barro",              "modifier": +4  },
+          { "condition": "Terreno normal mezclado",           "modifier": 0   },
+          { "condition": "Hierba densa",                      "modifier": -2  },
+          { "condition": "Brezal, brezo",                     "modifier": -4  },
+          { "condition": "Tierra muy dura, roca seca",        "modifier": -6  },
+          { "condition": "Roca viva",                         "modifier": -10 }
+        ]
+      },
+      {
+        "category": "Tiempo transcurrido",
+        "entries": [
+          { "condition": "Menos de 1 hora",                   "modifier": +4  },
+          { "condition": "1-4 horas",                         "modifier": +2  },
+          { "condition": "4-12 horas",                        "modifier": 0   },
+          { "condition": "12-24 horas",                       "modifier": -5  },
+          { "condition": "Más de 24 horas",                   "modifier": -10 }
+        ]
+      },
+      {
+        "category": "Lluvia o nieve reciente (borra rastro)",
+        "entries": [
+          { "condition": "Llovizna / nieve ligera (≤ 1 hora)", "modifier": -2 },
+          { "condition": "Lluvia moderada / nevada",           "modifier": -5 },
+          { "condition": "Lluvia intensa / ventisca",          "modifier": -10}
+        ]
+      },
+      {
+        "category": "Características especiales de la presa",
+        "entries": [
+          { "condition": "Presa intentando ocultar rastro",   "modifier": -5  },
+          { "condition": "Presa a caballo",                   "modifier": +2  },
+          { "condition": "Presa vuela o levita",              "modifier": "Imposible salvo por huellas de aterrizaje" },
+          { "condition": "Presa sin piernas (serpiente, babosa)", "modifier": +2 },
+          { "condition": "Presa es no-muerto o no deja rastro", "modifier": -6 }
+        ]
+      },
+      {
+        "category": "Condiciones de luz",
+        "entries": [
+          { "condition": "Plena luz del día",                 "modifier": 0   },
+          { "condition": "Luz parcial (nubes, bosque denso)", "modifier": -2  },
+          { "condition": "Luz de antorcha / luna llena",      "modifier": -4  },
+          { "condition": "Oscuridad completa",                "modifier": "Imposible sin infravision o medios mágicos" }
+        ]
+      },
+      {
+        "category": "Ayudantes adicionales (no rangers)",
+        "entries": [
+          { "condition": "Por cada ayudante extra (no ranger)", "modifier": +1, "maxBonus": "Limitado al nivel del ranger ÷ 3" }
+        ]
+      },
+      {
+        "category": "Bonificadores del ranger",
+        "entries": [
+          { "condition": "Por cada 3 niveles del ranger",     "modifier": +1  }
+        ]
+      }
+    ]
+  },
+
+  "table40_movementWhileTracking": {
+    "description": "Tabla 40 PHB: Tasa de movimiento máxima permitida mientras se rastrea, según la puntuación modificada de Rastreo.",
+    "note": "Si el rastreador supera esta tasa de movimiento pierde el rastro automáticamente.",
+    "table": [
+      { "trackingScore": "1-5",   "maxMovement": 1,  "description": "Movimiento muy lento — paso a paso" },
+      { "trackingScore": "6-10",  "maxMovement": 2,  "description": "Muy lento"      },
+      { "trackingScore": "11-15", "maxMovement": 4,  "description": "Lento"           },
+      { "trackingScore": "16-20", "maxMovement": 6,  "description": "Moderado"        },
+      { "trackingScore": "21-25", "maxMovement": 8,  "description": "Normal reducido" },
+      { "trackingScore": "26-30", "maxMovement": 10, "description": "Normal"          },
+      { "trackingScore": "31+",   "maxMovement": 12, "description": "Movimiento completo" }
+    ],
+    "movementReference": "Las tasas de movimiento base están en T64 (humano=12, enano=6, elfo=12, gnomo=6, halfling=6). El movimiento durante rastreo está en estas unidades."
+  },
+
+  "rangerSpecialRules": {
+    "baseTrackingScore": "SAB del ranger",
+    "levelBonus": "+1 por cada 3 niveles (nivel 3=+1, nivel 6=+2, nivel 9=+3, etc.)",
+    "favoredTerrain": "En su entorno preferido (bosque, montaña, etc.) el ranger puede recibir bonos adicionales a discreción del DM.",
+    "animaleFollower": "El animal seguidor del ranger NO cuenta como rastreador adicional para el bono de ayudante."
+  }
+}

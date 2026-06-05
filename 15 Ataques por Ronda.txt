@@ -1,0 +1,92 @@
+{
+  "attacksPerRound": {
+    "description": "Tablas de ataques por ronda para guerreros (PHB Tabla 15) y especialistas (PHB Tabla 35)",
+    "source": "Player's Handbook (PHB) + Player's Option: Combat & Tactics (POCT)",
+
+    "warriorBase": {
+      "name": "Guerreros base (sin especialización)",
+      "source": "PHB Tabla 15",
+      "note": "Para Fighter, Paladin, Ranger, Bárbaro, Gladiador, Berserker, Templario, Cruzado",
+      "table": [
+        { "levelRange": [1, 6],  "attacks": "1/ronda",  "attacksNum": 1.0 },
+        { "levelRange": [7, 12], "attacks": "3/2 rondas", "attacksNum": 1.5 },
+        { "levelRange": [13, 99],"attacks": "2/ronda",  "attacksNum": 2.0 }
+      ]
+    },
+
+    "specialistAttacks": {
+      "name": "Especialistas en armas (PHB Tabla 35)",
+      "source": "PHB Tabla 35",
+      "note": "Solo Fighters de clase única (PHB). En POCT también Weapon Expertise para Rangers/Paladines/multiclase.",
+      "table": [
+        {
+          "levelRange": [1, 6],
+          "melee":         { "attacks": "3/2 rondas", "attacksNum": 1.5, "nota": "1 ataque ronda 1, 2 ataques ronda 2" },
+          "lightCrossbow": { "attacks": "1/ronda",    "attacksNum": 1.0 },
+          "heavyCrossbow": { "attacks": "1/2 rondas", "attacksNum": 0.5, "nota": "Cargar ronda 1, disparar ronda 2" },
+          "dagger":        { "attacks": "3/ronda",    "attacksNum": 3.0 },
+          "dart":          { "attacks": "4/ronda",    "attacksNum": 4.0 },
+          "otherMissile":  { "attacks": "3/2 rondas", "attacksNum": 1.5 }
+        },
+        {
+          "levelRange": [7, 12],
+          "melee":         { "attacks": "2/ronda",    "attacksNum": 2.0 },
+          "lightCrossbow": { "attacks": "3/2 rondas", "attacksNum": 1.5 },
+          "heavyCrossbow": { "attacks": "1/ronda",    "attacksNum": 1.0 },
+          "dagger":        { "attacks": "4/ronda",    "attacksNum": 4.0 },
+          "dart":          { "attacks": "5/ronda",    "attacksNum": 5.0 },
+          "otherMissile":  { "attacks": "2/ronda",    "attacksNum": 2.0 }
+        },
+        {
+          "levelRange": [13, 99],
+          "melee":         { "attacks": "5/2 rondas", "attacksNum": 2.5, "nota": "2 ataques ronda 1, 3 ataques ronda 2" },
+          "lightCrossbow": { "attacks": "2/ronda",    "attacksNum": 2.0 },
+          "heavyCrossbow": { "attacks": "3/2 rondas", "attacksNum": 1.5 },
+          "dagger":        { "attacks": "5/ronda",    "attacksNum": 5.0 },
+          "dart":          { "attacks": "6/ronda",    "attacksNum": 6.0 },
+          "otherMissile":  { "attacks": "5/2 rondas", "attacksNum": 2.5 }
+        }
+      ],
+      "bowSpecialist": {
+        "note": "Los especialistas en arco (bow) NO ganan ataques adicionales por ronda. Solo reciben +1 a impactar a cualquier rango y la categoría punto ciego.",
+        "pointBlank": "6 a 30 pies: +2 a tiradas de ataque (PHB) / +2 a daño (POCT)"
+      }
+    },
+
+    "poctSpecialistAttacks": {
+      "name": "Especialistas POCT (Combat & Tactics) — Armas de proyectil",
+      "source": "Player's Option: Combat & Tactics",
+      "note": "En POCT las armas de proyectil también ganan ataques. Reemplaza la versión PHB para ballestas.",
+      "table": [
+        {
+          "levelRange": [1, 6],
+          "bow":      { "attacks": "3/2 rondas", "attacksNum": 1.5 },
+          "crossbow": { "attacks": "1/ronda",    "attacksNum": 1.0 },
+          "firearm":  { "attacks": "1/2 rondas", "attacksNum": 0.5 }
+        },
+        {
+          "levelRange": [7, 12],
+          "bow":      { "attacks": "2/ronda",    "attacksNum": 2.0 },
+          "crossbow": { "attacks": "3/2 rondas", "attacksNum": 1.5 },
+          "firearm":  { "attacks": "1/ronda",    "attacksNum": 1.0 }
+        },
+        {
+          "levelRange": [13, 99],
+          "bow":      { "attacks": "5/2 rondas", "attacksNum": 2.5 },
+          "crossbow": { "attacks": "2/ronda",    "attacksNum": 2.0 },
+          "firearm":  { "attacks": "3/2 rondas", "attacksNum": 1.5 }
+        }
+      ]
+    },
+
+    "grandMasterBonus": {
+      "name": "Gran Maestro — Ataques adicionales",
+      "source": "Player's Option: Combat & Tactics",
+      "note": "El Gran Maestro gana 1 ataque adicional por ronda POR ENCIMA de la tasa de especialista para su nivel.",
+      "examples": [
+        { "level": 12, "specialistBase": "2/ronda", "grandMaster": "3/ronda" },
+        { "level": 6,  "specialistBase": "3/2 rondas", "grandMaster": "5/2 rondas" }
+      ]
+    }
+  }
+}

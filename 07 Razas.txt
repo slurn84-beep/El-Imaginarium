@@ -1,0 +1,9184 @@
+[
+  {
+    "id": "dwarf",
+    "nameEs": "Enano",
+    "nameEn": "Dwarf",
+    "icon": "fa-hammer",
+    "desc": "Raza robusta y terrenal, famosa por su artesanía, valentía en combate y resistencia a la magia.",
+    "source": "PHB",
+    "xpPenalty": false,
+    "size": "Pequeño/Mediano",
+    "movement": 6,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        18
+      ],
+      "DES": [
+        3,
+        17
+      ],
+      "CON": [
+        11,
+        19
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 2,
+      "poison": 2,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Enano"
+      ],
+      "bonus": [
+        "Gnomo",
+        "Goblin",
+        "Kobold",
+        "Orco"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [
+      {
+        "id": "dwarf_underground",
+        "name": "Conocimiento Subterráneo",
+        "desc": "1-5 en 1d6 para detectar obras nuevas, pasadizos inclinados, paredes corredizas o niveles de profundidad aproximados.",
+        "type": "passive"
+      },
+      {
+        "id": "dwarf_enemy_bonus",
+        "name": "Bonus vs Trasgos",
+        "desc": "+1 a las tiradas de ataque contra orcos, medio-orcos, goblins y hobgoblins.",
+        "type": "passive"
+      },
+      {
+        "id": "dwarf_giant_penalty",
+        "name": "Penalización de Gigantes",
+        "desc": "Los gigantes, ogros, troles, etóges y kobolds sufren -4 a las tiradas de ataque contra enanos.",
+        "type": "passive"
+      },
+      {
+        "id": "dwarf_magic_poison_save",
+        "name": "Resistencia Mágica y Veneno",
+        "desc": "+2 a salvaciones vs veneno; bono a salvaciones vs magia según CON (CON 4-6: +1, 7-10: +2, 11-13: +3, 14-17: +4, 18-19: +5).",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1,
+        "Paladin": -1,
+        "Ranger": -1
+      },
+      "rogue": {
+        "Thief": -1,
+        "Bard": -1
+      },
+      "priest": {
+        "Cleric": -1
+      },
+      "wizard": {
+        "Mage": -1,
+        "Illusionist": -1
+      },
+      "psionicist": -1
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo",
+      "Guerrero/Ladrón",
+      "Clérigo/Ladrón",
+      "Guerrero/Clérigo/Ladrón"
+    ],
+    "aging": {
+      "start": 40,
+      "middle": 125,
+      "old": 188,
+      "venerable": 250,
+      "maxAge": "250+2d100"
+    },
+    "height": {
+      "maleFeet": 4,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 3,
+      "femaleInches": 8,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 130,
+      "maleModifier": "3d10",
+      "femaleBase": 110,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "elf",
+    "nameEs": "Elfo",
+    "nameEn": "Elf",
+    "icon": "fa-leaf",
+    "desc": "Una raza mágica y longeva de gran belleza, que se siente en casa en los bosques y los reinos de las hadas.",
+    "source": "PHB",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": 1,
+      "CON": -1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        6,
+        19
+      ],
+      "CON": [
+        7,
+        17
+      ],
+      "INT": [
+        8,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        8,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 2,
+      "sleep": 90,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Élfico"
+      ],
+      "bonus": [
+        "Gnomo",
+        "Orco",
+        "Hobgoblin",
+        "Goblin",
+        "Halfling"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Espada larga",
+      "Espada corta",
+      "Arco largo",
+      "Arco corto"
+    ],
+    "specialAbilities": [
+      {
+        "id": "elven_secret_door_detection",
+        "name": "Detección de Puertas Secretas",
+        "desc": "1-2 en 1d6 para detectar puertas secretas; 1-3 en 1d6 si se busca activamente.",
+        "type": "passive"
+      },
+      {
+        "id": "elven_stealth_surprise",
+        "name": "Sigilo en la Naturaleza",
+        "desc": "Sorprende a los enemigos con 4-6 en 1d6 cuando está en el bosque o utilizando equipo élfico.",
+        "type": "passive"
+      },
+      {
+        "id": "elven_charm_sleep_resistance",
+        "name": "Resistencia a Dormir y Encantar",
+        "desc": "Resistencia del 90% a los hechizos de sueño y +2 a las salvaciones contra hechizos de encantamiento.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1,
+        "Paladin": -1,
+        "Ranger": -1
+      },
+      "rogue": {
+        "Thief": -1,
+        "Bard": -1
+      },
+      "priest": {
+        "Cleric": -1
+      },
+      "wizard": {
+        "Mage": -1
+      },
+      "psionicist": -1
+    },
+    "multiclassOptions": [
+      "Guerrero/Mago",
+      "Guerrero/Ladrón",
+      "Mago/Ladrón",
+      "Guerrero/Mago/Ladrón",
+      "Clérigo/Guerrero",
+      "Clérigo/Mago"
+    ],
+    "aging": {
+      "start": 100,
+      "middle": 175,
+      "old": 233,
+      "venerable": 350,
+      "maxAge": "350+4d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 0,
+      "maleModifier": "2d10",
+      "femaleFeet": 4,
+      "femaleInches": 6,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 100,
+      "maleModifier": "2d10",
+      "femaleBase": 80,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "gnome",
+    "nameEs": "Gnomo",
+    "nameEn": "Gnome",
+    "icon": "fa-gem",
+    "desc": "Raza curiosa y vivaz, amante de las gemas, la tecnología y las ilusiones.",
+    "source": "PHB",
+    "xpPenalty": false,
+    "size": "Pequeño",
+    "movement": 6,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": 0,
+      "CON": 0,
+      "INT": 1,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        6,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        8,
+        18
+      ],
+      "INT": [
+        7,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 2,
+      "poison": 2,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Gnomo"
+      ],
+      "bonus": [
+        "Élfico",
+        "Enano",
+        "Halfling",
+        "Kobold",
+        "Goblin"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [
+      {
+        "id": "gnome_illusion_magic_bonus",
+        "name": "Maestro de Ilusiones",
+        "desc": "-2 a la tirada de salvación de la víctima contra conjuros de ilusión lanzados por un gnomo.",
+        "type": "passive"
+      },
+      {
+        "id": "gnome_giant_creature_bonus",
+        "name": "Pequeño pero Matón",
+        "desc": "+1 a las tiradas de ataque contra kobolds y goblins.",
+        "type": "passive"
+      },
+      {
+        "id": "gnome_detect_underground",
+        "name": "Conocimiento Subterráneo",
+        "desc": "1-5 en 1d6 para detectar construcciones nuevas, pasadizos inclinados o en pendiente.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      },
+      "priest": {
+        "Cleric": -1
+      },
+      "wizard": {
+        "Mage": -1,
+        "Illusionist": -1
+      },
+      "psionicist": -1
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo",
+      "Guerrero/Ladrón",
+      "Clérigo/Ladrón",
+      "Guerrero/Ilusionista"
+    ],
+    "aging": {
+      "start": 60,
+      "middle": 200,
+      "old": 300,
+      "venerable": 400,
+      "maxAge": "400+3d100"
+    },
+    "height": {
+      "maleFeet": 3,
+      "maleInches": 6,
+      "maleModifier": "2d6",
+      "femaleFeet": 3,
+      "femaleInches": 4,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 60,
+      "maleModifier": "3d10",
+      "femaleBase": 55,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "half-elf",
+    "nameEs": "Semielfo",
+    "nameEn": "Half-Elf",
+    "icon": "fa-star",
+    "desc": "Un individuo con un pie en dos mundos, encarnando la curiosidad humana y la gracia élfica.",
+    "source": "PHB",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        6,
+        18
+      ],
+      "CON": [
+        6,
+        18
+      ],
+      "INT": [
+        4,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 2,
+      "sleep": 30,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Élfico"
+      ],
+      "bonus": [
+        "Humano",
+        "Enano",
+        "Gnomo",
+        "Halfling",
+        "Orco",
+        "Goblin",
+        "Hobgoblin"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [
+      {
+        "id": "half_elf_secret_door_detection",
+        "name": "Detección de Puertas Secretas",
+        "desc": "1-2 en 1d6 para detectar puertas secretas; 1-3 en 1d6 si se busca activamente.",
+        "type": "passive"
+      },
+      {
+        "id": "half_elf_charm_sleep_resistance",
+        "name": "Resistencia a Dormir y Encantar",
+        "desc": "Resistencia del 30% a los hechizos de sueño y +2 a las salvaciones contra hechizos de encantamiento.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Mago",
+      "Guerrero/Ladrón",
+      "Mago/Ladrón",
+      "Guerrero/Mago/Ladrón",
+      "Guerrero/Clérigo",
+      "Clérigo/Mago",
+      "Guerrero/Clérigo/Mago",
+      "Clérigo/Ladrón",
+      "Mago/Clérigo/Ladrón"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 62,
+      "old": 83,
+      "venerable": 125,
+      "maxAge": "125+3d20"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 4,
+      "maleModifier": "2d8",
+      "femaleFeet": 5,
+      "femaleInches": 0,
+      "femaleModifier": "2d8"
+    },
+    "weight": {
+      "maleBase": 120,
+      "maleModifier": "2d10",
+      "femaleBase": 100,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "halfling",
+    "nameEs": "Mediano",
+    "nameEn": "Halfling",
+    "icon": "fa-leaf",
+    "desc": "Gente pequeña y de espíritu libre, ama la buena comida, la bebida y la vida pacífica.",
+    "source": "PHB",
+    "xpPenalty": false,
+    "size": "Pequeño",
+    "movement": 6,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": 1,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        6,
+        17
+      ],
+      "DES": [
+        7,
+        18
+      ],
+      "CON": [
+        10,
+        18
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 3,
+      "poison": 3,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Halfling"
+      ],
+      "bonus": [
+        "Enano",
+        "Gnomo",
+        "Orco"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [
+      {
+        "id": "halfling_stealth",
+        "name": "Sigilo Sorprendente",
+        "desc": "Sorprende a los enemigos con 4-6 en 1d6 cuando está solo o con un grupo de medianos/elfos.",
+        "type": "passive"
+      },
+      {
+        "id": "halfling_missile_bonus",
+        "name": "Bonus con Armas de Proyectil",
+        "desc": "+3 a las tiradas de ataque con armas de proyectil (honda, arco, daga arrojadiza).",
+        "type": "passive"
+      },
+      {
+        "id": "halfling_magic_save",
+        "name": "Resistencia Mágica",
+        "desc": "+3 a todas las salvaciones vs magia. +3 vs veneno.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      },
+      "priest": {
+        "Cleric": -1
+      },
+      "psionicist": -1
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón",
+      "Guerrero/Clérigo",
+      "Clérigo/Ladrón"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 50,
+      "old": 75,
+      "venerable": 100,
+      "maxAge": "100+5d20"
+    },
+    "height": {
+      "maleFeet": 3,
+      "maleInches": 0,
+      "maleModifier": "2d4",
+      "femaleFeet": 2,
+      "femaleInches": 10,
+      "femaleModifier": "2d4"
+    },
+    "weight": {
+      "maleBase": 60,
+      "maleModifier": "1d10",
+      "femaleBase": 50,
+      "femaleModifier": "1d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "human",
+    "nameEs": "Humano",
+    "nameEn": "Human",
+    "icon": "fa-user",
+    "desc": "La raza más común y versátil, caracterizada por su ambición, adaptabilidad y determinación.",
+    "source": "PHB",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común"
+      ],
+      "bonus": [
+        "Cualquier no secreto"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [
+      {
+        "id": "human_dual_class",
+        "name": "Doble Clase",
+        "desc": "Los humanos pueden cambiar de clase; retienen habilidades de la clase anterior cuando superen su antiguo nivel.",
+        "type": "active"
+      },
+      {
+        "id": "human_xp_bonus",
+        "name": "Ventaja de XP",
+        "desc": "Los humanos no sufren la penalización de XP doble que afecta a otras razas (regla de mesa).",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [],
+    "aging": {
+      "start": 15,
+      "middle": 35,
+      "old": 53,
+      "venerable": 70,
+      "maxAge": "70+2d20"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 140,
+      "maleModifier": "4d10",
+      "femaleBase": 115,
+      "femaleModifier": "4d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "aquatic_elf",
+    "nameEs": "Elfo Acuático",
+    "nameEn": "Aquatic Elf",
+    "icon": "fa-fish",
+    "desc": "Una subraza élfica adaptada a la vida submarina, con branquias y escamas.",
+    "source": "Complete Book of Elves",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        6,
+        19
+      ],
+      "CON": [
+        7,
+        17
+      ],
+      "INT": [
+        8,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        8,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 2,
+      "sleep": 90,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Élfico",
+        "Aguano"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Espada larga",
+      "Arco largo",
+      "Tridente",
+      "Red"
+    ],
+    "specialAbilities": [
+      {
+        "id": "aquatic_elf_breathing",
+        "name": "Respiración Acuática",
+        "desc": "Puede respirar tanto agua como aire.",
+        "type": "passive"
+      },
+      {
+        "id": "aquatic_elf_swim",
+        "name": "Nado Rápido",
+        "desc": "Velocidad de nado de 18.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Mago",
+      "Guerrero/Ladrón",
+      "Mago/Ladrón",
+      "Guerrero/Mago/Ladrón"
+    ],
+    "aging": {
+      "start": 100,
+      "middle": 175,
+      "old": 233,
+      "venerable": 350,
+      "maxAge": "350+4d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 0,
+      "maleModifier": "2d10",
+      "femaleFeet": 4,
+      "femaleInches": 6,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 100,
+      "maleModifier": "2d10",
+      "femaleBase": 80,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "athasian_elf",
+    "nameEs": "Elfo Atasiano",
+    "nameEn": "Athasian Elf",
+    "icon": "fa-running",
+    "desc": "Elfos de Athas, altos, delgados, nómadas del desierto.",
+    "source": "Dark Sun Campaign Setting",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 15,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 2,
+      "CON": -1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        8,
+        19
+      ],
+      "CON": [
+        6,
+        16
+      ],
+      "INT": [
+        8,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        8,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común (Athas)",
+        "Élfico"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Arco corto",
+      "Lanza",
+      "Cuchillo",
+      "Honda"
+    ],
+    "specialAbilities": [
+      {
+        "id": "athasian_elf_run",
+        "name": "Carrera",
+        "desc": "Velocidad base 15, puede correr a 30.",
+        "type": "passive"
+      },
+      {
+        "id": "athasian_elf_fast_surge",
+        "name": "Aceleración",
+        "desc": "Puede sprintar 1 vez al día x2 velocidad.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1,
+        "Ranger": -1
+      },
+      "rogue": {
+        "Thief": -1
+      },
+      "wizard": {
+        "Mage": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón",
+      "Guerrero/Mago",
+      "Mago/Ladrón"
+    ],
+    "aging": {
+      "start": 100,
+      "middle": 175,
+      "old": 233,
+      "venerable": 350,
+      "maxAge": "350+4d100"
+    },
+    "height": {
+      "maleFeet": 6,
+      "maleInches": 0,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 6,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 120,
+      "maleModifier": "2d10",
+      "femaleBase": 100,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "avariel",
+    "nameEs": "Avariel (Elfo Alado)",
+    "nameEn": "Avariel",
+    "icon": "fa-feather",
+    "desc": "Elfo con alas, raro y en peligro.",
+    "source": "Complete Book of Elves",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -2,
+      "DES": 2,
+      "CON": -2,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 1
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        16
+      ],
+      "DES": [
+        8,
+        19
+      ],
+      "CON": [
+        5,
+        16
+      ],
+      "INT": [
+        8,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        10,
+        19
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 2,
+      "sleep": 90,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Élfico",
+        "Aarakocra"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Arco largo",
+      "Daga",
+      "Espada corta"
+    ],
+    "specialAbilities": [
+      {
+        "id": "avariel_flight",
+        "name": "Vuelo",
+        "desc": "Velocidad de vuelo 15, maniobrabilidad B. Requiere espacio para desplegar alas.",
+        "type": "passive"
+      },
+      {
+        "id": "avariel_elven_traits",
+        "name": "Habilidades Élfica",
+        "desc": "Detección de puertas secretas, resistencia a sueño/encantamiento como elfo estándar.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Ranger": -1
+      },
+      "wizard": {
+        "Mage": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Mago"
+    ],
+    "aging": {
+      "start": 100,
+      "middle": 175,
+      "old": 233,
+      "venerable": 350,
+      "maxAge": "350+4d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 2,
+      "maleModifier": "2d6",
+      "femaleFeet": 4,
+      "femaleInches": 10,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 80,
+      "maleModifier": "2d10",
+      "femaleBase": 65,
+      "femaleModifier": "2d10"
+    },
+    "movementFly": 15,
+    "levelCap": null
+  },
+  {
+    "id": "drow",
+    "nameEs": "Drow",
+    "nameEn": "Drow",
+    "icon": "fa-moon",
+    "desc": "Elfos oscuros de las profundidades, con piel negra y cabello blanco, famosos por su maldad y magia.",
+    "source": "Unearthed Arcana / Drow of the Underdark",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 120,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": -1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        7,
+        19
+      ],
+      "CON": [
+        6,
+        17
+      ],
+      "INT": [
+        9,
+        19
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        10,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 2,
+      "sleep": 90,
+      "magic": 2,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Élfico",
+        "Drow"
+      ],
+      "bonus": [
+        "Gnomo",
+        "Orco",
+        "Goblin",
+        "Infracomún"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Espada corta",
+      "Ballesta de mano",
+      "Daga",
+      "Látigo"
+    ],
+    "specialAbilities": [
+      {
+        "id": "drow_magic_resistance",
+        "name": "Resistencia a la Magia",
+        "desc": "50% + 2% por nivel contra hechizos y habilidades mágicas.",
+        "type": "passive"
+      },
+      {
+        "id": "drow_spell_like",
+        "name": "Poderes Mágicos",
+        "desc": "Puede lanzar oscuridad, telaraña y levitación 1 vez al día.",
+        "type": "active"
+      },
+      {
+        "id": "drow_light_sensitivity",
+        "name": "Sensibilidad a la Luz",
+        "desc": "Deslumbrado por luz brillante: -1 a ataque y salvaciones.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "wizard": {
+        "Mage": -1
+      },
+      "priest": {
+        "Cleric": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Mago",
+      "Guerrero/Ladrón",
+      "Mago/Ladrón",
+      "Guerrero/Mago/Ladrón",
+      "Guerrero/Clérigo",
+      "Clérigo/Mago"
+    ],
+    "aging": {
+      "start": 100,
+      "middle": 175,
+      "old": 233,
+      "venerable": 350,
+      "maxAge": "350+4d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 0,
+      "maleModifier": "2d10",
+      "femaleFeet": 4,
+      "femaleInches": 6,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 100,
+      "maleModifier": "2d10",
+      "femaleBase": 80,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "grey_elf",
+    "nameEs": "Elfo Gris",
+    "nameEn": "Grey Elf",
+    "icon": "fa-star",
+    "desc": "Los más altos y sabios de los elfos, a menudo llamados elfos altos del norte.",
+    "source": "Player's Handbook",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": 0,
+      "CON": -1,
+      "INT": 1,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        17
+      ],
+      "DES": [
+        6,
+        18
+      ],
+      "CON": [
+        7,
+        17
+      ],
+      "INT": [
+        10,
+        19
+      ],
+      "SAB": [
+        4,
+        18
+      ],
+      "CAR": [
+        8,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 2,
+      "sleep": 90,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Élfico",
+        "Draconico"
+      ],
+      "bonus": [
+        "Gnomo",
+        "Orco"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Espada larga",
+      "Arco largo",
+      "Espada corta",
+      "Arco corto"
+    ],
+    "specialAbilities": [
+      {
+        "id": "grey_elf_detection",
+        "name": "Detección de Puertas Secretas",
+        "desc": "1-2 en 1d6 al pasar; 1-3 en 1d6 buscando activamente. 1-4 en 1d6 buscando secretos.",
+        "type": "passive"
+      },
+      {
+        "id": "grey_elf_stealth",
+        "name": "Sigilo en Bosques",
+        "desc": "Sorprende con 4-6 en 1d6 en bosques o con equipo élfico.",
+        "type": "passive"
+      },
+      {
+        "id": "grey_elf_charm_resist",
+        "name": "Resistencia a Encantamientos",
+        "desc": "90% de resistencia a sueño mágico; +2 a salvaciones vs encantamiento.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Mago",
+      "Guerrero/Ladrón",
+      "Mago/Ladrón",
+      "Guerrero/Mago/Ladrón"
+    ],
+    "aging": {
+      "start": 100,
+      "middle": 175,
+      "old": 233,
+      "venerable": 350,
+      "maxAge": "350+4d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 6,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 0,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 110,
+      "maleModifier": "2d10",
+      "femaleBase": 85,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "high_elf",
+    "nameEs": "Elfo Alto",
+    "nameEn": "High Elf",
+    "icon": "fa-leaf",
+    "desc": "Elfo de los bosques, la subespecie más común. Idéntico al Elfo estándar del PHB.",
+    "source": "Player's Handbook",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": 1,
+      "CON": -1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        6,
+        19
+      ],
+      "CON": [
+        7,
+        17
+      ],
+      "INT": [
+        8,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        8,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 2,
+      "sleep": 90,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Élfico"
+      ],
+      "bonus": [
+        "Gnomo",
+        "Orco"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Espada larga",
+      "Espada corta",
+      "Arco largo",
+      "Arco corto"
+    ],
+    "specialAbilities": [
+      {
+        "id": "high_elf_detection",
+        "name": "Detección de Puertas Secretas",
+        "desc": "1-2 en 1d6 pasando; 1-3 en 1d6 buscando activamente.",
+        "type": "passive"
+      },
+      {
+        "id": "high_elf_stealth",
+        "name": "Sigilo en Bosques",
+        "desc": "Sorprende con 4-6 en 1d6 en bosques o con equipo élfico.",
+        "type": "passive"
+      },
+      {
+        "id": "high_elf_charm_resist",
+        "name": "Resistencia a Encantamientos",
+        "desc": "90% de resistencia a sueño mágico; +2 a salvaciones vs encantamiento.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Mago",
+      "Guerrero/Ladrón",
+      "Mago/Ladrón",
+      "Guerrero/Mago/Ladrón"
+    ],
+    "aging": {
+      "start": 100,
+      "middle": 175,
+      "old": 233,
+      "venerable": 350,
+      "maxAge": "350+4d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 0,
+      "maleModifier": "2d10",
+      "femaleFeet": 4,
+      "femaleInches": 6,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 100,
+      "maleModifier": "2d10",
+      "femaleBase": 80,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "rockseer_elf",
+    "nameEs": "Elfo Vidente de Rocas",
+    "nameEn": "Rockseer Elf",
+    "icon": "fa-gem",
+    "desc": "Elfo de montaña, minero.",
+    "source": "Monstrous Manual",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        6,
+        18
+      ],
+      "CON": [
+        9,
+        18
+      ],
+      "INT": [
+        8,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        6,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 1,
+      "poison": 1,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Élfico",
+        "Enano"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Pico",
+      "Martillo",
+      "Ballesta"
+    ],
+    "specialAbilities": [
+      {
+        "id": "rockseer_mining",
+        "name": "Minería",
+        "desc": "Como enano, detecta pasadizos.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 100,
+      "middle": 175,
+      "old": 233,
+      "venerable": 350,
+      "maxAge": "350+4d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 0,
+      "maleModifier": "2d8",
+      "femaleFeet": 4,
+      "femaleInches": 6,
+      "femaleModifier": "2d8"
+    },
+    "weight": {
+      "maleBase": 120,
+      "maleModifier": "3d10",
+      "femaleBase": 100,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "snow_elf",
+    "nameEs": "Elfo de las Nieves",
+    "nameEn": "Snow Elf",
+    "icon": "fa-snowflake",
+    "desc": "Raza élfica de climas fríos, con piel pálida y resistencia al hielo.",
+    "source": "Complete Book of Elves",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        6,
+        19
+      ],
+      "CON": [
+        7,
+        18
+      ],
+      "INT": [
+        8,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        8,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 2,
+      "sleep": 90,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Élfico"
+      ],
+      "bonus": [
+        "Gnomo",
+        "Troll",
+        "Gigante"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Arco corto",
+      "Espada larga",
+      "Lanza",
+      "Hacha de mano"
+    ],
+    "specialAbilities": [
+      {
+        "id": "snow_elf_cold_resistance",
+        "name": "Resistencia al Frío",
+        "desc": "+2 a salvaciones contra frío; mitad de daño por frío natural.",
+        "type": "passive"
+      },
+      {
+        "id": "snow_elf_snow_stealth",
+        "name": "Sigilo en Nieve",
+        "desc": "Puede ocultarse en entornos nevados como si estuviera invisible con éxito.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Mago",
+      "Guerrero/Ladrón",
+      "Mago/Ladrón"
+    ],
+    "aging": {
+      "start": 100,
+      "middle": 175,
+      "old": 233,
+      "venerable": 350,
+      "maxAge": "350+4d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 2,
+      "maleModifier": "2d8",
+      "femaleFeet": 4,
+      "femaleInches": 10,
+      "femaleModifier": "2d8"
+    },
+    "weight": {
+      "maleBase": 120,
+      "maleModifier": "2d10",
+      "femaleBase": 95,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "sylvan_elf",
+    "nameEs": "Elfo Silvano",
+    "nameEn": "Sylvan Elf",
+    "icon": "fa-leaf",
+    "desc": "Elfo del bosque, más salvaje.",
+    "source": "Complete Book of Elves",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 1,
+      "CON": -1,
+      "INT": -1,
+      "SAB": 1,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        7,
+        19
+      ],
+      "CON": [
+        7,
+        17
+      ],
+      "INT": [
+        6,
+        17
+      ],
+      "SAB": [
+        6,
+        18
+      ],
+      "CAR": [
+        8,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 2,
+      "sleep": 90,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Élfico",
+        "Silvano"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Espada corta",
+      "Arco corto",
+      "Daga"
+    ],
+    "specialAbilities": [
+      {
+        "id": "sylvan_elf_stealth",
+        "name": "Sigilo en Bosques",
+        "desc": "Puede ocultarse con 90% de éxito en bosques; sorprende con 4-6 en 1d6.",
+        "type": "passive"
+      },
+      {
+        "id": "sylvan_elf_detection",
+        "name": "Detección de Puertas Secretas",
+        "desc": "1-2 en 1d6 al pasar; 1-3 en 1d6 buscando.",
+        "type": "passive"
+      },
+      {
+        "id": "sylvan_elf_charm_resist",
+        "name": "Resistencia a Encantamientos",
+        "desc": "90% de resistencia a sueño mágico; +2 a salvaciones vs encantamiento.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1,
+        "Ranger": -1
+      },
+      "priest": {
+        "Cleric": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Druida",
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 100,
+      "middle": 175,
+      "old": 233,
+      "venerable": 350,
+      "maxAge": "350+4d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 4,
+      "maleModifier": "2d8",
+      "femaleFeet": 4,
+      "femaleInches": 10,
+      "femaleModifier": "2d8"
+    },
+    "weight": {
+      "maleBase": 110,
+      "maleModifier": "2d10",
+      "femaleBase": 90,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "athasian_dwarf",
+    "nameEs": "Enano Atasiano",
+    "nameEn": "Athasian Dwarf",
+    "icon": "fa-gem",
+    "desc": "Enanos del mundo de Athas, más delgados y altos, obsesionados con el trabajo.",
+    "source": "Dark Sun Campaign Setting",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 2,
+      "INT": -1,
+      "SAB": -1,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        18
+      ],
+      "DES": [
+        6,
+        18
+      ],
+      "CON": [
+        12,
+        20
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        16
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 1,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común (Athas)",
+        "Enano"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Martillo",
+      "Maza"
+    ],
+    "specialAbilities": [
+      {
+        "id": "athasian_dwarf_focus",
+        "name": "Concentración Enana",
+        "desc": "Debe completar una tarea autoimpuesta o sufrir penalizaciones. Bonificación +2 a fuerza durante la tarea.",
+        "type": "active"
+      },
+      {
+        "id": "athasian_dwarf_poison_resist",
+        "name": "Resistencia al Veneno",
+        "desc": "+1 a salvaciones contra veneno.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "priest": {
+        "Cleric": -1,
+        "Druid": -1
+      },
+      "psionicist": -1
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo",
+      "Guerrero/Druida",
+      "Clérigo/Druida",
+      "Guerrero/Psionicista"
+    ],
+    "aging": {
+      "start": 40,
+      "middle": 125,
+      "old": 188,
+      "venerable": 250,
+      "maxAge": "250+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 4,
+      "femaleInches": 8,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 140,
+      "maleModifier": "3d10",
+      "femaleBase": 120,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "deep_dwarf",
+    "nameEs": "Enano Profundo",
+    "nameEn": "Deep Dwarf",
+    "icon": "fa-moon",
+    "desc": "Enanos del subsuelo, adaptados a la oscuridad.",
+    "source": "The Complete Book of Dwarves",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 6,
+    "infravision": 120,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        18
+      ],
+      "DES": [
+        3,
+        17
+      ],
+      "CON": [
+        11,
+        19
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 2,
+      "poison": 2,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Enano"
+      ],
+      "bonus": [
+        "Infracomún",
+        "Orco"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Pico",
+      "Martillo",
+      "Hacha"
+    ],
+    "specialAbilities": [
+      {
+        "id": "deep_dwarf_light_sensitivity",
+        "name": "Sensibilidad a la Luz",
+        "desc": "-1 a ataque bajo luz brillante.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 40,
+      "middle": 125,
+      "old": 188,
+      "venerable": 250,
+      "maxAge": "250+2d100"
+    },
+    "height": {
+      "maleFeet": 4,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 3,
+      "femaleInches": 8,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 130,
+      "maleModifier": "3d10",
+      "femaleBase": 110,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "duergar",
+    "nameEs": "Duergar",
+    "nameEn": "Duergar",
+    "icon": "fa-skull",
+    "desc": "Enanos grises del Inframundo, crueles y resistentes, capaces de volverse invisibles.",
+    "source": "Complete Book of Dwarves",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 6,
+    "infravision": 120,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        11,
+        19
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 2,
+      "poison": 2,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Enano",
+        "Duergar"
+      ],
+      "bonus": [
+        "Orco",
+        "Goblin",
+        "Kobold",
+        "Infracomún"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Pico de guerra",
+      "Martillo",
+      "Hacha",
+      "Ballesta"
+    ],
+    "specialAbilities": [
+      {
+        "id": "duergar_invisibility",
+        "name": "Invisibilidad",
+        "desc": "Puede volverse invisible 1 vez al día durante 1 turno.",
+        "type": "active"
+      },
+      {
+        "id": "duergar_enlarge",
+        "name": "Agrandamiento",
+        "desc": "Puede duplicar su tamaño 1 vez al día durante 1 turno, +2 a daño.",
+        "type": "active"
+      },
+      {
+        "id": "duergar_light_sensitivity",
+        "name": "Sensibilidad a la Luz",
+        "desc": "-1 a ataque y salvaciones bajo luz brillante.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      },
+      "priest": {
+        "Cleric": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo",
+      "Guerrero/Ladrón",
+      "Clérigo/Ladrón"
+    ],
+    "aging": {
+      "start": 40,
+      "middle": 125,
+      "old": 188,
+      "venerable": 250,
+      "maxAge": "250+2d100"
+    },
+    "height": {
+      "maleFeet": 4,
+      "maleInches": 6,
+      "maleModifier": "2d6",
+      "femaleFeet": 4,
+      "femaleInches": 0,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 150,
+      "maleModifier": "3d10",
+      "femaleBase": 130,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "gully_dwarf",
+    "nameEs": "Enano de Barranco",
+    "nameEn": "Gully Dwarf",
+    "icon": "fa-trash",
+    "desc": "Enano sucio y primitivo de Krynn.",
+    "source": "Dragonlance Adventures",
+    "xpPenalty": false,
+    "size": "Pequeño",
+    "movement": 6,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": -1,
+      "CON": 0,
+      "INT": -3,
+      "SAB": -2,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        5,
+        17
+      ],
+      "DES": [
+        2,
+        16
+      ],
+      "CON": [
+        9,
+        18
+      ],
+      "INT": [
+        3,
+        14
+      ],
+      "SAB": [
+        3,
+        14
+      ],
+      "CAR": [
+        3,
+        12
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 1,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Enano"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Maza",
+      "Hacha",
+      "Honda"
+    ],
+    "specialAbilities": [
+      {
+        "id": "gully_dwarf_level_cap",
+        "name": "Nivel Máximo 4",
+        "desc": "Los Enanos de Barranco no pueden superar el nivel 4 en ninguna clase.",
+        "type": "passive"
+      },
+      {
+        "id": "gully_dwarf_cowardice",
+        "name": "Cobardía",
+        "desc": "-2 a moral y tiradas de salvación contra miedo.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 40,
+      "middle": 125,
+      "old": 188,
+      "venerable": 250,
+      "maxAge": "250+2d100"
+    },
+    "height": {
+      "maleFeet": 4,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 3,
+      "femaleInches": 8,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 100,
+      "maleModifier": "2d10",
+      "femaleBase": 85,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": 4,
+    "movementFly": 0
+  },
+  {
+    "id": "hill_dwarf",
+    "nameEs": "Enano de las Colinas",
+    "nameEn": "Hill Dwarf",
+    "icon": "fa-gem",
+    "desc": "Enano estándar de colinas.",
+    "source": "Player's Handbook",
+    "xpPenalty": false,
+    "size": "Pequeño",
+    "movement": 6,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        18
+      ],
+      "DES": [
+        3,
+        17
+      ],
+      "CON": [
+        11,
+        19
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 2,
+      "poison": 2,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Enano"
+      ],
+      "bonus": [
+        "Gnomo"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Martillo",
+      "Ballesta"
+    ],
+    "specialAbilities": [
+      {
+        "id": "hill_dwarf_underground",
+        "name": "Conocimiento Subterráneo",
+        "desc": "Detecta pasadizos y trampas de piedra.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "priest": {
+        "Cleric": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo",
+      "Guerrero/Ladrón",
+      "Clérigo/Ladrón"
+    ],
+    "aging": {
+      "start": 40,
+      "middle": 125,
+      "old": 188,
+      "venerable": 250,
+      "maxAge": "250+2d100"
+    },
+    "height": {
+      "maleFeet": 4,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 3,
+      "femaleInches": 8,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 130,
+      "maleModifier": "3d10",
+      "femaleBase": 110,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "mountain_dwarf",
+    "nameEs": "Enano de Montaña",
+    "nameEn": "Mountain Dwarf",
+    "icon": "fa-gem",
+    "desc": "Enano de las montañas, más robusto.",
+    "source": "Player's Handbook",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 6,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 1,
+      "DES": 0,
+      "CON": 1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        9,
+        19
+      ],
+      "DES": [
+        3,
+        17
+      ],
+      "CON": [
+        11,
+        19
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 2,
+      "poison": 2,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Enano"
+      ],
+      "bonus": [
+        "Gnomo",
+        "Orco"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Martillo",
+      "Ballesta pesada"
+    ],
+    "specialAbilities": [
+      {
+        "id": "mountain_dwarf_combat",
+        "name": "Combate",
+        "desc": "+1 vs orcos, goblins, hobgoblins.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón",
+      "Guerrero/Clérigo"
+    ],
+    "aging": {
+      "start": 40,
+      "middle": 125,
+      "old": 188,
+      "venerable": 250,
+      "maxAge": "250+2d100"
+    },
+    "height": {
+      "maleFeet": 4,
+      "maleInches": 6,
+      "maleModifier": "2d6",
+      "femaleFeet": 4,
+      "femaleInches": 0,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 150,
+      "maleModifier": "3d10",
+      "femaleBase": 130,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "sundered_dwarf",
+    "nameEs": "Enano Quebrado",
+    "nameEn": "Sundered Dwarf",
+    "icon": "fa-skull",
+    "desc": "Enano maldito de Athas.",
+    "source": "Dark Sun",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 6,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        18
+      ],
+      "DES": [
+        3,
+        17
+      ],
+      "CON": [
+        11,
+        19
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 40,
+      "middle": 125,
+      "old": 188,
+      "venerable": 250,
+      "maxAge": "250+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 4,
+      "femaleInches": 8,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 140,
+      "maleModifier": "3d10",
+      "femaleBase": 120,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "urdunnir_dwarf",
+    "nameEs": "Enano Urdunnir",
+    "nameEn": "Urdunnir Dwarf",
+    "icon": "fa-gem",
+    "desc": "Enano con poderes pétreos.",
+    "source": "Monstrous Manual",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 6,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 1,
+      "DES": 0,
+      "CON": 2,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        9,
+        19
+      ],
+      "DES": [
+        3,
+        17
+      ],
+      "CON": [
+        12,
+        20
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        15
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 2,
+      "poison": 2,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Enano"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Pico",
+      "Martillo"
+    ],
+    "specialAbilities": [
+      {
+        "id": "urdunnir_stonewalk",
+        "name": "Caminar Piedra",
+        "desc": "Puede moverse a través de piedra sólida.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 40,
+      "middle": 125,
+      "old": 188,
+      "venerable": 250,
+      "maxAge": "250+2d100"
+    },
+    "height": {
+      "maleFeet": 4,
+      "maleInches": 6,
+      "maleModifier": "2d6",
+      "femaleFeet": 4,
+      "femaleInches": 0,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 160,
+      "maleModifier": "3d10",
+      "femaleBase": 140,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "deep_gnome",
+    "nameEs": "Gnomo Profundo",
+    "nameEn": "Deep Gnome (Svirfneblin)",
+    "icon": "fa-gem",
+    "desc": "Gnomos del subsuelo, pardos y sigilosos, con poderes mágicos defensivos.",
+    "source": "Complete Book of Gnomes & Halflings",
+    "xpPenalty": true,
+    "size": "Pequeño",
+    "movement": 6,
+    "infravision": 120,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        5,
+        17
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        8,
+        18
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 2,
+      "poison": 2,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Gnomo",
+        "Svirfneblin"
+      ],
+      "bonus": [
+        "Enano",
+        "Goblin",
+        "Kobold",
+        "Orco"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Ballesta ligera",
+      "Daga",
+      "Pica",
+      "Honda"
+    ],
+    "specialAbilities": [
+      {
+        "id": "deep_gnome_blur",
+        "name": "Difuminar",
+        "desc": "Puede lanzar difuminar 1 vez al día.",
+        "type": "active"
+      },
+      {
+        "id": "deep_gnome_blindness",
+        "name": "Ceguera",
+        "desc": "Puede lanzar ceguera 1 vez al día.",
+        "type": "active"
+      },
+      {
+        "id": "deep_gnome_magic_resist",
+        "name": "Resistencia Mágica",
+        "desc": "25% de resistencia a la magia + 5% por nivel.",
+        "type": "passive"
+      },
+      {
+        "id": "deep_gnome_stealth",
+        "name": "Sigilo Subterráneo",
+        "desc": "95% de posibilidad de ocultarse en rocas.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      },
+      "wizard": {
+        "Illusionist": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ilusionista",
+      "Guerrero/Ladrón",
+      "Ilusionista/Ladrón"
+    ],
+    "aging": {
+      "start": 60,
+      "middle": 200,
+      "old": 300,
+      "venerable": 400,
+      "maxAge": "400+3d100"
+    },
+    "height": {
+      "maleFeet": 3,
+      "maleInches": 4,
+      "maleModifier": "2d4",
+      "femaleFeet": 3,
+      "femaleInches": 0,
+      "femaleModifier": "2d4"
+    },
+    "weight": {
+      "maleBase": 70,
+      "maleModifier": "2d6",
+      "femaleBase": 60,
+      "femaleModifier": "2d6"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "forest_gnome",
+    "nameEs": "Gnomo del Bosque",
+    "nameEn": "Forest Gnome",
+    "icon": "fa-tree",
+    "desc": "Gnomo amante de la naturaleza, habitante de bosques.",
+    "source": "Complete Book of Gnomes & Halflings",
+    "xpPenalty": false,
+    "size": "Pequeño",
+    "movement": 6,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": 1,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        6,
+        17
+      ],
+      "DES": [
+        7,
+        18
+      ],
+      "CON": [
+        8,
+        18
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Gnomo",
+        "Silvano"
+      ],
+      "bonus": [
+        "Élfico"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Arco corto",
+      "Espada corta",
+      "Honda"
+    ],
+    "specialAbilities": [
+      {
+        "id": "forest_gnome_stealth",
+        "name": "Sigilo",
+        "desc": "80% de ocultarse en bosques.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      },
+      "priest": {
+        "Druid": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón",
+      "Guerrero/Druida",
+      "Ladrón/Druida"
+    ],
+    "aging": {
+      "start": 60,
+      "middle": 200,
+      "old": 300,
+      "venerable": 400,
+      "maxAge": "400+3d100"
+    },
+    "height": {
+      "maleFeet": 3,
+      "maleInches": 4,
+      "maleModifier": "2d4",
+      "femaleFeet": 3,
+      "femaleInches": 0,
+      "femaleModifier": "2d4"
+    },
+    "weight": {
+      "maleBase": 55,
+      "maleModifier": "2d6",
+      "femaleBase": 50,
+      "femaleModifier": "2d6"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "rock_gnome",
+    "nameEs": "Gnomo de las Rocas",
+    "nameEn": "Rock Gnome",
+    "icon": "fa-gem",
+    "desc": "Gnomo estándar, artífice e ilusionista.",
+    "source": "Player's Handbook",
+    "xpPenalty": false,
+    "size": "Pequeño",
+    "movement": 6,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        6,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        8,
+        18
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 2,
+      "poison": 2,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Gnomo"
+      ],
+      "bonus": [
+        "Enano",
+        "Élfico"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Ballesta ligera",
+      "Hacha",
+      "Maza"
+    ],
+    "specialAbilities": [
+      {
+        "id": "rock_gnome_illusion_bonus",
+        "name": "Maestro Ilusionista",
+        "desc": "-2 a la salvación contra sus ilusiones.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      },
+      "wizard": {
+        "Illusionist": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ilusionista",
+      "Guerrero/Ladrón",
+      "Ilusionista/Ladrón"
+    ],
+    "aging": {
+      "start": 60,
+      "middle": 200,
+      "old": 300,
+      "venerable": 400,
+      "maxAge": "400+3d100"
+    },
+    "height": {
+      "maleFeet": 3,
+      "maleInches": 6,
+      "maleModifier": "2d6",
+      "femaleFeet": 3,
+      "femaleInches": 4,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 60,
+      "maleModifier": "3d10",
+      "femaleBase": 55,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "tinker_gnome",
+    "nameEs": "Gnomo Ingeniero",
+    "nameEn": "Tinker Gnome",
+    "icon": "fa-gem",
+    "desc": "Gnomo loco por la tecnología, de Krynn.",
+    "source": "Dragonlance Adventures",
+    "xpPenalty": true,
+    "size": "Pequeño",
+    "movement": 6,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": 0,
+      "CON": 0,
+      "INT": 1,
+      "SAB": -1,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        6,
+        17
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        8,
+        18
+      ],
+      "INT": [
+        8,
+        19
+      ],
+      "SAB": [
+        3,
+        17
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Gnomo"
+      ],
+      "bonus": [
+        "Enano"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Ballesta",
+      "Maza",
+      "Hacha"
+    ],
+    "specialAbilities": [
+      {
+        "id": "tinker_invention",
+        "name": "Invención",
+        "desc": "Puede crear artefactos mecánicos (fallan el 50% del tiempo).",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      },
+      "wizard": {
+        "Illusionist": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ilusionista",
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 60,
+      "middle": 200,
+      "old": 300,
+      "venerable": 400,
+      "maxAge": "400+3d100"
+    },
+    "height": {
+      "maleFeet": 3,
+      "maleInches": 4,
+      "maleModifier": "2d4",
+      "femaleFeet": 3,
+      "femaleInches": 0,
+      "femaleModifier": "2d4"
+    },
+    "weight": {
+      "maleBase": 55,
+      "maleModifier": "2d6",
+      "femaleBase": 50,
+      "femaleModifier": "2d6"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "athasian_halfling",
+    "nameEs": "Mediano Atasiano",
+    "nameEn": "Athasian Halfling",
+    "icon": "fa-leaf",
+    "desc": "Pequeños caníbales primitivos de Athas, feroces.",
+    "source": "Dark Sun Campaign Setting",
+    "xpPenalty": false,
+    "size": "Pequeño",
+    "movement": 9,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": 2,
+      "CON": 0,
+      "INT": -1,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        16
+      ],
+      "DES": [
+        9,
+        19
+      ],
+      "CON": [
+        8,
+        18
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 1,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Halfling"
+      ],
+      "bonus": [
+        "Común"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Honda",
+      "Daga",
+      "Cerbatana"
+    ],
+    "specialAbilities": [
+      {
+        "id": "athasian_halfling_poison_resist",
+        "name": "Resistencia a Venenos",
+        "desc": "+1 a salvaciones contra veneno.",
+        "type": "passive"
+      },
+      {
+        "id": "athasian_halfling_stealth",
+        "name": "Sigilo",
+        "desc": "Puede ocultarse en desierto con 80% de éxito.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      },
+      "priest": {
+        "Druid": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón",
+      "Guerrero/Druida",
+      "Ladrón/Druida"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 50,
+      "old": 75,
+      "venerable": 100,
+      "maxAge": "100+5d20"
+    },
+    "height": {
+      "maleFeet": 3,
+      "maleInches": 2,
+      "maleModifier": "2d4",
+      "femaleFeet": 2,
+      "femaleInches": 10,
+      "femaleModifier": "2d4"
+    },
+    "weight": {
+      "maleBase": 65,
+      "maleModifier": "2d6",
+      "femaleBase": 55,
+      "femaleModifier": "2d6"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "hairfoot",
+    "nameEs": "Mediano Piespeludos",
+    "nameEn": "Hairfoot Halfling",
+    "icon": "fa-running",
+    "desc": "Halfling común, de pies peludos.",
+    "source": "The Complete Book of Gnomes & Halflings",
+    "xpPenalty": false,
+    "size": "Pequeño",
+    "movement": 6,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": 1,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        6,
+        17
+      ],
+      "DES": [
+        7,
+        18
+      ],
+      "CON": [
+        10,
+        18
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 3,
+      "poison": 3,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Halfling"
+      ],
+      "bonus": [
+        "Enano",
+        "Gnomo"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Honda",
+      "Daga"
+    ],
+    "specialAbilities": [
+      {
+        "id": "hairfoot_stealth",
+        "name": "Sigilo",
+        "desc": "Puede ocultarse en la naturaleza con 70% de éxito.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 50,
+      "old": 75,
+      "venerable": 100,
+      "maxAge": "100+5d20"
+    },
+    "height": {
+      "maleFeet": 3,
+      "maleInches": 0,
+      "maleModifier": "2d4",
+      "femaleFeet": 2,
+      "femaleInches": 10,
+      "femaleModifier": "2d4"
+    },
+    "weight": {
+      "maleBase": 60,
+      "maleModifier": "1d10",
+      "femaleBase": 50,
+      "femaleModifier": "1d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "athasian_human",
+    "nameEs": "Humano Atasiano",
+    "nameEn": "Athasian Human",
+    "icon": "fa-user",
+    "desc": "Humanos del mundo desolado de Athas, resistentes.",
+    "source": "Dark Sun Campaign Setting",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común (Athas)"
+      ],
+      "bonus": [
+        "Cualquier"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [],
+    "classRestrictions": null,
+    "multiclassOptions": [],
+    "aging": {
+      "start": 15,
+      "middle": 35,
+      "old": 53,
+      "venerable": 70,
+      "maxAge": "70+2d20"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 140,
+      "maleModifier": "4d10",
+      "femaleBase": 115,
+      "femaleModifier": "4d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "kender",
+    "nameEs": "Kender",
+    "nameEn": "Kender",
+    "icon": "fa-running",
+    "desc": "Pequeños humanoides de Krynn, inmunes al miedo, curiosos y sin sentido de la propiedad.",
+    "source": "Dragonlance Adventures",
+    "xpPenalty": false,
+    "size": "Pequeño",
+    "movement": 12,
+    "infravision": 30,
+    "abilityAdj": {
+      "FUE": -2,
+      "DES": 1,
+      "CON": -1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        16
+      ],
+      "DES": [
+        8,
+        19
+      ],
+      "CON": [
+        6,
+        17
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        6,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Kender"
+      ],
+      "bonus": [
+        "Enano",
+        "Gnomo",
+        "Élfico"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Honda",
+      "Daga",
+      "Espada corta",
+      "Hacha de mano"
+    ],
+    "specialAbilities": [
+      {
+        "id": "kender_fearlessness",
+        "name": "Inmunidad al Miedo",
+        "desc": "Completamente inmune a hechizos y efectos de miedo mágico y normal.",
+        "type": "passive"
+      },
+      {
+        "id": "kender_taunt",
+        "name": "Provocación",
+        "desc": "Puede provocar a criaturas conscientes; la criatura debe atacar al kender si falla una salvación vs hechizos.",
+        "type": "active"
+      },
+      {
+        "id": "kender_handling",
+        "name": "Manejo de Objetos",
+        "desc": "Puede \"recoger\" objetos de otros sin que lo noten (como Robar Bolsillos con bonificación +15%).",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "rogue": {
+        "Thief": -1
+      },
+      "warrior": {
+        "Fighter": -1
+      },
+      "priest": {
+        "Cleric": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 40,
+      "old": 60,
+      "venerable": 80,
+      "maxAge": "80+2d20"
+    },
+    "height": {
+      "maleFeet": 4,
+      "maleInches": 0,
+      "maleModifier": "2d4",
+      "femaleFeet": 3,
+      "femaleInches": 8,
+      "femaleModifier": "2d4"
+    },
+    "weight": {
+      "maleBase": 65,
+      "maleModifier": "2d6",
+      "femaleBase": 55,
+      "femaleModifier": "2d6"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "aarakocra",
+    "nameEs": "Aarakocra",
+    "nameEn": "Aarakocra",
+    "icon": "fa-feather",
+    "desc": "Humanoides pájaro de los picos, amantes de la libertad y el cielo.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 6,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": -2,
+      "DES": 2,
+      "CON": -1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        16
+      ],
+      "DES": [
+        10,
+        19
+      ],
+      "CON": [
+        6,
+        17
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        6,
+        18
+      ],
+      "CAR": [
+        6,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Aarakocra"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Daga",
+      "Lanza",
+      "Arco corto"
+    ],
+    "specialAbilities": [
+      {
+        "id": "aarakocra_flight",
+        "name": "Vuelo",
+        "desc": "Velocidad de vuelo 18, maniobrabilidad C. Requiere 20 pies de espacio para despegar.",
+        "type": "passive"
+      },
+      {
+        "id": "aarakocra_talon_attack",
+        "name": "Ataque de Garras",
+        "desc": "Dos ataques de garras (1d4 cada uno) en combate cuerpo a cuerpo.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "priest": {
+        "Cleric": -1,
+        "Druid": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo",
+      "Guerrero/Druida",
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 10,
+      "middle": 20,
+      "old": 30,
+      "venerable": 40,
+      "maxAge": "40+2d10"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 6,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 0,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 80,
+      "maleModifier": "2d6",
+      "femaleBase": 70,
+      "femaleModifier": "2d6"
+    },
+    "movementFly": 18,
+    "levelCap": null
+  },
+  {
+    "id": "alaghi",
+    "nameEs": "Alaghi",
+    "nameEn": "Alaghi",
+    "icon": "fa-fist-raised",
+    "desc": "Humanoide peludo y fuerte.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 9,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 2,
+      "DES": -1,
+      "CON": 2,
+      "INT": -2,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        11,
+        19
+      ],
+      "DES": [
+        3,
+        16
+      ],
+      "CON": [
+        11,
+        19
+      ],
+      "INT": [
+        3,
+        15
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        15
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Alaghi"
+      ],
+      "bonus": [
+        "Común"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Maza",
+      "Lanza"
+    ],
+    "specialAbilities": [],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 10,
+      "middle": 25,
+      "old": 40,
+      "venerable": 55,
+      "maxAge": "55+2d20"
+    },
+    "height": {
+      "maleFeet": 7,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 6,
+      "femaleInches": 6,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 250,
+      "maleModifier": "3d10",
+      "femaleBase": 220,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "athasian_aarakocra",
+    "nameEs": "Aarakocra Atasiano",
+    "nameEn": "Athasian Aarakocra",
+    "icon": "fa-feather",
+    "desc": "Aarakocra de Athas, más delgados.",
+    "source": "Dark Sun Campaign Setting",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 6,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": -2,
+      "DES": 2,
+      "CON": -1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        16
+      ],
+      "DES": [
+        10,
+        19
+      ],
+      "CON": [
+        6,
+        17
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        6,
+        18
+      ],
+      "CAR": [
+        6,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común (Athas)",
+        "Aarakocra"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Lanza",
+      "Daga"
+    ],
+    "specialAbilities": [
+      {
+        "id": "athasian_aarakocra_flight",
+        "name": "Vuelo",
+        "desc": "Velocidad 15, maniobrabilidad C.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "priest": {
+        "Druid": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Druida"
+    ],
+    "aging": {
+      "start": 10,
+      "middle": 20,
+      "old": 30,
+      "venerable": 40,
+      "maxAge": "40+2d10"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 6,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 0,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 75,
+      "maleModifier": "2d6",
+      "femaleBase": 65,
+      "femaleModifier": "2d6"
+    },
+    "movementFly": 15,
+    "levelCap": null
+  },
+  {
+    "id": "beastman",
+    "nameEs": "Hombre Bestia",
+    "nameEn": "Beastman",
+    "icon": "fa-fist-raised",
+    "desc": "Humanoide con cabeza de animal.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 9,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 1,
+      "DES": 0,
+      "CON": 1,
+      "INT": -2,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        19
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        9,
+        19
+      ],
+      "INT": [
+        3,
+        15
+      ],
+      "SAB": [
+        3,
+        17
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Beastman"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Lanza",
+      "Maza"
+    ],
+    "specialAbilities": [],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 8,
+      "middle": 20,
+      "old": 30,
+      "venerable": 40,
+      "maxAge": "40+2d10"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 10,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 160,
+      "maleModifier": "3d10",
+      "femaleBase": 140,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "bugbear",
+    "nameEs": "Bugbear",
+    "nameEn": "Bugbear",
+    "icon": "fa-fist-raised",
+    "desc": "Grandes goblinoides peludos, fuertes y sigilosos.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 9,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 2,
+      "DES": 0,
+      "CON": 1,
+      "INT": -1,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        11,
+        20
+      ],
+      "DES": [
+        5,
+        18
+      ],
+      "CON": [
+        9,
+        18
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        17
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Goblin"
+      ],
+      "bonus": [
+        "Orco",
+        "Hobgoblin"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Maza",
+      "Hacha",
+      "Lanza",
+      "Arco corto"
+    ],
+    "specialAbilities": [
+      {
+        "id": "bugbear_stealth",
+        "name": "Sigilo",
+        "desc": "95% de ocultarse en la oscuridad.",
+        "type": "passive"
+      },
+      {
+        "id": "bugbear_surprise",
+        "name": "Sorpresa",
+        "desc": "Sorprende en 1-3 en 1d6.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      },
+      "priest": {
+        "Cleric": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón",
+      "Guerrero/Clérigo"
+    ],
+    "aging": {
+      "start": 10,
+      "middle": 25,
+      "old": 35,
+      "venerable": 50,
+      "maxAge": "50+2d20"
+    },
+    "height": {
+      "maleFeet": 7,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 6,
+      "femaleInches": 6,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 200,
+      "maleModifier": "3d10",
+      "femaleBase": 180,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "bullywug",
+    "nameEs": "Bullywug",
+    "nameEn": "Bullywug",
+    "icon": "fa-flask",
+    "desc": "Rana humanoide.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 6,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 1,
+      "CON": 0,
+      "INT": -1,
+      "SAB": -1,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        6,
+        18
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        16
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Bullywug"
+      ],
+      "bonus": [
+        "Común"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Daga",
+      "Lanza"
+    ],
+    "specialAbilities": [
+      {
+        "id": "bullywug_swim",
+        "name": "Nado",
+        "desc": "Velocidad 9, respira bajo el agua 1 turno.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 8,
+      "middle": 20,
+      "old": 30,
+      "venerable": 40,
+      "maxAge": "40+2d10"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 4,
+      "femaleInches": 8,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 120,
+      "maleModifier": "3d10",
+      "femaleBase": 100,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "centaur",
+    "nameEs": "Centauro",
+    "nameEn": "Centaur",
+    "icon": "fa-compass",
+    "desc": "Criatura mítica con torso humano y cuerpo de caballo, habitante de los bosques.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 18,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 2,
+      "DES": 0,
+      "CON": 1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        11,
+        19
+      ],
+      "DES": [
+        6,
+        18
+      ],
+      "CON": [
+        11,
+        19
+      ],
+      "INT": [
+        4,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Centauro"
+      ],
+      "bonus": [
+        "Élfico",
+        "Silvano"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Arco largo",
+      "Lanza",
+      "Espada larga",
+      "Hacha"
+    ],
+    "specialAbilities": [
+      {
+        "id": "centaur_charge",
+        "name": "Carga",
+        "desc": "Puede cargar con una lanza causando doble daño.",
+        "type": "active"
+      },
+      {
+        "id": "centaur_hoof_attack",
+        "name": "Ataque de Cascos",
+        "desc": "Dos ataques de cascos (1d4 cada uno).",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "priest": {
+        "Cleric": -1,
+        "Druid": -1
+      },
+      "rogue": {
+        "Bard": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo",
+      "Guerrero/Druida",
+      "Clérigo/Druida"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 40,
+      "old": 60,
+      "venerable": 80,
+      "maxAge": "80+2d20"
+    },
+    "height": {
+      "maleFeet": 7,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 6,
+      "femaleInches": 8,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 1000,
+      "maleModifier": "5d20",
+      "femaleBase": 800,
+      "femaleModifier": "5d20"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "crabman",
+    "nameEs": "Cangrejoide",
+    "nameEn": "Crabman",
+    "icon": "fa-anchor",
+    "desc": "Humanide crustáceo.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 9,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 2,
+      "DES": 0,
+      "CON": 1,
+      "INT": -1,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        11,
+        19
+      ],
+      "DES": [
+        5,
+        18
+      ],
+      "CON": [
+        9,
+        19
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Crabman"
+      ],
+      "bonus": [
+        "Común"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Espada",
+      "Lanza"
+    ],
+    "specialAbilities": [
+      {
+        "id": "crabman_swim",
+        "name": "Nado",
+        "desc": "Velocidad de nado 12.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 10,
+      "middle": 25,
+      "old": 40,
+      "venerable": 55,
+      "maxAge": "55+2d20"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 170,
+      "maleModifier": "3d10",
+      "femaleBase": 150,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "dryad",
+    "nameEs": "Dríada",
+    "nameEn": "Dryad",
+    "icon": "fa-tree",
+    "desc": "Ninfa del bosque unida a un árbol.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -2,
+      "DES": 2,
+      "CON": -1,
+      "INT": 1,
+      "SAB": 0,
+      "CAR": 2
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        16
+      ],
+      "DES": [
+        6,
+        18
+      ],
+      "CON": [
+        6,
+        16
+      ],
+      "INT": [
+        9,
+        19
+      ],
+      "SAB": [
+        6,
+        18
+      ],
+      "CAR": [
+        14,
+        20
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Silvano"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Daga",
+      "Arco corto"
+    ],
+    "specialAbilities": [
+      {
+        "id": "dryad_tree_bond",
+        "name": "Unión al Árbol",
+        "desc": "No puede alejarse más de 300 metros de su árbol.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "priest": {
+        "Druid": -1
+      },
+      "rogue": {
+        "Bard": -1
+      }
+    },
+    "multiclassOptions": [
+      "Druida/Bardo"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 100,
+      "old": 200,
+      "venerable": 300,
+      "maxAge": "300+2d100"
+    },
+    "height": {
+      "maleFeet": 4,
+      "maleInches": 6,
+      "maleModifier": "2d6",
+      "femaleFeet": 4,
+      "femaleInches": 0,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 80,
+      "maleModifier": "2d6",
+      "femaleBase": 70,
+      "femaleModifier": "2d6"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "firbolg",
+    "nameEs": "Firbolg",
+    "nameEn": "Firbolg",
+    "icon": "fa-fist-raised",
+    "desc": "Gigante benigno de bosques.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 4,
+      "DES": 0,
+      "CON": 3,
+      "INT": -1,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        14,
+        22
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        12,
+        21
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Gigante"
+      ],
+      "bonus": [
+        "Común"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Hacha grande",
+      "Maza"
+    ],
+    "specialAbilities": [
+      {
+        "id": "firbolg_speak_animals",
+        "name": "Hablar con animales",
+        "desc": "A voluntad.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 30,
+      "middle": 80,
+      "old": 120,
+      "venerable": 200,
+      "maxAge": "200+2d100"
+    },
+    "height": {
+      "maleFeet": 10,
+      "maleInches": 6,
+      "maleModifier": "2d10",
+      "femaleFeet": 10,
+      "femaleInches": 0,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 800,
+      "maleModifier": "4d20",
+      "femaleBase": 700,
+      "femaleModifier": "4d20"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "fremlin",
+    "nameEs": "Fremlin",
+    "nameEn": "Fremlin",
+    "icon": "fa-spider",
+    "desc": "Pequeño ser travieso.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Pequeño",
+    "movement": 9,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -2,
+      "DES": 2,
+      "CON": -1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        16
+      ],
+      "DES": [
+        8,
+        19
+      ],
+      "CON": [
+        6,
+        16
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Fremlin"
+      ],
+      "bonus": [
+        "Común"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Daga"
+    ],
+    "specialAbilities": [],
+    "classRestrictions": {
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 10,
+      "middle": 25,
+      "old": 40,
+      "venerable": 55,
+      "maxAge": "55+2d20"
+    },
+    "height": {
+      "maleFeet": 2,
+      "maleInches": 6,
+      "maleModifier": "2d4",
+      "femaleFeet": 2,
+      "femaleInches": 0,
+      "femaleModifier": "2d4"
+    },
+    "weight": {
+      "maleBase": 30,
+      "maleModifier": "1d10",
+      "femaleBase": 25,
+      "femaleModifier": "1d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "gnoll",
+    "nameEs": "Gnoll",
+    "nameEn": "Gnoll",
+    "icon": "fa-fist-raised",
+    "desc": "Híbrido de humano y hiena, cruel y feroz.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 9,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 2,
+      "DES": 0,
+      "CON": 1,
+      "INT": -2,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        11,
+        19
+      ],
+      "DES": [
+        5,
+        18
+      ],
+      "CON": [
+        9,
+        19
+      ],
+      "INT": [
+        3,
+        15
+      ],
+      "SAB": [
+        3,
+        16
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Gnoll"
+      ],
+      "bonus": [
+        "Común",
+        "Goblin"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Lanza",
+      "Arco largo"
+    ],
+    "specialAbilities": [],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 8,
+      "middle": 15,
+      "old": 20,
+      "venerable": 30,
+      "maxAge": "30+1d20"
+    },
+    "height": {
+      "maleFeet": 7,
+      "maleInches": 6,
+      "maleModifier": "2d6",
+      "femaleFeet": 7,
+      "femaleInches": 0,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 250,
+      "maleModifier": "3d10",
+      "femaleBase": 220,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "goblin",
+    "nameEs": "Goblin",
+    "nameEn": "Goblin",
+    "icon": "fa-skull",
+    "desc": "Criaturas pequeñas y astutas, que habitan en oscuridad y caos.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Pequeño",
+    "movement": 6,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -1,
+      "DES": 1,
+      "CON": 0,
+      "INT": -1,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        5,
+        17
+      ],
+      "DES": [
+        7,
+        18
+      ],
+      "CON": [
+        8,
+        18
+      ],
+      "INT": [
+        3,
+        17
+      ],
+      "SAB": [
+        3,
+        17
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Goblin"
+      ],
+      "bonus": [
+        "Común",
+        "Orco",
+        "Hobgoblin"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Maza",
+      "Espada corta",
+      "Arco corto"
+    ],
+    "specialAbilities": [
+      {
+        "id": "goblin_stealth",
+        "name": "Sigilo",
+        "desc": "Puede ocultarse en la oscuridad o en el bosque.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 5,
+      "middle": 15,
+      "old": 25,
+      "venerable": 35,
+      "maxAge": "35+2d10"
+    },
+    "height": {
+      "maleFeet": 3,
+      "maleInches": 6,
+      "maleModifier": "2d4",
+      "femaleFeet": 3,
+      "femaleInches": 0,
+      "femaleModifier": "2d4"
+    },
+    "weight": {
+      "maleBase": 50,
+      "maleModifier": "2d6",
+      "femaleBase": 45,
+      "femaleModifier": "2d6"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "half-ogre",
+    "nameEs": "Semiogro",
+    "nameEn": "Half-Ogre",
+    "icon": "fa-skull",
+    "desc": "Descendiente de humano y ogro, fuerte y bruto.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 2,
+      "DES": -1,
+      "CON": 2,
+      "INT": -2,
+      "SAB": -1,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        10,
+        20
+      ],
+      "DES": [
+        3,
+        17
+      ],
+      "CON": [
+        11,
+        19
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        16
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Ogro"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Hacha grande",
+      "Maza",
+      "Lanza"
+    ],
+    "specialAbilities": [],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 10,
+      "middle": 25,
+      "old": 40,
+      "venerable": 55,
+      "maxAge": "55+2d20"
+    },
+    "height": {
+      "maleFeet": 7,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 6,
+      "femaleInches": 6,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 300,
+      "maleModifier": "3d10",
+      "femaleBase": 280,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "half-orc",
+    "nameEs": "Semi-orco",
+    "nameEn": "Half-Orc",
+    "icon": "fa-fist-raised",
+    "desc": "Descendiente de humanos y orcos, fuerte y resistente pero marginado.",
+    "source": "Player's Handbook",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 1,
+      "DES": 0,
+      "CON": 1,
+      "INT": -2,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        7,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        11,
+        18
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        17
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Orco"
+      ],
+      "bonus": [
+        "Enano",
+        "Goblin",
+        "Gnomo"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Hacha de batalla",
+      "Espada ancha",
+      "Maza",
+      "Ballesta"
+    ],
+    "specialAbilities": [
+      {
+        "id": "half_orc_light_sensitivity",
+        "name": "Sensibilidad a la Luz",
+        "desc": "-1 a ataque bajo luz brillante (opcional).",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      },
+      "priest": {
+        "Cleric": -1
+      },
+      "wizard": {
+        "Mage": -1,
+        "Illusionist": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo",
+      "Guerrero/Ladrón",
+      "Clérigo/Ladrón"
+    ],
+    "aging": {
+      "start": 15,
+      "middle": 25,
+      "old": 35,
+      "venerable": 45,
+      "maxAge": "45+2d20"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 160,
+      "maleModifier": "4d10",
+      "femaleBase": 130,
+      "femaleModifier": "4d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "hobgoblin",
+    "nameEs": "Hobgoblin",
+    "nameEn": "Hobgoblin",
+    "icon": "fa-shield",
+    "desc": "Goblinoides grandes y disciplinados, militaristas.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 9,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 1,
+      "DES": 0,
+      "CON": 1,
+      "INT": -1,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        19
+      ],
+      "DES": [
+        6,
+        18
+      ],
+      "CON": [
+        9,
+        19
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        16
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Goblin",
+        "Común"
+      ],
+      "bonus": [
+        "Orco",
+        "Enano"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Espada larga",
+      "Lanza",
+      "Arco largo"
+    ],
+    "specialAbilities": [],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 8,
+      "middle": 20,
+      "old": 30,
+      "venerable": 40,
+      "maxAge": "40+2d10"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 10,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 170,
+      "maleModifier": "3d10",
+      "femaleBase": 150,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "kobold",
+    "nameEs": "Kobold",
+    "nameEn": "Kobold",
+    "icon": "fa-dragon",
+    "desc": "Pequeños reptilianos, tramperos y astutos.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Pequeño",
+    "movement": 6,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -2,
+      "DES": 1,
+      "CON": -1,
+      "INT": -1,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        16
+      ],
+      "DES": [
+        7,
+        18
+      ],
+      "CON": [
+        6,
+        17
+      ],
+      "INT": [
+        3,
+        17
+      ],
+      "SAB": [
+        3,
+        17
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Kobold"
+      ],
+      "bonus": [
+        "Común",
+        "Goblin"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Daga",
+      "Honda",
+      "Ballesta ligera",
+      "Espada corta"
+    ],
+    "specialAbilities": [
+      {
+        "id": "kobold_mining",
+        "name": "Minería",
+        "desc": "Similar a los enanos, puede detectar pasadizos (1-4 en 1d6).",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 5,
+      "middle": 15,
+      "old": 25,
+      "venerable": 35,
+      "maxAge": "35+2d10"
+    },
+    "height": {
+      "maleFeet": 2,
+      "maleInches": 6,
+      "maleModifier": "2d4",
+      "femaleFeet": 2,
+      "femaleInches": 0,
+      "femaleModifier": "2d4"
+    },
+    "weight": {
+      "maleBase": 40,
+      "maleModifier": "2d6",
+      "femaleBase": 35,
+      "femaleModifier": "2d6"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "lizard_man",
+    "nameEs": "Hombre Lagarto",
+    "nameEn": "Lizard Man",
+    "icon": "fa-dragon",
+    "desc": "Reptiliano humanoide, excelente nadador y primitivo.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 9,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 2,
+      "DES": 0,
+      "CON": 1,
+      "INT": -1,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        11,
+        19
+      ],
+      "DES": [
+        5,
+        18
+      ],
+      "CON": [
+        9,
+        19
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        15
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Hombre Lagarto"
+      ],
+      "bonus": [
+        "Común"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Lanza",
+      "Maza",
+      "Arco corto"
+    ],
+    "specialAbilities": [
+      {
+        "id": "lizard_man_swim",
+        "name": "Nado",
+        "desc": "Velocidad de nado 12, puede respirar bajo el agua 1 turno.",
+        "type": "passive"
+      },
+      {
+        "id": "lizard_man_natural_armor",
+        "name": "Armadura Natural",
+        "desc": "CA 5 por escamas.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "priest": {
+        "Cleric": -1,
+        "Druid": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo",
+      "Guerrero/Druida",
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 10,
+      "middle": 25,
+      "old": 40,
+      "venerable": 55,
+      "maxAge": "55+2d20"
+    },
+    "height": {
+      "maleFeet": 6,
+      "maleInches": 6,
+      "maleModifier": "2d6",
+      "femaleFeet": 6,
+      "femaleInches": 0,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 180,
+      "maleModifier": "3d10",
+      "femaleBase": 160,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "minotaur",
+    "nameEs": "Minotauro",
+    "nameEn": "Minotaur",
+    "icon": "fa-shield",
+    "desc": "Bestia con cabeza de toro y cuerpo humanoide, fuerte y brutal.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 4,
+      "DES": 0,
+      "CON": 2,
+      "INT": -2,
+      "SAB": -1,
+      "CAR": -3
+    },
+    "abilityLimits": {
+      "FUE": [
+        15,
+        21
+      ],
+      "DES": [
+        6,
+        18
+      ],
+      "CON": [
+        11,
+        20
+      ],
+      "INT": [
+        3,
+        15
+      ],
+      "SAB": [
+        3,
+        16
+      ],
+      "CAR": [
+        3,
+        12
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Minotauro"
+      ],
+      "bonus": [
+        "Común"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Hacha de batalla",
+      "Maza",
+      "Espada larga"
+    ],
+    "specialAbilities": [
+      {
+        "id": "minotaur_charge",
+        "name": "Carga",
+        "desc": "Ataque con cuernos (1d6) tras carga, más embestida.",
+        "type": "active"
+      },
+      {
+        "id": "minotaur_direction_sense",
+        "name": "Sentido de la Dirección",
+        "desc": "Siempre puede orientarse en un laberinto.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 15,
+      "middle": 30,
+      "old": 45,
+      "venerable": 60,
+      "maxAge": "60+2d20"
+    },
+    "height": {
+      "maleFeet": 7,
+      "maleInches": 6,
+      "maleModifier": "2d8",
+      "femaleFeet": 7,
+      "femaleInches": 0,
+      "femaleModifier": "2d8"
+    },
+    "weight": {
+      "maleBase": 350,
+      "maleModifier": "4d10",
+      "femaleBase": 300,
+      "femaleModifier": "4d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "ogre",
+    "nameEs": "Ogro",
+    "nameEn": "Ogre",
+    "icon": "fa-skull",
+    "desc": "Gigantesco humanoide bruto, de inteligencia limitada.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 9,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 3,
+      "DES": -1,
+      "CON": 2,
+      "INT": -3,
+      "SAB": -2,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        14,
+        20
+      ],
+      "DES": [
+        3,
+        16
+      ],
+      "CON": [
+        12,
+        19
+      ],
+      "INT": [
+        3,
+        14
+      ],
+      "SAB": [
+        3,
+        15
+      ],
+      "CAR": [
+        3,
+        12
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Ogro"
+      ],
+      "bonus": [
+        "Común",
+        "Orco"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Gran hacha",
+      "Maza",
+      "Lanza"
+    ],
+    "specialAbilities": [],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 10,
+      "middle": 25,
+      "old": 40,
+      "venerable": 55,
+      "maxAge": "55+2d20"
+    },
+    "height": {
+      "maleFeet": 9,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 8,
+      "femaleInches": 6,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 600,
+      "maleModifier": "4d10",
+      "femaleBase": 500,
+      "femaleModifier": "4d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "ogre_mage",
+    "nameEs": "Ogro Mago",
+    "nameEn": "Ogre Mage",
+    "icon": "fa-star",
+    "desc": "Ogro con poderes mágicos.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 3,
+      "DES": 0,
+      "CON": 2,
+      "INT": 0,
+      "SAB": 1,
+      "CAR": 1
+    },
+    "abilityLimits": {
+      "FUE": [
+        14,
+        20
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        12,
+        19
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        6,
+        18
+      ],
+      "CAR": [
+        6,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Gigante",
+        "Ogro"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Maza",
+      "Espada"
+    ],
+    "specialAbilities": [
+      {
+        "id": "ogre_mage_invisibility",
+        "name": "Invisibilidad",
+        "desc": "A voluntad.",
+        "type": "active"
+      },
+      {
+        "id": "ogre_mage_fly",
+        "name": "Volar",
+        "desc": "Velocidad 12.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "wizard": {
+        "Mage": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Mago"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 9,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 8,
+      "femaleInches": 6,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 400,
+      "maleModifier": "3d10",
+      "femaleBase": 350,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "orc",
+    "nameEs": "Orco",
+    "nameEn": "Orc",
+    "icon": "fa-skull",
+    "desc": "Raza brutal y belicosa, con piel verdosa y colmillos.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 9,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 1,
+      "DES": 0,
+      "CON": 1,
+      "INT": -2,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        19
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        9,
+        19
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        17
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Orco"
+      ],
+      "bonus": [
+        "Común",
+        "Goblin"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Espada ancha",
+      "Lanza",
+      "Arco corto"
+    ],
+    "specialAbilities": [
+      {
+        "id": "orc_light_sensitivity",
+        "name": "Sensibilidad a la Luz",
+        "desc": "-1 a ataque bajo luz brillante (opcional).",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      },
+      "priest": {
+        "Cleric": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo",
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 8,
+      "middle": 20,
+      "old": 30,
+      "venerable": 40,
+      "maxAge": "40+2d10"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 160,
+      "maleModifier": "3d10",
+      "femaleBase": 140,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "pixie",
+    "nameEs": "Pixie",
+    "nameEn": "Pixie",
+    "icon": "fa-feather",
+    "desc": "Pequeña criatura alada, traviesa e invisible.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Pequeño",
+    "movement": 6,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -2,
+      "DES": 2,
+      "CON": -1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 1
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        14
+      ],
+      "DES": [
+        11,
+        19
+      ],
+      "CON": [
+        6,
+        16
+      ],
+      "INT": [
+        8,
+        18
+      ],
+      "SAB": [
+        6,
+        18
+      ],
+      "CAR": [
+        12,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 2,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Pixie",
+        "Silvano"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Daga",
+      "Espada corta",
+      "Arco corto"
+    ],
+    "specialAbilities": [
+      {
+        "id": "pixie_invisibility",
+        "name": "Invisibilidad",
+        "desc": "Puede volverse invisible a voluntad, permaneciendo aunque ataque.",
+        "type": "active"
+      },
+      {
+        "id": "pixie_magic_resist",
+        "name": "Resistencia Mágica",
+        "desc": "20% de resistencia a la magia.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "rogue": {
+        "Thief": -1,
+        "Bard": -1
+      },
+      "wizard": {
+        "Illusionist": -1
+      }
+    },
+    "multiclassOptions": [
+      "Ladrón/Ilusionista"
+    ],
+    "aging": {
+      "start": 30,
+      "middle": 80,
+      "old": 120,
+      "venerable": 200,
+      "maxAge": "200+3d100"
+    },
+    "height": {
+      "maleFeet": 2,
+      "maleInches": 6,
+      "maleModifier": "2d4",
+      "femaleFeet": 2,
+      "femaleInches": 4,
+      "femaleModifier": "2d4"
+    },
+    "weight": {
+      "maleBase": 25,
+      "maleModifier": "2d6",
+      "femaleBase": 20,
+      "femaleModifier": "2d6"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "satyr",
+    "nameEs": "Sátiro",
+    "nameEn": "Satyr",
+    "icon": "fa-music",
+    "desc": "Criatura del bosque con torso humano y patas de cabra, amante de la fiesta.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 1,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 2
+    },
+    "abilityLimits": {
+      "FUE": [
+        6,
+        18
+      ],
+      "DES": [
+        9,
+        19
+      ],
+      "CON": [
+        8,
+        18
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        6,
+        18
+      ],
+      "CAR": [
+        14,
+        19
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Silvano",
+        "Común"
+      ],
+      "bonus": [
+        "Élfico"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Espada corta",
+      "Arco corto",
+      "Lanza",
+      "Caramillo"
+    ],
+    "specialAbilities": [
+      {
+        "id": "satyr_music",
+        "name": "Música Encantadora",
+        "desc": "Puede encantar criaturas con su flauta (como fascinar).",
+        "type": "active"
+      },
+      {
+        "id": "satyr_headbutt",
+        "name": "Cornada",
+        "desc": "Ataque con cuernos (1d6).",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "rogue": {
+        "Bard": -1
+      },
+      "priest": {
+        "Druid": -1
+      }
+    },
+    "multiclassOptions": [
+      "Bardo/Druida"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 50,
+      "old": 80,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 150,
+      "maleModifier": "3d10",
+      "femaleBase": 130,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "thri-kreen",
+    "nameEs": "Thri-Kreen",
+    "nameEn": "Thri-Kreen",
+    "icon": "fa-spider",
+    "desc": "Insectoide mantis humanoide de Athas, rápido y letal.",
+    "source": "Dark Sun Campaign Setting",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 18,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 1,
+      "DES": 2,
+      "CON": 1,
+      "INT": -2,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        9,
+        18
+      ],
+      "DES": [
+        10,
+        19
+      ],
+      "CON": [
+        10,
+        18
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Thri-Kreen",
+        "Común (pobre)"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Gythka",
+      "Chatkcha",
+      "Lanza",
+      "Espada corta"
+    ],
+    "specialAbilities": [
+      {
+        "id": "thri_kreen_multiple_arms",
+        "name": "Brazos Múltiples",
+        "desc": "Puede atacar con dos armas sin penalización.",
+        "type": "active"
+      },
+      {
+        "id": "thri_kreen_jump",
+        "name": "Salto",
+        "desc": "Puede saltar hasta 50 pies horizontalmente.",
+        "type": "active"
+      },
+      {
+        "id": "thri_kreen_camouflage",
+        "name": "Camuflaje",
+        "desc": "95% de ocultarse en desierto.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1,
+        "Bard": -1
+      },
+      "psionicist": -1
+    },
+    "multiclassOptions": [
+      "Guerrero/Psionicista",
+      "Guerrero/Ladrón",
+      "Ladrón/Psionicista"
+    ],
+    "aging": {
+      "start": 2,
+      "middle": 10,
+      "old": 15,
+      "venerable": 20,
+      "maxAge": "20+2d6"
+    },
+    "height": {
+      "maleFeet": 6,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 10,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 150,
+      "maleModifier": "2d10",
+      "femaleBase": 130,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "troglodyte",
+    "nameEs": "Troglodita",
+    "nameEn": "Troglodyte",
+    "icon": "fa-dragon",
+    "desc": "Reptil humanoide apestoso.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 9,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 1,
+      "DES": 0,
+      "CON": 1,
+      "INT": -2,
+      "SAB": -1,
+      "CAR": -3
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        19
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        9,
+        19
+      ],
+      "INT": [
+        3,
+        15
+      ],
+      "SAB": [
+        3,
+        16
+      ],
+      "CAR": [
+        3,
+        13
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Troglodita"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Maza",
+      "Lanza"
+    ],
+    "specialAbilities": [
+      {
+        "id": "troglodyte_stench",
+        "name": "Hedor",
+        "desc": "Aura que causa -2 a ataque a enemigos.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 8,
+      "middle": 20,
+      "old": 30,
+      "venerable": 40,
+      "maxAge": "40+2d10"
+    },
+    "height": {
+      "maleFeet": 6,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 8,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 180,
+      "maleModifier": "3d10",
+      "femaleBase": 160,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "yeti",
+    "nameEs": "Yeti",
+    "nameEn": "Yeti",
+    "icon": "fa-snowflake",
+    "desc": "Criatura de nieve.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 15,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 3,
+      "DES": 0,
+      "CON": 2,
+      "INT": -1,
+      "SAB": 0,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        13,
+        20
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        12,
+        19
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        17
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Yeti"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Maza",
+      "Lanza"
+    ],
+    "specialAbilities": [
+      {
+        "id": "yeti_cold_resist",
+        "name": "Resistencia al Frío",
+        "desc": "Inmune al daño por frío.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 15,
+      "middle": 40,
+      "old": 60,
+      "venerable": 80,
+      "maxAge": "80+2d20"
+    },
+    "height": {
+      "maleFeet": 8,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 7,
+      "femaleInches": 6,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 400,
+      "maleModifier": "3d10",
+      "femaleBase": 350,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "aasimar",
+    "nameEs": "Aasimar",
+    "nameEn": "Aasimar",
+    "icon": "fa-sun",
+    "desc": "Descendiente de humanos y seres celestiales, de alma noble.",
+    "source": "The Complete Book of Humanoids / Planescape",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 1,
+      "CAR": 1
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        4,
+        19
+      ],
+      "CAR": [
+        4,
+        19
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0,
+      "acid": 1,
+      "cold": 1,
+      "fire": 1
+    },
+    "languages": {
+      "automatic": [
+        "Común"
+      ],
+      "bonus": [
+        "Celestial"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [
+      {
+        "id": "aasimar_light",
+        "name": "Luz",
+        "desc": "Puede lanzar luz 1 vez al día.",
+        "type": "active"
+      },
+      {
+        "id": "aasimar_resistances",
+        "name": "Resistencias",
+        "desc": "Resistencia 10% a frío, fuego y ácido.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Clérigo",
+      "Guerrero/Mago",
+      "Clérigo/Mago"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 140,
+      "maleModifier": "4d10",
+      "femaleBase": 115,
+      "femaleModifier": "4d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "bariaur",
+    "nameEs": "Bariaur",
+    "nameEn": "Bariaur",
+    "icon": "fa-compass",
+    "desc": "Centauro con torso humanoide, de planos.",
+    "source": "Planescape",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 18,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 1,
+      "DES": 1,
+      "CON": 1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        19
+      ],
+      "DES": [
+        6,
+        19
+      ],
+      "CON": [
+        8,
+        19
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        6,
+        18
+      ],
+      "CAR": [
+        6,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Bariaur"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Arco",
+      "Lanza",
+      "Espada"
+    ],
+    "specialAbilities": [
+      {
+        "id": "bariaur_charge",
+        "name": "Carga",
+        "desc": "Como centauro.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1,
+        "Ranger": -1
+      },
+      "rogue": {
+        "Bard": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Bardo"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 180,
+      "maleModifier": "3d10",
+      "femaleBase": 160,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "air_genasi",
+    "nameEs": "Genasi de Aire",
+    "nameEn": "Air Genasi",
+    "icon": "fa-feather-alt",
+    "desc": "Descendiente de elemental de aire.",
+    "source": "Planescape",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 1,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        8,
+        19
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común"
+      ],
+      "bonus": [
+        "Aéreo"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [
+      {
+        "id": "air_genasi_levitate",
+        "name": "Levitación",
+        "desc": "1 vez al día.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Mago"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 140,
+      "maleModifier": "4d10",
+      "femaleBase": 115,
+      "femaleModifier": "4d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "earth_genasi",
+    "nameEs": "Genasi de Tierra",
+    "nameEn": "Earth Genasi",
+    "icon": "fa-gem",
+    "desc": "Descendiente de elemental de tierra.",
+    "source": "Planescape",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 9,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 1,
+      "DES": -1,
+      "CON": 1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        19
+      ],
+      "DES": [
+        3,
+        17
+      ],
+      "CON": [
+        8,
+        19
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común"
+      ],
+      "bonus": [
+        "Terráneo"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [
+      {
+        "id": "earth_genasi_stone_walk",
+        "name": "Caminar Piedra",
+        "desc": "1 vez al día.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Clérigo"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 150,
+      "maleModifier": "4d10",
+      "femaleBase": 125,
+      "femaleModifier": "4d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "fire_genasi",
+    "nameEs": "Genasi de Fuego",
+    "nameEn": "Fire Genasi",
+    "icon": "fa-sun",
+    "desc": "Descendiente de elemental de fuego.",
+    "source": "Planescape",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0,
+      "fire": 2
+    },
+    "languages": {
+      "automatic": [
+        "Común"
+      ],
+      "bonus": [
+        "Ígneo"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [
+      {
+        "id": "fire_genasi_resist",
+        "name": "Resistencia al Fuego",
+        "desc": "+2 a salvaciones y mitad de daño.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Mago"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 140,
+      "maleModifier": "4d10",
+      "femaleBase": 115,
+      "femaleModifier": "4d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "water_genasi",
+    "nameEs": "Genasi de Agua",
+    "nameEn": "Water Genasi",
+    "icon": "fa-anchor",
+    "desc": "Descendiente de elemental de agua.",
+    "source": "Planescape",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        8,
+        19
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común"
+      ],
+      "bonus": [
+        "Acuoso"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [
+      {
+        "id": "water_genasi_swim",
+        "name": "Nado",
+        "desc": "Velocidad 9, respira bajo el agua.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Clérigo"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 140,
+      "maleModifier": "4d10",
+      "femaleBase": 115,
+      "femaleModifier": "4d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "githyanki",
+    "nameEs": "Githyanki",
+    "nameEn": "Githyanki",
+    "icon": "fa-shield",
+    "desc": "Guerreros astrales, altos y amarillentos.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 1,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        6,
+        19
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Githyanki"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Espada de plata"
+    ],
+    "specialAbilities": [
+      {
+        "id": "githyanki_psionics",
+        "name": "Psiónica",
+        "desc": "Poderes limitados (como levitación).",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "wizard": {
+        "Mage": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Mago"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 6,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 8,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 160,
+      "maleModifier": "3d10",
+      "femaleBase": 140,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "githzerai",
+    "nameEs": "Githzerai",
+    "nameEn": "Githzerai",
+    "icon": "fa-bolt",
+    "desc": "Humanoides psiónicos y disciplinados.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 1,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 2,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        6,
+        19
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        9,
+        19
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Githzerai"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Espada",
+      "Daga"
+    ],
+    "specialAbilities": [
+      {
+        "id": "githzerai_psionics",
+        "name": "Psiónica",
+        "desc": "Poderes de defensa mental.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "psionicist": -1
+    },
+    "multiclassOptions": [
+      "Guerrero/Psionicista"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 6,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 8,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 160,
+      "maleModifier": "3d10",
+      "femaleBase": 140,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "tiefling",
+    "nameEs": "Tiefling",
+    "nameEn": "Tiefling",
+    "icon": "fa-sun",
+    "desc": "Ser con sangre infernal, porte oscuro y poderes hereditarios.",
+    "source": "The Complete Book of Humanoids / Planescape",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        4,
+        19
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        17
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0,
+      "fire": 1,
+      "cold": 1
+    },
+    "languages": {
+      "automatic": [
+        "Común"
+      ],
+      "bonus": [
+        "Infernal",
+        "Abismal"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [
+      {
+        "id": "tiefling_darkness",
+        "name": "Oscuridad",
+        "desc": "Puede lanzar oscuridad en un radio de 5 pies 1 vez al día.",
+        "type": "active"
+      },
+      {
+        "id": "tiefling_resistances",
+        "name": "Resistencia al Fuego y Frío",
+        "desc": "Resistencia 10% a frío y fuego.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Ladrón",
+      "Guerrero/Mago",
+      "Mago/Ladrón"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 140,
+      "maleModifier": "4d10",
+      "femaleBase": 115,
+      "femaleModifier": "4d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "half_giant",
+    "nameEs": "Semigigante",
+    "nameEn": "Half-Giant",
+    "icon": "fa-moon",
+    "desc": "Gigantes de Athas, enormes y resistentes, de mentalidad simple.",
+    "source": "Dark Sun Campaign Setting",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 12,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 2,
+      "DES": 0,
+      "CON": 2,
+      "INT": -2,
+      "SAB": -1,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        12,
+        20
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        12,
+        20
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        16
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común (Athas)"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Hacha grande",
+      "Maza",
+      "Lanza",
+      "Honda"
+    ],
+    "specialAbilities": [
+      {
+        "id": "half_giant_powerful",
+        "name": "Corpulencia",
+        "desc": "Puede usar armas de dos manos con una sola mano.",
+        "type": "passive"
+      },
+      {
+        "id": "half_giant_drudging",
+        "name": "Sin Iniciativa",
+        "desc": "Penalización de -2 a la iniciativa por lentitud.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "priest": {
+        "Cleric": -1,
+        "Druid": -1
+      },
+      "psionicist": -1
+    },
+    "multiclassOptions": [
+      "Guerrero/Psionicista",
+      "Guerrero/Clérigo"
+    ],
+    "aging": {
+      "start": 15,
+      "middle": 40,
+      "old": 60,
+      "venerable": 80,
+      "maxAge": "80+2d20"
+    },
+    "height": {
+      "maleFeet": 9,
+      "maleInches": 6,
+      "maleModifier": "2d10",
+      "femaleFeet": 9,
+      "femaleInches": 0,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 500,
+      "maleModifier": "5d20",
+      "femaleBase": 450,
+      "femaleModifier": "5d20"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "aquatic_half_elf",
+    "nameEs": "Semielfo Acuático",
+    "nameEn": "Aquatic Half-Elf",
+    "icon": "fa-fish",
+    "desc": "Híbrido de elfo acuático y humano, adaptado al mar.",
+    "source": "Complete Book of Elves",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        6,
+        18
+      ],
+      "CON": [
+        6,
+        18
+      ],
+      "INT": [
+        4,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 2,
+      "sleep": 30,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Élfico",
+        "Aguano"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Tridente",
+      "Arpón",
+      "Espada corta"
+    ],
+    "specialAbilities": [
+      {
+        "id": "aquatic_half_elf_breathing",
+        "name": "Respiración Acuática",
+        "desc": "Puede respirar agua 1 hora por nivel al día.",
+        "type": "active"
+      },
+      {
+        "id": "aquatic_half_elf_swim",
+        "name": "Nado",
+        "desc": "Velocidad de nado 15.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Ladrón",
+      "Guerrero/Mago",
+      "Mago/Ladrón",
+      "Guerrero/Clérigo"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 62,
+      "old": 83,
+      "venerable": 125,
+      "maxAge": "125+3d20"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 4,
+      "maleModifier": "2d8",
+      "femaleFeet": 5,
+      "femaleInches": 0,
+      "femaleModifier": "2d8"
+    },
+    "weight": {
+      "maleBase": 120,
+      "maleModifier": "2d10",
+      "femaleBase": 100,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "athasian_half_elf",
+    "nameEs": "Semielfo Atasiano",
+    "nameEn": "Athasian Half-Elf",
+    "icon": "fa-star",
+    "desc": "Mestizo de humano y elfo en Athas, marginado.",
+    "source": "Dark Sun Campaign Setting",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 14,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 1,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        7,
+        19
+      ],
+      "CON": [
+        6,
+        18
+      ],
+      "INT": [
+        4,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común (Athas)",
+        "Élfico"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Arco corto",
+      "Lanza",
+      "Daga"
+    ],
+    "specialAbilities": [],
+    "classRestrictions": null,
+    "multiclassOptions": [
+      "Guerrero/Ladrón",
+      "Guerrero/Mago",
+      "Mago/Ladrón",
+      "Guerrero/Clérigo"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 62,
+      "old": 83,
+      "venerable": 125,
+      "maxAge": "125+3d20"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d8",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d8"
+    },
+    "weight": {
+      "maleBase": 130,
+      "maleModifier": "2d10",
+      "femaleBase": 110,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "malenti_noble",
+    "nameEs": "Malenti Noble",
+    "nameEn": "Malenti, Noble",
+    "icon": "fa-fish",
+    "desc": "Mutación de sahuagín que parece elfo acuático.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Sahuagín"
+      ],
+      "bonus": [
+        "Élfico Acuático"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Tridente",
+      "Daga"
+    ],
+    "specialAbilities": [
+      {
+        "id": "malenti_swim",
+        "name": "Nado",
+        "desc": "Velocidad 18.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 6,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 2,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 150,
+      "maleModifier": "3d10",
+      "femaleBase": 130,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "merfolk",
+    "nameEs": "Tritón (Merfolk)",
+    "nameEn": "Merfolk",
+    "icon": "fa-fish",
+    "desc": "Seres marinos de torso humano y cola de pez.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 3,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Merfolk"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Tridente",
+      "Daga"
+    ],
+    "specialAbilities": [
+      {
+        "id": "merfolk_swim",
+        "name": "Nado",
+        "desc": "Velocidad 18, puede respirar bajo el agua.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "priest": {
+        "Cleric": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 140,
+      "maleModifier": "3d10",
+      "femaleBase": 120,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "triton",
+    "nameEs": "Tritón",
+    "nameEn": "Triton",
+    "icon": "fa-anchor",
+    "desc": "Humanoide marino de piel azul, protector.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 9,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 1,
+      "DES": 0,
+      "CON": 1,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        19
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        8,
+        19
+      ],
+      "INT": [
+        6,
+        18
+      ],
+      "SAB": [
+        6,
+        18
+      ],
+      "CAR": [
+        6,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Tritón"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Tridente",
+      "Red"
+    ],
+    "specialAbilities": [
+      {
+        "id": "triton_swim",
+        "name": "Nado",
+        "desc": "Velocidad 15, respira agua.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "priest": {
+        "Cleric": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo"
+    ],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 150,
+      "maleModifier": "3d10",
+      "femaleBase": 130,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "half_vistani",
+    "nameEs": "Semivistaní",
+    "nameEn": "Half-Vistani",
+    "icon": "fa-compass",
+    "desc": "Mestizo de humano y vistaní, con sangre gitana.",
+    "source": "Domains of Dread",
+    "xpPenalty": false,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 0,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 1
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        4,
+        19
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común"
+      ],
+      "bonus": [
+        "Vistaní"
+      ]
+    },
+    "weaponProficiencyBonus": [],
+    "specialAbilities": [
+      {
+        "id": "half_vistani_curse",
+        "name": "Maldición",
+        "desc": "Puede lanzar una maldición menor 1 vez al día.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": null,
+    "multiclassOptions": [],
+    "aging": {
+      "start": 15,
+      "middle": 35,
+      "old": 53,
+      "venerable": 70,
+      "maxAge": "70+2d20"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 140,
+      "maleModifier": "4d10",
+      "femaleBase": 115,
+      "femaleModifier": "4d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "rakasta",
+    "nameEs": "Rakasta",
+    "nameEn": "Rakasta",
+    "icon": "fa-moon",
+    "desc": "Humanoide felino.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 15,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 0,
+      "DES": 2,
+      "CON": 0,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": 0
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        18
+      ],
+      "DES": [
+        8,
+        19
+      ],
+      "CON": [
+        3,
+        18
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        18
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Rakasta"
+      ],
+      "bonus": [
+        "Común"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Espada",
+      "Arco",
+      "Garras"
+    ],
+    "specialAbilities": [
+      {
+        "id": "rakasta_claws",
+        "name": "Garras",
+        "desc": "Ataque natural 1d4.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "rogue": {
+        "Thief": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Ladrón"
+    ],
+    "aging": {
+      "start": 10,
+      "middle": 25,
+      "old": 40,
+      "venerable": 55,
+      "maxAge": "55+2d20"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 6,
+      "maleModifier": "2d6",
+      "femaleFeet": 5,
+      "femaleInches": 0,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 130,
+      "maleModifier": "3d10",
+      "femaleBase": 110,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "tortle",
+    "nameEs": "Tortugaide",
+    "nameEn": "Tortle",
+    "icon": "fa-shield",
+    "desc": "Humanoide tortuga.",
+    "source": "The Complete Book of Humanoids",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 6,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 1,
+      "DES": -2,
+      "CON": 1,
+      "INT": -1,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        8,
+        19
+      ],
+      "DES": [
+        3,
+        16
+      ],
+      "CON": [
+        8,
+        19
+      ],
+      "INT": [
+        3,
+        16
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Tortle"
+      ],
+      "bonus": [
+        "Común"
+      ]
+    },
+    "weaponProficiencyBonus": [
+      "Maza",
+      "Lanza"
+    ],
+    "specialAbilities": [
+      {
+        "id": "tortle_shell",
+        "name": "Caparazón",
+        "desc": "AC 3 cuando se retrae.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "priest": {
+        "Cleric": -1
+      }
+    },
+    "multiclassOptions": [
+      "Guerrero/Clérigo"
+    ],
+    "aging": {
+      "start": 15,
+      "middle": 40,
+      "old": 60,
+      "venerable": 80,
+      "maxAge": "80+2d20"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 4,
+      "femaleInches": 8,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 200,
+      "maleModifier": "3d10",
+      "femaleBase": 180,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "trollborn",
+    "nameEs": "Trollborne",
+    "nameEn": "Trollborn",
+    "icon": "fa-fist-raised",
+    "desc": "Descendiente de trolls, con regeneración limitada.",
+    "source": "Viking Campaign",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 2,
+      "DES": -1,
+      "CON": 2,
+      "INT": -2,
+      "SAB": -1,
+      "CAR": -2
+    },
+    "abilityLimits": {
+      "FUE": [
+        10,
+        20
+      ],
+      "DES": [
+        3,
+        17
+      ],
+      "CON": [
+        12,
+        20
+      ],
+      "INT": [
+        3,
+        15
+      ],
+      "SAB": [
+        3,
+        15
+      ],
+      "CAR": [
+        3,
+        14
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Troll"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Maza"
+    ],
+    "specialAbilities": [
+      {
+        "id": "trollborn_regeneration",
+        "name": "Regeneración",
+        "desc": "1 HP por turno.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 15,
+      "middle": 40,
+      "old": 60,
+      "venerable": 80,
+      "maxAge": "80+2d20"
+    },
+    "height": {
+      "maleFeet": 7,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 6,
+      "femaleInches": 6,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 250,
+      "maleModifier": "3d10",
+      "femaleBase": 220,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "sidhe",
+    "nameEs": "Sidhe (Elfo de las Hadas)",
+    "nameEn": "Sidhe",
+    "icon": "fa-star",
+    "desc": "Elfo feérico, inmortal.",
+    "source": "Celtic Campaign",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": -2,
+      "DES": 2,
+      "CON": -2,
+      "INT": 1,
+      "SAB": 1,
+      "CAR": 2
+    },
+    "abilityLimits": {
+      "FUE": [
+        3,
+        16
+      ],
+      "DES": [
+        8,
+        19
+      ],
+      "CON": [
+        5,
+        16
+      ],
+      "INT": [
+        9,
+        19
+      ],
+      "SAB": [
+        8,
+        19
+      ],
+      "CAR": [
+        12,
+        20
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 2,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Sidhe",
+        "Silvano"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Espada",
+      "Arco"
+    ],
+    "specialAbilities": [
+      {
+        "id": "sidhe_immortal",
+        "name": "Inmortal",
+        "desc": "No envejece.",
+        "type": "passive"
+      }
+    ],
+    "classRestrictions": {
+      "wizard": {
+        "Mage": -1
+      },
+      "priest": {
+        "Druid": -1
+      }
+    },
+    "multiclassOptions": [
+      "Mago/Druida"
+    ],
+    "aging": {
+      "start": 0,
+      "middle": 0,
+      "old": 0,
+      "venerable": 0,
+      "maxAge": "Inmortal"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 0,
+      "maleModifier": "2d6",
+      "femaleFeet": 4,
+      "femaleInches": 6,
+      "femaleModifier": "2d6"
+    },
+    "weight": {
+      "maleBase": 100,
+      "maleModifier": "2d10",
+      "femaleBase": 80,
+      "femaleModifier": "2d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "fomorian",
+    "nameEs": "Fomoré",
+    "nameEn": "Fomorian",
+    "icon": "fa-skull",
+    "desc": "Gigante deforme y malvado.",
+    "source": "Celtic Campaign",
+    "xpPenalty": true,
+    "size": "Grande",
+    "movement": 9,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 4,
+      "DES": -2,
+      "CON": 3,
+      "INT": -2,
+      "SAB": -1,
+      "CAR": -3
+    },
+    "abilityLimits": {
+      "FUE": [
+        15,
+        22
+      ],
+      "DES": [
+        3,
+        16
+      ],
+      "CON": [
+        13,
+        21
+      ],
+      "INT": [
+        3,
+        15
+      ],
+      "SAB": [
+        3,
+        16
+      ],
+      "CAR": [
+        3,
+        13
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Gigante"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Hacha",
+      "Maza"
+    ],
+    "specialAbilities": [],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 30,
+      "middle": 80,
+      "old": 120,
+      "venerable": 200,
+      "maxAge": "200+2d100"
+    },
+    "height": {
+      "maleFeet": 10,
+      "maleInches": 0,
+      "maleModifier": "2d10",
+      "femaleFeet": 9,
+      "femaleInches": 6,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 700,
+      "maleModifier": "4d20",
+      "femaleBase": 600,
+      "femaleModifier": "4d20"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "maedar",
+    "nameEs": "Maedar",
+    "nameEn": "Maedar",
+    "icon": "fa-gem",
+    "desc": "Variante masculina de la medusa, sin mirada petrificante.",
+    "source": "Monstrous Manual",
+    "xpPenalty": true,
+    "size": "Mediano",
+    "movement": 12,
+    "infravision": 60,
+    "abilityAdj": {
+      "FUE": 2,
+      "DES": 0,
+      "CON": 2,
+      "INT": 0,
+      "SAB": 0,
+      "CAR": -1
+    },
+    "abilityLimits": {
+      "FUE": [
+        11,
+        19
+      ],
+      "DES": [
+        3,
+        18
+      ],
+      "CON": [
+        11,
+        19
+      ],
+      "INT": [
+        3,
+        18
+      ],
+      "SAB": [
+        3,
+        18
+      ],
+      "CAR": [
+        3,
+        16
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 0,
+      "poison": 0,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Espada",
+      "Lanza"
+    ],
+    "specialAbilities": [
+      {
+        "id": "maedar_stone_power",
+        "name": "Poder Pétreo",
+        "desc": "Puede tocar piedra y convertirla en barro.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 20,
+      "middle": 60,
+      "old": 90,
+      "venerable": 120,
+      "maxAge": "120+2d100"
+    },
+    "height": {
+      "maleFeet": 5,
+      "maleInches": 8,
+      "maleModifier": "2d10",
+      "femaleFeet": 5,
+      "femaleInches": 4,
+      "femaleModifier": "2d10"
+    },
+    "weight": {
+      "maleBase": 160,
+      "maleModifier": "3d10",
+      "femaleBase": 140,
+      "femaleModifier": "3d10"
+    },
+    "levelCap": null,
+    "movementFly": 0
+  },
+  {
+    "id": "dragon_gold",
+    "nameEs": "Dragón Dorado",
+    "nameEn": "Gold Dragon",
+    "icon": "fa-dragon",
+    "desc": "Dragón metálico noble, en forma humana.",
+    "source": "Council of Wyrms",
+    "xpPenalty": true,
+    "size": "Variable",
+    "movement": 9,
+    "infravision": 0,
+    "abilityAdj": {
+      "FUE": 5,
+      "DES": 2,
+      "CON": 5,
+      "INT": 3,
+      "SAB": 3,
+      "CAR": 4
+    },
+    "abilityLimits": {
+      "FUE": [
+        18,
+        25
+      ],
+      "DES": [
+        12,
+        20
+      ],
+      "CON": [
+        18,
+        25
+      ],
+      "INT": [
+        14,
+        22
+      ],
+      "SAB": [
+        14,
+        22
+      ],
+      "CAR": [
+        16,
+        23
+      ]
+    },
+    "savingThrowBonus": {
+      "charm": 0,
+      "sleep": 0,
+      "magic": 5,
+      "poison": 5,
+      "paralization": 0,
+      "petrification": 0,
+      "breathWeapon": 0,
+      "rodStaffWand": 0
+    },
+    "languages": {
+      "automatic": [
+        "Común",
+        "Draconico"
+      ],
+      "bonus": []
+    },
+    "weaponProficiencyBonus": [
+      "Garras",
+      "Mordisco",
+      "Cola"
+    ],
+    "specialAbilities": [
+      {
+        "id": "dragon_breath",
+        "name": "Arma de Aliento",
+        "desc": "Fuego (cono 90x30 pies) o gas debilitante (cono 50x40 pies), 1d4+1 veces por día.",
+        "type": "active"
+      },
+      {
+        "id": "dragon_spells",
+        "name": "Conjuros de Mago",
+        "desc": "Puede lanzar conjuros de mago según su edad.",
+        "type": "active"
+      },
+      {
+        "id": "dragon_shapechange",
+        "name": "Cambio de Forma",
+        "desc": "Puede adoptar tres formas animales distintas a voluntad.",
+        "type": "active"
+      }
+    ],
+    "classRestrictions": {
+      "warrior": {
+        "Fighter": -1
+      },
+      "wizard": {
+        "Mage": -1
+      }
+    },
+    "multiclassOptions": [],
+    "aging": {
+      "start": 0,
+      "middle": 200,
+      "old": 800,
+      "venerable": 1200,
+      "maxAge": "1200+5d100"
+    },
+    "height": {
+      "maleFeet": 10,
+      "maleInches": 0,
+      "maleModifier": "2d20",
+      "femaleFeet": 10,
+      "femaleInches": 0,
+      "femaleModifier": "2d20"
+    },
+    "weight": {
+      "maleBase": 1000,
+      "maleModifier": "5d20",
+      "femaleBase": 900,
+      "femaleModifier": "5d20"
+    },
+    "movementFly": 30,
+    "levelCap": null
+  }
+]

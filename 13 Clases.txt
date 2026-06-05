@@ -1,0 +1,1314 @@
+[
+  {
+    "name": "Bardo",
+    "group": "Rogue",
+    "source": "Player's Handbook",
+    "xpProgressionType": "rogue",
+    "thac0ProgressionType": "rogue",
+    "savingThrowGroup": "rogue",
+    "hitDice": {
+      "initial": "1d6",
+      "levels": "1-9",
+      "afterLevel9": "2 per level",
+      "constitutionBonus": true,
+      "notes": "Standard rogue HP"
+    },
+    "startingMoney": "2d6 × 10 gp",
+    "armor": "Leather armor, studded leather, elven chain (with restrictions)",
+    "weapons": "Any one-handed sword, short bow, long bow, crossbow, dagger, club, staff, sling, many others",
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 4,
+      "gainLevels": [4,8,12,16,20],
+      "penaltyNonProficient": -3,
+      "costPerWeapon": 1
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "groups": {
+        "general": "normal cost",
+        "rogue": "normal cost",
+        "other": "+1 slot cost"
+      },
+      "intelligenceLanguageSlotsCanBeUsed": true
+    },
+    "thievingSkills": {
+      "basePercentages": {
+        "pickPockets": 15,
+        "openLocks": 10,
+        "findRemoveTraps": 5,
+        "moveSilently": 10,
+        "hideInShadows": 5,
+        "detectNoise": 15,
+        "climbWalls": 50,
+        "readLanguages": 0
+      },
+      "racialAdjustments": true,
+      "dexterityAdjustments": true,
+      "armorAdjustments": true
+    },
+    "spellcasting": {
+      "type": "Arcane (limited schools: Enchantment/Charm, Illusion, Divination)",
+      "spellSlots": [
+        [0,0,0,0,0,0],
+        [1,0,0,0,0,0],
+        [2,0,0,0,0,0],
+        [2,1,0,0,0,0],
+        [3,1,0,0,0,0],
+        [3,2,0,0,0,0],
+        [3,2,1,0,0,0],
+        [3,3,1,0,0,0],
+        [3,3,2,0,0,0],
+        [3,3,2,1,0,0],
+        [3,3,3,1,0,0],
+        [3,3,3,2,0,0],
+        [3,3,3,2,1,0],
+        [3,3,3,3,1,0],
+        [3,3,3,3,2,0],
+        [4,3,3,3,2,1],
+        [4,4,3,3,3,1],
+        [4,4,4,3,3,2],
+        [4,4,4,4,3,2],
+        [4,4,4,4,4,3]
+      ]
+    },
+    "classFeatures": [
+      "Pick pockets (as thief of same level)",
+      "Read languages (as thief of same level)",
+      "May use magical scrolls (any wizard spell, 5% chance of failure per spell level above 6)",
+      "Legends lore (ability to identify magical items, 10% chance + 5% per level)",
+      "May inspire companions (+1 to hit, +1 damage or +2 morale)",
+      "Counter song (negates magical silence and sound-based attacks)"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":1250},{"level":3,"xp":2500},{"level":4,"xp":5000},{"level":5,"xp":10000},
+        {"level":6,"xp":20000},{"level":7,"xp":40000},{"level":8,"xp":70000},{"level":9,"xp":110000},{"level":10,"xp":160000},
+        {"level":11,"xp":220000},{"level":12,"xp":440000},{"level":13,"xp":660000},{"level":14,"xp":880000},{"level":15,"xp":1100000},
+        {"level":16,"xp":1320000},{"level":17,"xp":1540000},{"level":18,"xp":1760000},{"level":19,"xp":1980000},{"level":20,"xp":2200000}
+      ],
+      "xpExtraPerLevel": 220000,
+      "thac0": [20,20,19,19,18,18,17,17,16,16,15,15,14,14,13,13,12,12,11,11],
+      "savingThrows": [
+        {"levelRange":[1,4],"paralyzationPoisonDeath":13,"rodStaffWand":14,"petrificationPolymorph":12,"breathWeapon":16,"spell":15},
+        {"levelRange":[5,8],"paralyzationPoisonDeath":12,"rodStaffWand":12,"petrificationPolymorph":11,"breathWeapon":15,"spell":13},
+        {"levelRange":[9,12],"paralyzationPoisonDeath":11,"rodStaffWand":10,"petrificationPolymorph":10,"breathWeapon":14,"spell":11},
+        {"levelRange":[13,16],"paralyzationPoisonDeath":10,"rodStaffWand":8,"petrificationPolymorph":9,"breathWeapon":13,"spell":9},
+        {"levelRange":[17,20],"paralyzationPoisonDeath":9,"rodStaffWand":6,"petrificationPolymorph":8,"breathWeapon":12,"spell":7}
+      ],
+      "attacksPerRound": {"base":1,"improvementLevels":[7,13]}
+    },
+    "multiClass": {"allowed": false}
+  },
+  {
+    "name": "Clérigo",
+    "group": "Priest",
+    "source": "Player's Handbook",
+    "xpProgressionType": "priest",
+    "thac0ProgressionType": "priest",
+    "savingThrowGroup": "priest",
+    "hitDice": {
+      "initial": "1d8",
+      "levels": "1-9",
+      "afterLevel9": "2 per level",
+      "constitutionBonus": true
+    },
+    "startingMoney": "2d4 × 10 gp",
+    "armor": "Any armor",
+    "weapons": "All bludgeoning weapons (club, mace, hammer, staff, etc.), no edged or pointed weapons (by default; can vary by deity)",
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 4,
+      "gainLevels": [4,8,12,16,20],
+      "penaltyNonProficient": -2
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "groups": {"general":"normal cost","priest":"normal cost","other":"+1 slot cost"}
+    },
+    "spellcasting": {
+      "type": "Divine (Priest spells)",
+      "spellSlots": [
+        [1,0,0,0,0,0,0],[2,0,0,0,0,0,0],[2,1,0,0,0,0,0],[3,2,0,0,0,0,0],[3,3,1,0,0,0,0],
+        [3,3,2,0,0,0,0],[3,3,2,1,0,0,0],[3,3,3,2,0,0,0],[4,4,3,2,1,0,0],[4,4,3,3,2,0,0],
+        [5,4,4,3,2,1,0],[6,5,5,3,2,2,0],[6,6,6,4,2,2,0],[6,6,6,5,3,2,1],[6,6,6,6,4,2,1],
+        [7,7,6,6,4,2,1],[7,7,7,6,4,3,2],[7,7,7,7,4,3,2],[7,7,7,7,5,4,2],[7,7,7,7,5,4,3]
+      ]
+    },
+    "classFeatures": [
+      "Turn undead (see table)",
+      "May use any magical item allowed to priests",
+      "Gain bonus spells from high Wisdom (1st, 2nd, 3rd level spells)",
+      "Spell failure chance for low Wisdom"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":1500},{"level":3,"xp":3000},{"level":4,"xp":6000},{"level":5,"xp":13000},
+        {"level":6,"xp":27500},{"level":7,"xp":55000},{"level":8,"xp":110000},{"level":9,"xp":225000},{"level":10,"xp":450000},
+        {"level":11,"xp":675000},{"level":12,"xp":900000},{"level":13,"xp":1125000},{"level":14,"xp":1350000},{"level":15,"xp":1575000},
+        {"level":16,"xp":1800000},{"level":17,"xp":2025000},{"level":18,"xp":2250000},{"level":19,"xp":2475000},{"level":20,"xp":2700000}
+      ],
+      "xpExtraPerLevel": 225000,
+      "thac0": [20,20,18,18,16,16,14,14,12,12,10,10,8,8,6,6,4,4,2,2],
+      "savingThrows": [
+        {"levelRange":[1,3],"paralyzationPoisonDeath":10,"rodStaffWand":14,"petrificationPolymorph":13,"breathWeapon":16,"spell":15},
+        {"levelRange":[4,6],"paralyzationPoisonDeath":9,"rodStaffWand":12,"petrificationPolymorph":12,"breathWeapon":15,"spell":14},
+        {"levelRange":[7,9],"paralyzationPoisonDeath":7,"rodStaffWand":11,"petrificationPolymorph":10,"breathWeapon":13,"spell":12},
+        {"levelRange":[10,12],"paralyzationPoisonDeath":6,"rodStaffWand":10,"petrificationPolymorph":9,"breathWeapon":12,"spell":11},
+        {"levelRange":[13,15],"paralyzationPoisonDeath":5,"rodStaffWand":9,"petrificationPolymorph":8,"breathWeapon":11,"spell":10},
+        {"levelRange":[16,18],"paralyzationPoisonDeath":4,"rodStaffWand":8,"petrificationPolymorph":7,"breathWeapon":10,"spell":9},
+        {"levelRange":[19,20],"paralyzationPoisonDeath":2,"rodStaffWand":6,"petrificationPolymorph":5,"breathWeapon":8,"spell":7}
+      ],
+      "attacksPerRound": {"base":1,"improvementLevels":[7,13]}
+    },
+    "multiClass": {"allowed": true, "combinations": ["fighter", "thief"]}
+  },
+  {
+    "name": "Druida",
+    "group": "Priest",
+    "source": "Player's Handbook",
+    "xpProgressionType": "druid",
+    "thac0ProgressionType": "priest",
+    "savingThrowGroup": "priest",
+    "hitDice": {
+      "initial": "1d8",
+      "levels": "1-9",
+      "afterLevel9": "2 per level",
+      "constitutionBonus": true
+    },
+    "startingMoney": "2d4 × 10 gp",
+    "armor": "Leather armor, hide armor, wooden shield",
+    "weapons": "Club, dagger, dart, hammer, scimitar, sickle, sling, spear, staff, etc.",
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 4,
+      "gainLevels": [4,8,12,16,20],
+      "penaltyNonProficient": -2
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "groups": {"general":"normal cost","priest":"normal cost","other":"+1 slot cost"}
+    },
+    "spellcasting": {
+      "type": "Divine (Priest spells from plant, animal, elemental, weather spheres)",
+      "spellSlots": [
+        [1,0,0,0,0,0,0],[2,0,0,0,0,0,0],[2,1,0,0,0,0,0],[3,2,0,0,0,0,0],[3,3,1,0,0,0,0],
+        [3,3,2,0,0,0,0],[3,3,2,1,0,0,0],[3,3,3,2,0,0,0],[4,4,3,2,1,0,0],[4,4,3,3,2,0,0],
+        [5,4,4,3,2,1,0],[6,5,5,3,2,2,0],[6,6,6,4,2,2,0],[6,6,6,5,3,2,1],[6,6,6,6,4,2,1],
+        [6,6,6,6,4,2,1],[6,6,6,6,4,2,1],[6,6,6,6,4,2,1],[6,6,6,6,4,2,1],[6,6,6,6,4,2,1]
+      ]
+    },
+    "classFeatures": [
+      "Identify plants, animals, and pure water",
+      "Pass without trace (in natural surroundings)",
+      "Immune to woodland creature attacks (only those with less than 2 HD)",
+      "May shapechange into animals 3 times per day (levels 7+)",
+      "Bonus languages (druidic, animal languages)",
+      "Cannot wear metal armor or use metal shields"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2000},{"level":3,"xp":4000},{"level":4,"xp":7500},{"level":5,"xp":12500},
+        {"level":6,"xp":20000},{"level":7,"xp":35000},{"level":8,"xp":60000},{"level":9,"xp":90000},{"level":10,"xp":125000},
+        {"level":11,"xp":200000},{"level":12,"xp":300000},{"level":13,"xp":750000},{"level":14,"xp":1500000},{"level":15,"xp":3000000},
+        {"level":16,"xp":3500000},{"level":17,"xp":500000},{"level":18,"xp":1000000},{"level":19,"xp":1500000},{"level":20,"xp":2000000}
+      ],
+      "xpExtraPerLevel": 500000,
+      "thac0": [20,20,18,18,16,16,14,14,12,12,10,10,8,8,6,6,4,4,2,2],
+      "savingThrows": [
+        {"levelRange":[1,3],"paralyzationPoisonDeath":10,"rodStaffWand":14,"petrificationPolymorph":13,"breathWeapon":16,"spell":15},
+        {"levelRange":[4,6],"paralyzationPoisonDeath":9,"rodStaffWand":12,"petrificationPolymorph":12,"breathWeapon":15,"spell":14},
+        {"levelRange":[7,9],"paralyzationPoisonDeath":7,"rodStaffWand":11,"petrificationPolymorph":10,"breathWeapon":13,"spell":12},
+        {"levelRange":[10,12],"paralyzationPoisonDeath":6,"rodStaffWand":10,"petrificationPolymorph":9,"breathWeapon":12,"spell":11},
+        {"levelRange":[13,15],"paralyzationPoisonDeath":5,"rodStaffWand":9,"petrificationPolymorph":8,"breathWeapon":11,"spell":10},
+        {"levelRange":[16,18],"paralyzationPoisonDeath":4,"rodStaffWand":8,"petrificationPolymorph":7,"breathWeapon":10,"spell":9},
+        {"levelRange":[19,20],"paralyzationPoisonDeath":2,"rodStaffWand":6,"petrificationPolymorph":5,"breathWeapon":8,"spell":7}
+      ],
+      "attacksPerRound": {"base":1,"improvementLevels":[7,13]}
+    },
+    "multiClass": {"allowed": true, "combinations": ["fighter"]}
+  },
+  {
+    "name": "Guerrero",
+    "group": "Warrior",
+    "source": "Player's Handbook",
+    "xpProgressionType": "fighter",
+    "thac0ProgressionType": "warrior",
+    "savingThrowGroup": "warrior",
+    "hitDice": {
+      "initial": "1d10",
+      "levels": "1-9",
+      "afterLevel9": "3 per level",
+      "constitutionBonus": true,
+      "notes": "Gains additional +1 HP per level from Constitution above 16 (warrior bonus)"
+    },
+    "startingMoney": "5d4 × 10 gp",
+    "armor": "Any armor",
+    "weapons": "Any weapon",
+    "weaponProficiencies": {
+      "initialSlots": 4,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "penaltyNonProficient": -2,
+      "costPerWeapon": 1,
+      "specializationAllowed": true
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "groups": {"general":"normal cost","warrior":"normal cost","other":"+1 slot cost"}
+    },
+    "classFeatures": [
+      "Weapon specialization (with fighter): +1 to hit, +2 damage, extra attacks",
+      "May build a stronghold at 9th level and attract followers"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2000},{"level":3,"xp":4000},{"level":4,"xp":8000},{"level":5,"xp":16000},
+        {"level":6,"xp":32000},{"level":7,"xp":64000},{"level":8,"xp":125000},{"level":9,"xp":250000},{"level":10,"xp":500000},
+        {"level":11,"xp":750000},{"level":12,"xp":1000000},{"level":13,"xp":1250000},{"level":14,"xp":1500000},{"level":15,"xp":1750000},
+        {"level":16,"xp":2000000},{"level":17,"xp":2250000},{"level":18,"xp":2500000},{"level":19,"xp":2750000},{"level":20,"xp":3000000}
+      ],
+      "xpExtraPerLevel": 250000,
+      "thac0": [20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1],
+      "savingThrows": [
+        {"levelRange":[0,0],"paralyzationPoisonDeath":16,"rodStaffWand":18,"petrificationPolymorph":17,"breathWeapon":20,"spell":19},
+        {"levelRange":[1,2],"paralyzationPoisonDeath":14,"rodStaffWand":16,"petrificationPolymorph":15,"breathWeapon":17,"spell":17},
+        {"levelRange":[3,4],"paralyzationPoisonDeath":13,"rodStaffWand":15,"petrificationPolymorph":14,"breathWeapon":16,"spell":16},
+        {"levelRange":[5,6],"paralyzationPoisonDeath":11,"rodStaffWand":13,"petrificationPolymorph":12,"breathWeapon":15,"spell":14},
+        {"levelRange":[7,8],"paralyzationPoisonDeath":10,"rodStaffWand":12,"petrificationPolymorph":11,"breathWeapon":14,"spell":13},
+        {"levelRange":[9,10],"paralyzationPoisonDeath":8,"rodStaffWand":10,"petrificationPolymorph":9,"breathWeapon":13,"spell":11},
+        {"levelRange":[11,12],"paralyzationPoisonDeath":7,"rodStaffWand":9,"petrificationPolymorph":8,"breathWeapon":12,"spell":10},
+        {"levelRange":[13,14],"paralyzationPoisonDeath":5,"rodStaffWand":7,"petrificationPolymorph":6,"breathWeapon":11,"spell":8},
+        {"levelRange":[15,16],"paralyzationPoisonDeath":4,"rodStaffWand":6,"petrificationPolymorph":5,"breathWeapon":10,"spell":7},
+        {"levelRange":[17,20],"paralyzationPoisonDeath":3,"rodStaffWand":5,"petrificationPolymorph":4,"breathWeapon":9,"spell":6}
+      ],
+      "attacksPerRound": {"base":1,"improvementLevels":[7,13]}
+    },
+    "multiClass": {"allowed": true, "combinations": ["cleric", "thief", "mage"]}
+  },
+  {
+    "name": "Mago",
+    "group": "Wizard",
+    "source": "Player's Handbook",
+    "xpProgressionType": "wizard",
+    "thac0ProgressionType": "wizard",
+    "savingThrowGroup": "wizard",
+    "hitDice": {
+      "initial": "1d4",
+      "levels": "1-9",
+      "afterLevel9": "1 per level",
+      "constitutionBonus": true
+    },
+    "startingMoney": "2d4 × 10 gp",
+    "armor": "None",
+    "weapons": "Dagger, staff, dart, knife, sling",
+    "weaponProficiencies": {
+      "initialSlots": 1,
+      "gainEveryNLevels": 6,
+      "gainLevels": [6,12,18],
+      "penaltyNonProficient": -5
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 4,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "groups": {"general":"normal cost","wizard":"normal cost","other":"+1 slot cost"}
+    },
+    "spellcasting": {
+      "type": "Arcane (Wizard spells)",
+      "spellSlots": [
+        [1,0,0,0,0,0,0,0,0],[2,0,0,0,0,0,0,0,0],[2,1,0,0,0,0,0,0,0],[3,2,0,0,0,0,0,0,0],[4,2,1,0,0,0,0,0,0],
+        [4,2,2,0,0,0,0,0,0],[4,3,2,1,0,0,0,0,0],[4,3,3,2,0,0,0,0,0],[4,3,3,2,1,0,0,0,0],[4,4,3,2,2,0,0,0,0],
+        [4,4,4,3,3,0,0,0,0],[4,4,4,4,4,1,0,0,0],[5,5,5,4,4,2,0,0,0],[5,5,5,4,4,2,1,0,0],[5,5,5,5,5,2,1,0,0],
+        [5,5,5,5,5,3,2,1,0],[5,5,5,5,5,3,3,2,0],[5,5,5,5,5,3,3,2,1],[5,5,5,5,5,3,3,2,1],[5,5,5,5,5,4,3,3,2]
+      ]
+    },
+    "classFeatures": [
+      "Spell books (must prepare spells daily)",
+      "May create magical items (at high level)",
+      "Familiar (optional)"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2500},{"level":3,"xp":5000},{"level":4,"xp":10000},{"level":5,"xp":20000},
+        {"level":6,"xp":40000},{"level":7,"xp":60000},{"level":8,"xp":90000},{"level":9,"xp":135000},{"level":10,"xp":250000},
+        {"level":11,"xp":375000},{"level":12,"xp":750000},{"level":13,"xp":1125000},{"level":14,"xp":1500000},{"level":15,"xp":1875000},
+        {"level":16,"xp":2250000},{"level":17,"xp":2625000},{"level":18,"xp":3000000},{"level":19,"xp":3375000},{"level":20,"xp":3750000}
+      ],
+      "xpExtraPerLevel": 375000,
+      "thac0": [20,20,20,19,19,19,18,18,18,17,17,17,16,16,16,15,15,15,14,14],
+      "savingThrows": [
+        {"levelRange":[1,5],"paralyzationPoisonDeath":14,"rodStaffWand":11,"petrificationPolymorph":13,"breathWeapon":15,"spell":12},
+        {"levelRange":[6,10],"paralyzationPoisonDeath":13,"rodStaffWand":9,"petrificationPolymorph":11,"breathWeapon":13,"spell":10},
+        {"levelRange":[11,15],"paralyzationPoisonDeath":11,"rodStaffWand":7,"petrificationPolymorph":9,"breathWeapon":11,"spell":8},
+        {"levelRange":[16,20],"paralyzationPoisonDeath":10,"rodStaffWand":5,"petrificationPolymorph":7,"breathWeapon":9,"spell":6}
+      ],
+      "attacksPerRound": {"base":1,"improvementLevels":[10,20]}
+    },
+    "multiClass": {"allowed": true, "combinations": ["cleric", "thief", "fighter"]}
+  },
+  {
+    "name": "Paladín",
+    "group": "Warrior",
+    "source": "Player's Handbook",
+    "xpProgressionType": "warrior",
+    "thac0ProgressionType": "warrior",
+    "savingThrowGroup": "warrior",
+    "hitDice": {
+      "initial": "1d10",
+      "levels": "1-9",
+      "afterLevel9": "3 per level",
+      "constitutionBonus": true,
+      "notes": "Gains warrior CON bonus"
+    },
+    "startingMoney": "5d4 × 10 gp",
+    "armor": "Any armor",
+    "weapons": "Any weapon",
+    "weaponProficiencies": {
+      "initialSlots": 4,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "penaltyNonProficient": -2,
+      "specializationAllowed": false
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "groups": {"general":"normal cost","warrior":"normal cost","other":"+1 slot cost"}
+    },
+    "spellcasting": {
+      "type": "Divine (Priest spells, limited spheres)",
+      "spellSlots": [
+        [0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[1,0,0,0,0,0,0],[2,0,0,0,0,0,0],
+        [2,1,0,0,0,0,0],[2,2,0,0,0,0,0],[2,2,1,0,0,0,0],[3,2,1,0,0,0,0],[3,3,1,0,0,0,0],
+        [3,3,2,0,0,0,0],[3,3,2,1,0,0,0],[4,3,2,1,0,0,0],[4,4,2,1,0,0,0],[4,4,3,2,0,0,0],
+        [4,4,3,2,1,0,0],[5,4,3,2,1,0,0],[5,5,3,3,1,0,0],[5,5,4,3,2,0,0],[5,5,4,3,2,1,0]
+      ],
+      "startsAtLevel": 9
+    },
+    "classFeatures": [
+      "Lay on hands (heal 2 HP per level, once per day)",
+      "Detect evil (at will)",
+      "Protection from evil (10' radius, continuous)",
+      "Turn undead (as cleric of 2 levels lower)",
+      "Cure disease (once per week, 1/day at high level)",
+      "Immune to disease (natural)",
+      "Aura of courage (allies within 10' get +4 to fear saves)",
+      "Must remain Lawful Good, tithe 10% of income"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2250},{"level":3,"xp":4500},{"level":4,"xp":9000},{"level":5,"xp":18000},
+        {"level":6,"xp":32000},{"level":7,"xp":75000},{"level":8,"xp":150000},{"level":9,"xp":300000},{"level":10,"xp":600000},
+        {"level":11,"xp":900000},{"level":12,"xp":1200000},{"level":13,"xp":1500000},{"level":14,"xp":1800000},{"level":15,"xp":2100000},
+        {"level":16,"xp":2400000},{"level":17,"xp":2700000},{"level":18,"xp":3000000},{"level":19,"xp":3300000},{"level":20,"xp":3600000}
+      ],
+      "xpExtraPerLevel": 300000,
+      "thac0": [20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1],
+      "savingThrows": [
+        {"levelRange":[0,0],"paralyzationPoisonDeath":16,"rodStaffWand":18,"petrificationPolymorph":17,"breathWeapon":20,"spell":19},
+        {"levelRange":[1,2],"paralyzationPoisonDeath":14,"rodStaffWand":16,"petrificationPolymorph":15,"breathWeapon":17,"spell":17},
+        {"levelRange":[3,4],"paralyzationPoisonDeath":13,"rodStaffWand":15,"petrificationPolymorph":14,"breathWeapon":16,"spell":16},
+        {"levelRange":[5,6],"paralyzationPoisonDeath":11,"rodStaffWand":13,"petrificationPolymorph":12,"breathWeapon":15,"spell":14},
+        {"levelRange":[7,8],"paralyzationPoisonDeath":10,"rodStaffWand":12,"petrificationPolymorph":11,"breathWeapon":14,"spell":13},
+        {"levelRange":[9,10],"paralyzationPoisonDeath":8,"rodStaffWand":10,"petrificationPolymorph":9,"breathWeapon":13,"spell":11},
+        {"levelRange":[11,12],"paralyzationPoisonDeath":7,"rodStaffWand":9,"petrificationPolymorph":8,"breathWeapon":12,"spell":10},
+        {"levelRange":[13,14],"paralyzationPoisonDeath":5,"rodStaffWand":7,"petrificationPolymorph":6,"breathWeapon":11,"spell":8},
+        {"levelRange":[15,16],"paralyzationPoisonDeath":4,"rodStaffWand":6,"petrificationPolymorph":5,"breathWeapon":10,"spell":7},
+        {"levelRange":[17,20],"paralyzationPoisonDeath":3,"rodStaffWand":5,"petrificationPolymorph":4,"breathWeapon":9,"spell":6}
+      ],
+      "attacksPerRound": {"base":1,"improvementLevels":[7,13]}
+    },
+    "multiClass": {"allowed": false}
+  },
+  {
+    "name": "Guardabosques",
+    "group": "Warrior",
+    "source": "Player's Handbook",
+    "xpProgressionType": "warrior",
+    "thac0ProgressionType": "warrior",
+    "savingThrowGroup": "warrior",
+    "hitDice": {
+      "initial": "1d10",
+      "levels": "1-9",
+      "afterLevel9": "3 per level",
+      "constitutionBonus": true,
+      "notes": "Warrior CON bonus"
+    },
+    "startingMoney": "5d4 × 10 gp",
+    "armor": "Any armor (but must be able to move silently in natural surroundings if using hide in shadows)",
+    "weapons": "Any weapon",
+    "weaponProficiencies": {
+      "initialSlots": 4,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "penaltyNonProficient": -2,
+      "specializationAllowed": true
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "groups": {"general":"normal cost","warrior":"normal cost","other":"+1 slot cost"},
+      "bonusProficiencies": ["Tracking"]
+    },
+    "spellcasting": {
+      "type": "Divine (Priest spells from plant and animal spheres)",
+      "spellSlots": [
+        [0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[1,0,0,0,0,0],[2,0,0,0,0,0],
+        [2,1,0,0,0,0],[2,2,0,0,0,0],[2,2,1,0,0,0],[3,2,1,0,0,0],[3,3,1,0,0,0],
+        [3,3,2,0,0,0],[3,3,2,1,0,0],[4,3,2,1,0,0],[4,4,2,1,0,0],[4,4,3,2,0,0],
+        [4,4,3,2,1,0],[5,4,3,2,1,0],[5,5,3,3,1,0],[5,5,4,3,2,0],[5,5,4,3,2,1]
+      ],
+      "startsAtLevel": 8
+    },
+    "classFeatures": [
+      "Tracking (automatic proficiency)",
+      "Hide in shadows (25% base, +5% per level) and move silently (20% base, +5% per level) in natural surroundings",
+      "Favored enemy: +4 to hit against specific creature type (goblins, orcs, etc.)",
+      "May use priest scrolls and some magical items",
+      "Animal empathy (can calm or befriend animals)",
+      "Two-weapon fighting without penalty when wearing studded leather or lighter"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2250},{"level":3,"xp":4500},{"level":4,"xp":9000},{"level":5,"xp":18000},
+        {"level":6,"xp":32000},{"level":7,"xp":75000},{"level":8,"xp":150000},{"level":9,"xp":300000},{"level":10,"xp":600000},
+        {"level":11,"xp":900000},{"level":12,"xp":1200000},{"level":13,"xp":1500000},{"level":14,"xp":1800000},{"level":15,"xp":2100000},
+        {"level":16,"xp":2400000},{"level":17,"xp":2700000},{"level":18,"xp":3000000},{"level":19,"xp":3300000},{"level":20,"xp":3600000}
+      ],
+      "xpExtraPerLevel": 300000,
+      "thac0": [20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1],
+      "savingThrows": [
+        {"levelRange":[0,0],"paralyzationPoisonDeath":16,"rodStaffWand":18,"petrificationPolymorph":17,"breathWeapon":20,"spell":19},
+        {"levelRange":[1,2],"paralyzationPoisonDeath":14,"rodStaffWand":16,"petrificationPolymorph":15,"breathWeapon":17,"spell":17},
+        {"levelRange":[3,4],"paralyzationPoisonDeath":13,"rodStaffWand":15,"petrificationPolymorph":14,"breathWeapon":16,"spell":16},
+        {"levelRange":[5,6],"paralyzationPoisonDeath":11,"rodStaffWand":13,"petrificationPolymorph":12,"breathWeapon":15,"spell":14},
+        {"levelRange":[7,8],"paralyzationPoisonDeath":10,"rodStaffWand":12,"petrificationPolymorph":11,"breathWeapon":14,"spell":13},
+        {"levelRange":[9,10],"paralyzationPoisonDeath":8,"rodStaffWand":10,"petrificationPolymorph":9,"breathWeapon":13,"spell":11},
+        {"levelRange":[11,12],"paralyzationPoisonDeath":7,"rodStaffWand":9,"petrificationPolymorph":8,"breathWeapon":12,"spell":10},
+        {"levelRange":[13,14],"paralyzationPoisonDeath":5,"rodStaffWand":7,"petrificationPolymorph":6,"breathWeapon":11,"spell":8},
+        {"levelRange":[15,16],"paralyzationPoisonDeath":4,"rodStaffWand":6,"petrificationPolymorph":5,"breathWeapon":10,"spell":7},
+        {"levelRange":[17,20],"paralyzationPoisonDeath":3,"rodStaffWand":5,"petrificationPolymorph":4,"breathWeapon":9,"spell":6}
+      ],
+      "attacksPerRound": {"base":1,"improvementLevels":[7,13]}
+    },
+    "multiClass": {"allowed": false}
+  },
+  {
+    "name": "Ladrón",
+    "group": "Rogue",
+    "source": "Player's Handbook",
+    "xpProgressionType": "rogue",
+    "thac0ProgressionType": "rogue",
+    "savingThrowGroup": "rogue",
+    "hitDice": {
+      "initial": "1d6",
+      "levels": "1-9",
+      "afterLevel9": "2 per level",
+      "constitutionBonus": true
+    },
+    "startingMoney": "2d6 × 10 gp",
+    "armor": "Leather armor, studded leather, elven chain (with penalties)",
+    "weapons": "Club, dagger, dart, sling, short sword, long sword, broad sword, short bow, crossbow, etc.",
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 4,
+      "gainLevels": [4,8,12,16,20],
+      "penaltyNonProficient": -3
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "groups": {"general":"normal cost","rogue":"normal cost","other":"+1 slot cost"}
+    },
+    "thievingSkills": {
+      "basePercentages": {
+        "pickPockets": 15,
+        "openLocks": 10,
+        "findRemoveTraps": 5,
+        "moveSilently": 10,
+        "hideInShadows": 5,
+        "detectNoise": 15,
+        "climbWalls": 60,
+        "readLanguages": 0
+      },
+      "racialAdjustments": true,
+      "dexterityAdjustments": true,
+      "armorAdjustments": true,
+      "pointsPerLevel": 30
+    },
+    "classFeatures": [
+      "Backstab (multiply damage from behind)",
+      "Use scrolls (any wizard or priest scroll with chance of failure)",
+      "Climb walls (base 60%)",
+      "Read languages (levels 4+)"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":1250},{"level":3,"xp":2500},{"level":4,"xp":5000},{"level":5,"xp":10000},
+        {"level":6,"xp":20000},{"level":7,"xp":40000},{"level":8,"xp":70000},{"level":9,"xp":110000},{"level":10,"xp":160000},
+        {"level":11,"xp":220000},{"level":12,"xp":440000},{"level":13,"xp":660000},{"level":14,"xp":880000},{"level":15,"xp":1100000},
+        {"level":16,"xp":1320000},{"level":17,"xp":1540000},{"level":18,"xp":1760000},{"level":19,"xp":1980000},{"level":20,"xp":2200000}
+      ],
+      "xpExtraPerLevel": 220000,
+      "thac0": [20,20,19,19,18,18,17,17,16,16,15,15,14,14,13,13,12,12,11,11],
+      "savingThrows": [
+        {"levelRange":[1,4],"paralyzationPoisonDeath":13,"rodStaffWand":14,"petrificationPolymorph":12,"breathWeapon":16,"spell":15},
+        {"levelRange":[5,8],"paralyzationPoisonDeath":12,"rodStaffWand":12,"petrificationPolymorph":11,"breathWeapon":15,"spell":13},
+        {"levelRange":[9,12],"paralyzationPoisonDeath":11,"rodStaffWand":10,"petrificationPolymorph":10,"breathWeapon":14,"spell":11},
+        {"levelRange":[13,16],"paralyzationPoisonDeath":10,"rodStaffWand":8,"petrificationPolymorph":9,"breathWeapon":13,"spell":9},
+        {"levelRange":[17,20],"paralyzationPoisonDeath":9,"rodStaffWand":6,"petrificationPolymorph":8,"breathWeapon":12,"spell":7}
+      ],
+      "attacksPerRound": {"base":1,"improvementLevels":[7,13]}
+    },
+    "multiClass": {"allowed": true, "combinations": ["fighter", "cleric", "mage", "assassin"]}
+  },
+  {
+    "name": "Asesino",
+    "group": "Rogue",
+    "source": "The Complete Thief's Handbook",
+    "xpProgressionType": "rogue",
+    "thac0ProgressionType": "rogue",
+    "savingThrowGroup": "rogue",
+    "hitDice": {
+      "initial": "1d6",
+      "levels": "1-9",
+      "afterLevel9": "2 per level",
+      "constitutionBonus": true
+    },
+    "startingMoney": "2d6 × 10 gp",
+    "armor": "Leather armor, studded leather, elven chain",
+    "weapons": "Any weapon (specialize in assassination tools)",
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 4,
+      "gainLevels": [4,8,12,16,20],
+      "penaltyNonProficient": -3,
+      "specializationAllowed": false
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "groups": {"general":"normal cost","rogue":"normal cost","other":"+1 slot cost"}
+    },
+    "thievingSkills": {
+      "basePercentages": {
+        "pickPockets": 15,
+        "openLocks": 10,
+        "findRemoveTraps": 5,
+        "moveSilently": 10,
+        "hideInShadows": 5,
+        "detectNoise": 15,
+        "climbWalls": 60,
+        "readLanguages": 0
+      },
+      "racialAdjustments": true,
+      "dexterityAdjustments": true,
+      "armorAdjustments": true,
+      "pointsPerLevel": 25
+    },
+    "classFeatures": [
+      "Assassination (chance to kill instantly)",
+      "Disguise (bonus proficiency)",
+      "May use poison",
+      "Backstab (as thief)",
+      "Guild connections"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":1250},{"level":3,"xp":2500},{"level":4,"xp":5000},{"level":5,"xp":10000},
+        {"level":6,"xp":20000},{"level":7,"xp":40000},{"level":8,"xp":70000},{"level":9,"xp":110000},{"level":10,"xp":160000},
+        {"level":11,"xp":220000},{"level":12,"xp":440000},{"level":13,"xp":660000},{"level":14,"xp":880000},{"level":15,"xp":1100000},
+        {"level":16,"xp":1320000},{"level":17,"xp":1540000},{"level":18,"xp":1760000},{"level":19,"xp":1980000},{"level":20,"xp":2200000}
+      ],
+      "xpExtraPerLevel": 220000,
+      "thac0": [20,20,19,19,18,18,17,17,16,16,15,15,14,14,13,13,12,12,11,11],
+      "savingThrows": [
+        {"levelRange":[1,4],"paralyzationPoisonDeath":13,"rodStaffWand":14,"petrificationPolymorph":12,"breathWeapon":16,"spell":15},
+        {"levelRange":[5,8],"paralyzationPoisonDeath":12,"rodStaffWand":12,"petrificationPolymorph":11,"breathWeapon":15,"spell":13},
+        {"levelRange":[9,12],"paralyzationPoisonDeath":11,"rodStaffWand":10,"petrificationPolymorph":10,"breathWeapon":14,"spell":11},
+        {"levelRange":[13,16],"paralyzationPoisonDeath":10,"rodStaffWand":8,"petrificationPolymorph":9,"breathWeapon":13,"spell":9},
+        {"levelRange":[17,20],"paralyzationPoisonDeath":9,"rodStaffWand":6,"petrificationPolymorph":8,"breathWeapon":12,"spell":7}
+      ],
+      "attacksPerRound": {"base":1,"improvementLevels":[7,13]}
+    },
+    "multiClass": {"allowed": true, "combinations": ["fighter", "cleric", "mage"]}
+  },
+  {
+    "name": "Bárbaro",
+    "group": "Warrior",
+    "source": "The Complete Barbarian's Handbook",
+    "xpProgressionType": "fighter",
+    "thac0ProgressionType": "warrior",
+    "savingThrowGroup": "warrior",
+    "hitDice": {
+      "initial": "1d12",
+      "levels": "1-9",
+      "afterLevel9": "3 per level",
+      "constitutionBonus": true
+    },
+    "startingMoney": "3d6 × 10 gp",
+    "armor": "Hide armor, leather, studded leather, no metal armor",
+    "weapons": "Any weapon, prefer non-metal (stone, bone, wood)",
+    "weaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "penaltyNonProficient": -2,
+      "specializationAllowed": true
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "groups": {"general":"normal cost","warrior":"normal cost","other":"+1 slot cost"}
+    },
+    "classFeatures": [
+      "Climbing (base 40%)",
+      "Leaping (horizontal 10', vertical 4')",
+      "Hiding (in wilderness 75% base)",
+      "Ambush (bonus to initiative when ambushing)",
+      "Weapon use (can use any weapon, but may have cultural restrictions)",
+      "Savage fury (berserk rage: +2 to hit, +2 damage, -4 AC, cannot retreat)",
+      "Animal lore (bonus)",
+      "Tracking (bonus)"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2000},{"level":3,"xp":4000},{"level":4,"xp":8000},{"level":5,"xp":16000},
+        {"level":6,"xp":32000},{"level":7,"xp":64000},{"level":8,"xp":125000},{"level":9,"xp":250000},{"level":10,"xp":500000},
+        {"level":11,"xp":750000},{"level":12,"xp":1000000},{"level":13,"xp":1250000},{"level":14,"xp":1500000},{"level":15,"xp":1750000},
+        {"level":16,"xp":2000000},{"level":17,"xp":2250000},{"level":18,"xp":2500000},{"level":19,"xp":2750000},{"level":20,"xp":3000000}
+      ],
+      "xpExtraPerLevel": 250000,
+      "thac0": [20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1],
+      "savingThrows": [
+        {"levelRange":[0,0],"paralyzationPoisonDeath":16,"rodStaffWand":18,"petrificationPolymorph":17,"breathWeapon":20,"spell":19},
+        {"levelRange":[1,2],"paralyzationPoisonDeath":14,"rodStaffWand":16,"petrificationPolymorph":15,"breathWeapon":17,"spell":17},
+        {"levelRange":[3,4],"paralyzationPoisonDeath":13,"rodStaffWand":15,"petrificationPolymorph":14,"breathWeapon":16,"spell":16},
+        {"levelRange":[5,6],"paralyzationPoisonDeath":11,"rodStaffWand":13,"petrificationPolymorph":12,"breathWeapon":15,"spell":14},
+        {"levelRange":[7,8],"paralyzationPoisonDeath":10,"rodStaffWand":12,"petrificationPolymorph":11,"breathWeapon":14,"spell":13},
+        {"levelRange":[9,10],"paralyzationPoisonDeath":8,"rodStaffWand":10,"petrificationPolymorph":9,"breathWeapon":13,"spell":11},
+        {"levelRange":[11,12],"paralyzationPoisonDeath":7,"rodStaffWand":9,"petrificationPolymorph":8,"breathWeapon":12,"spell":10},
+        {"levelRange":[13,14],"paralyzationPoisonDeath":5,"rodStaffWand":7,"petrificationPolymorph":6,"breathWeapon":11,"spell":8},
+        {"levelRange":[15,16],"paralyzationPoisonDeath":4,"rodStaffWand":6,"petrificationPolymorph":5,"breathWeapon":10,"spell":7},
+        {"levelRange":[17,20],"paralyzationPoisonDeath":3,"rodStaffWand":5,"petrificationPolymorph":4,"breathWeapon":9,"spell":6}
+      ],
+      "attacksPerRound": {"base":1,"improvementLevels":[7,13]}
+    },
+    "multiClass": {"allowed": false}
+  },
+  {
+    "name": "Runecaster",
+    "group": "Warrior",
+    "source": "Vikings Campaign Sourcebook",
+    "xpProgressionType": "fighter",
+    "thac0ProgressionType": "warrior",
+    "savingThrowGroup": "warrior",
+    "hitDice": {
+      "initial": "1d10",
+      "levels": "1-9",
+      "afterLevel9": "3 per level",
+      "constitutionBonus": true,
+      "notes": "Does not gain fighter bonus HP from high Constitution (standard CON bonus only)"
+    },
+    "startingMoney": "5d4 × 10 gp",
+    "armor": "Any armor",
+    "weapons": "Any weapon",
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "penaltyNonProficient": -2,
+      "costPerWeapon": 1,
+      "canUseSlotsFor": ["fighting_styles", "favored_weapon", "weapon_expertise"]
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "gainLevels": [3,6,9,12,15,18],
+      "groups": {"general":"normal cost","warrior":"normal cost","other":"+1 slot cost"},
+      "intelligenceLanguageSlotsCanBeUsed": true,
+      "notes": "Also can use language slots for weapon proficiencies per PO:C&T"
+    },
+    "fightingStyles": {
+      "available": ["single weapon", "two-handed weapon", "weapon and shield", "two weapons", "unarmed", "missile/thrown", "horse archer", "local styles"],
+      "specializationAllowed": true,
+      "costPerStyle": 1
+    },
+    "specialAttacks": {
+      "attacksOfOpportunity": "1 + 1 per 5 levels"
+    },
+    "specialAbilities": {
+      "runeCasting": {
+        "initialRunes": 2,
+        "gainPerLevel": 1,
+        "runesPerLevel": [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],
+        "cannotLearnOtherwise": true
+      },
+      "weaponExpertise": {
+        "allowed": true,
+        "description": "Can gain weapon expertise (not specialization) for one weapon type. Cost: 1 weapon slot if proficient. Grants extra attacks but no attack/damage bonus."
+      }
+    },
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2000},{"level":3,"xp":4000},{"level":4,"xp":8000},{"level":5,"xp":16000},
+        {"level":6,"xp":32000},{"level":7,"xp":64000},{"level":8,"xp":125000},{"level":9,"xp":250000},{"level":10,"xp":500000},
+        {"level":11,"xp":750000},{"level":12,"xp":1000000},{"level":13,"xp":1250000},{"level":14,"xp":1500000},{"level":15,"xp":1750000},
+        {"level":16,"xp":2000000},{"level":17,"xp":2250000},{"level":18,"xp":2500000},{"level":19,"xp":2750000},{"level":20,"xp":3000000}
+      ],
+      "xpExtraPerLevel": 250000,
+      "thac0": [20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1],
+      "savingThrows": [
+        {"levelRange":[0,0],"paralyzationPoisonDeath":16,"rodStaffWand":18,"petrificationPolymorph":17,"breathWeapon":20,"spell":19},
+        {"levelRange":[1,2],"paralyzationPoisonDeath":14,"rodStaffWand":16,"petrificationPolymorph":15,"breathWeapon":17,"spell":17},
+        {"levelRange":[3,4],"paralyzationPoisonDeath":13,"rodStaffWand":15,"petrificationPolymorph":14,"breathWeapon":16,"spell":16},
+        {"levelRange":[5,6],"paralyzationPoisonDeath":11,"rodStaffWand":13,"petrificationPolymorph":12,"breathWeapon":15,"spell":14},
+        {"levelRange":[7,8],"paralyzationPoisonDeath":10,"rodStaffWand":12,"petrificationPolymorph":11,"breathWeapon":14,"spell":13},
+        {"levelRange":[9,10],"paralyzationPoisonDeath":8,"rodStaffWand":10,"petrificationPolymorph":9,"breathWeapon":13,"spell":11},
+        {"levelRange":[11,12],"paralyzationPoisonDeath":7,"rodStaffWand":9,"petrificationPolymorph":8,"breathWeapon":12,"spell":10},
+        {"levelRange":[13,14],"paralyzationPoisonDeath":5,"rodStaffWand":7,"petrificationPolymorph":6,"breathWeapon":11,"spell":8},
+        {"levelRange":[15,16],"paralyzationPoisonDeath":4,"rodStaffWand":6,"petrificationPolymorph":5,"breathWeapon":10,"spell":7},
+        {"levelRange":[17,20],"paralyzationPoisonDeath":3,"rodStaffWand":5,"petrificationPolymorph":4,"breathWeapon":9,"spell":6}
+      ],
+      "attacksPerRound": {"base":1,"improvementLevels":[7,13]},
+      "weaponProficiencySlotsGainLevels": [3,6,9,12,15,18],
+      "nonWeaponProficiencySlotsGainLevels": [3,6,9,12,15,18]
+    },
+    "multiClass": {"allowed": true, "combinations": ["fighter", "thief", "cleric"]},
+    "notes": "Runecasters use rune magic instead of spells. They cannot learn runes except by leveling."
+  },
+  {
+    "name": "Cruzado",
+    "group": "Priest",
+    "source": "Warriors and Priests of the Realms",
+    "xpProgressionType": "priest",
+    "thac0ProgressionType": "warrior",
+    "savingThrowGroup": "priest",
+    "hitDice": {
+      "initial": "1d10",
+      "levels": "1-9",
+      "afterLevel9": "2 per level",
+      "constitutionBonus": true,
+      "notes": "Fighter HD. Gains priest saving throws."
+    },
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 3,
+      "penaltyNonProficient": -2,
+      "specializationAllowed": true,
+      "notes": "Fighter weapon progression. Can use all weapons and armor."
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "groups": {
+        "general": "normal cost",
+        "warrior": "normal cost",
+        "other": "+1 slot cost"
+      }
+    },
+    "spellcasting": {
+      "type": "Divine (Priest spells)",
+      "progression": "Same as Cleric"
+    },
+    "classFeatures": [
+      "Fighter THAC0 progression",
+      "Priest saving throws",
+      "Access to Priest spells",
+      "May be of any alignment"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2250},{"level":3,"xp":4500},{"level":4,"xp":9000},{"level":5,"xp":18000},
+        {"level":6,"xp":32000},{"level":7,"xp":75000},{"level":8,"xp":150000},{"level":9,"xp":300000},{"level":10,"xp":600000}
+      ],
+      "thac0": [20,20,18,18,16,16,14,14,12,12],
+      "xpExtraPerLevel": 300000
+    }
+  },
+  {
+    "name": "Monje (Conjurador)",
+    "group": "Priest",
+    "source": "Player's Option: Spells & Magic",
+    "xpProgressionType": "priest",
+    "thac0ProgressionType": "rogue",
+    "savingThrowGroup": "rogue",
+    "hitDice": {
+      "initial": "1d4",
+      "levels": "1-9",
+      "afterLevel9": "2 per level",
+      "constitutionBonus": true,
+      "notes": "Low HD but gains full HD each level."
+    },
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 4,
+      "penaltyNonProficient": -5,
+      "notes": "Cannot wear armor, no shield."
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 4,
+      "gainEveryNLevels": 3,
+      "groups": {
+        "general": "normal cost",
+        "priest": "normal cost",
+        "other": "+1 slot cost"
+      }
+    },
+    "spellcasting": {
+      "type": "Divine (Priest spells)",
+      "progression": "Same as Cleric"
+    },
+    "classFeatures": [
+      "Rogue THAC0 progression",
+      "Rogue saving throws",
+      "Unarmed combat skills",
+      "May not wear armor",
+      "Immunity to disease, slow, haste"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2250},{"level":3,"xp":4500},{"level":4,"xp":9000},{"level":5,"xp":18000},
+        {"level":6,"xp":32000},{"level":7,"xp":75000},{"level":8,"xp":150000},{"level":9,"xp":300000},{"level":10,"xp":600000}
+      ],
+      "thac0": [20,20,19,19,18,18,17,17,16,16],
+      "xpExtraPerLevel": 300000
+    }
+  },
+  {
+    "name": "Monje (Luchador)",
+    "group": "Rogue",
+    "source": "The Scarlet Brotherhood",
+    "xpProgressionType": "rogue",
+    "thac0ProgressionType": "rogue",
+    "savingThrowGroup": "rogue",
+    "hitDice": {
+      "initial": "1d8",
+      "levels": "1-9",
+      "afterLevel9": "2 per level",
+      "constitutionBonus": true,
+      "notes": "Unarmed and martial arts specialization."
+    },
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 4,
+      "penaltyNonProficient": -2,
+      "notes": "Cannot wear armor or shields. Specialized in martial arts."
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "groups": {
+        "general": "normal cost",
+        "rogue": "normal cost",
+        "other": "+1 slot cost"
+      }
+    },
+    "classFeatures": [
+      "Martial arts combat",
+      "Stunning attacks",
+      "Deflect missiles",
+      "Evasion (save for no damage)",
+      "Quivering palm"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":1250},{"level":3,"xp":2500},{"level":4,"xp":5000},{"level":5,"xp":10000},
+        {"level":6,"xp":20000},{"level":7,"xp":40000},{"level":8,"xp":70000},{"level":9,"xp":110000},{"level":10,"xp":160000}
+      ],
+      "thac0": [20,20,19,19,18,18,17,17,16,16],
+      "xpExtraPerLevel": 220000
+    }
+  },
+  {
+    "name": "Psiónico",
+    "group": "Psionicist",
+    "source": "The Complete Psionics Handbook",
+    "xpProgressionType": "rogue",
+    "thac0ProgressionType": "rogue",
+    "savingThrowGroup": "wizard",
+    "hitDice": {
+      "initial": "1d6",
+      "levels": "1-9",
+      "afterLevel9": "2 per level",
+      "constitutionBonus": true
+    },
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 4,
+      "penaltyNonProficient": -3
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "groups": {
+        "general": "normal cost",
+        "rogue": "normal cost",
+        "other": "+1 slot cost"
+      }
+    },
+    "psionics": {
+      "disciplines": ["Clairsentience", "Psychokinesis", "Psychometabolism", "Psychoportation", "Telepathy"],
+      "powers": {
+        "sciences": "Major powers",
+        "devotions": "Minor powers"
+      },
+      "powerPoints": "Based on Wisdom score"
+    },
+    "classFeatures": [
+      "Telepathy",
+      "Clairvoyance",
+      "Psychokinesis",
+      "ESP",
+      "Out-of-body travel",
+      "+2 bonus to saves vs enchantment/charm spells"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":1250},{"level":3,"xp":2500},{"level":4,"xp":5000},{"level":5,"xp":10000},
+        {"level":6,"xp":20000},{"level":7,"xp":40000},{"level":8,"xp":70000},{"level":9,"xp":110000},{"level":10,"xp":160000}
+      ],
+      "thac0": [20,20,19,19,18,18,17,17,16,16],
+      "xpExtraPerLevel": 220000
+    }
+  },
+  {
+    "name": "Chamán",
+    "group": "Priest",
+    "source": "Shaman (accessory)",
+    "xpProgressionType": "priest",
+    "thac0ProgressionType": "priest",
+    "savingThrowGroup": "priest",
+    "hitDice": {
+      "initial": "1d8",
+      "levels": "1-9",
+      "afterLevel9": "2 per level",
+      "constitutionBonus": false,
+      "notes": "CON bonus only applies for levels 1-9."
+    },
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 4,
+      "penaltyNonProficient": -3,
+      "notes": "Limited weapon selection per shaman type."
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "groups": {
+        "general": "normal cost",
+        "priest": "normal cost",
+        "other": "+1 slot cost"
+      }
+    },
+    "spellcasting": {
+      "type": "Divine (Spirit magic)",
+      "specialMechanic": "Spells are permanent slots; no daily memorization."
+    },
+    "classFeatures": [
+      "Spirit magic (Wisdom check to cast repeatedly)",
+      "No bonus spells for high Wisdom",
+      "+10% XP for Wisdom 16+",
+      "May turn or command undead",
+      "No stronghold or followers"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":1500},{"level":3,"xp":3000},{"level":4,"xp":6000},{"level":5,"xp":13000},
+        {"level":6,"xp":27500},{"level":7,"xp":55000},{"level":8,"xp":110000},{"level":9,"xp":225000},{"level":10,"xp":450000}
+      ],
+      "thac0": [20,20,18,18,16,16,14,14,12,12],
+      "xpExtraPerLevel": 225000
+    }
+  },
+  {
+    "name": "Brujo",
+    "group": "Wizard",
+    "source": "Player's Option: Spells & Magic",
+    "xpProgressionType": "wizard",
+    "thac0ProgressionType": "wizard",
+    "savingThrowGroup": "wizard",
+    "hitDice": {
+      "initial": "1d4",
+      "levels": "1-20",
+      "constitutionBonus": true
+    },
+    "weaponProficiencies": {
+      "initialSlots": 1,
+      "gainEveryNLevels": 6,
+      "penaltyNonProficient": -5
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 4,
+      "gainEveryNLevels": 3,
+      "groups": {
+        "general": "normal cost",
+        "wizard": "normal cost",
+        "other": "+1 slot cost"
+      }
+    },
+    "spellcasting": {
+      "type": "Arcane (Spell Point System)",
+      "spellPoints": [4,8,15,25,40,55,70,95,120,150,200,250,300,350,400,475,550,625,700,800],
+      "specialMechanic": "Bonus points for specialist wizards in parentheses."
+    },
+    "classFeatures": [
+      "Spell Point System instead of slots",
+      "Can be generalist or specialist wizard",
+      "High risk of corruption (optional)"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2500},{"level":3,"xp":5000},{"level":4,"xp":10000},{"level":5,"xp":20000},
+        {"level":6,"xp":40000},{"level":7,"xp":60000},{"level":8,"xp":90000},{"level":9,"xp":135000},{"level":10,"xp":250000}
+      ],
+      "thac0": [20,20,20,19,19,19,18,18,18,17],
+      "xpExtraPerLevel": 375000
+    }
+  },
+  {
+    "name": "Gladiador",
+    "group": "Warrior",
+    "source": "Dark Sun Campaign Setting Revised",
+    "xpProgressionType": "fighter",
+    "thac0ProgressionType": "warrior",
+    "savingThrowGroup": "warrior",
+    "hitDice": {
+      "initial": "1d10",
+      "levels": "1-9",
+      "afterLevel9": "3 per level",
+      "constitutionBonus": true
+    },
+    "weaponProficiencies": {
+      "initialSlots": 4,
+      "gainEveryNLevels": 3,
+      "penaltyNonProficient": -2,
+      "specializationAllowed": true,
+      "notes": "Proficient in all weapons. Can specialize in multiple weapons."
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "groups": {
+        "general": "normal cost",
+        "warrior": "normal cost",
+        "other": "+1 slot cost"
+      }
+    },
+    "classFeatures": [
+      "Proficient in all weapons",
+      "Weapon specialization in multiple weapons",
+      "+4 bonus to punching and wrestling attacks",
+      "AC bonus based on level",
+      "Known for brutal combat techniques"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2000},{"level":3,"xp":4000},{"level":4,"xp":8000},{"level":5,"xp":16000},
+        {"level":6,"xp":32000},{"level":7,"xp":64000},{"level":8,"xp":125000},{"level":9,"xp":250000},{"level":10,"xp":500000}
+      ],
+      "thac0": [20,19,18,17,16,15,14,13,12,11],
+      "xpExtraPerLevel": 250000
+    }
+  },
+  {
+    "name": "Templario",
+    "group": "Priest",
+    "source": "Dark Sun Campaign Setting Revised",
+    "xpProgressionType": "priest",
+    "thac0ProgressionType": "warrior",
+    "savingThrowGroup": "priest",
+    "hitDice": {
+      "initial": "1d8",
+      "levels": "1-9",
+      "afterLevel9": "2 per level",
+      "constitutionBonus": true
+    },
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 3,
+      "penaltyNonProficient": -2
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "groups": {
+        "general": "normal cost",
+        "priest": "normal cost",
+        "other": "+1 slot cost"
+      }
+    },
+    "spellcasting": {
+      "type": "Divine (Elemental Priest spells)",
+      "progression": "Same as Cleric"
+    },
+    "classFeatures": [
+      "Fighter THAC0 and weapon progression",
+      "Priest spells and saving throws",
+      "Sorcerer-King's magical item usage (as wizard)",
+      "Alignment restrictions vary by sorcerer-king",
+      "Typically lawfully aligned to serve their city-state"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":1500},{"level":3,"xp":3000},{"level":4,"xp":6000},{"level":5,"xp":13000},
+        {"level":6,"xp":27500},{"level":7,"xp":55000},{"level":8,"xp":110000},{"level":9,"xp":225000},{"level":10,"xp":450000}
+      ],
+      "thac0": [20,19,18,17,16,15,14,13,12,11],
+      "xpExtraPerLevel": 225000
+    }
+  },
+  {
+    "name": "Ninja",
+    "group": "Rogue",
+    "source": "The Complete Ninja's Handbook",
+    "xpProgressionType": "rogue",
+    "thac0ProgressionType": "rogue",
+    "savingThrowGroup": "rogue",
+    "hitDice": {
+      "initial": "1d6",
+      "levels": "1-9",
+      "afterLevel9": "2 per level",
+      "constitutionBonus": true,
+      "notes": "Rogue HD."
+    },
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 4,
+      "penaltyNonProficient": -3,
+      "notes": "Ninja-to, blowgun, shuriken, katana, etc."
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "groups": {
+        "general": "normal cost",
+        "rogue": "normal cost",
+        "other": "+1 slot cost"
+      }
+    },
+    "classFeatures": [
+      "Ninjutsu (stealth, disguise, infiltration)",
+      "Assassination skills",
+      "Martial arts and exotic weapons",
+      "Spy and intelligence gathering",
+      "Clan loyalty and duties"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":1250},{"level":3,"xp":2500},{"level":4,"xp":5000},{"level":5,"xp":10000},
+        {"level":6,"xp":20000},{"level":7,"xp":40000},{"level":8,"xp":70000},{"level":9,"xp":110000},{"level":10,"xp":160000}
+      ],
+      "thac0": [20,20,19,19,18,18,17,17,16,16],
+      "xpExtraPerLevel": 220000
+    }
+  },
+  {
+    "name": "Wu Jen",
+    "group": "Wizard",
+    "source": "The Complete Wizard's Handbook",
+    "xpProgressionType": "wizard",
+    "thac0ProgressionType": "wizard",
+    "savingThrowGroup": "wizard",
+    "hitDice": {
+      "initial": "1d4+1",
+      "levels": "2-20",
+      "afterLevel9": "1 per level",
+      "constitutionBonus": true,
+      "notes": "Different HD at level 1 (d4+1) and levels 2-20 (d6)."
+    },
+    "weaponProficiencies": {
+      "initialSlots": 1,
+      "gainEveryNLevels": 6,
+      "penaltyNonProficient": -5,
+      "notes": "Favored weapon: +1 to hit."
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 4,
+      "gainEveryNLevels": 3,
+      "groups": {
+        "general": "normal cost",
+        "wizard": "normal cost",
+        "other": "+1 slot cost"
+      }
+    },
+    "spellcasting": {
+      "type": "Arcane (Elemental schools only)",
+      "specialMechanic": "Spells known permanently; no memorization. One spell per level."
+    },
+    "classFeatures": [
+      "Elemental school specialization (earth, air, fire, water, nature)",
+      "No spell preparation (cast any known spell at will)",
+      "Favored weapon (choose one: blowgun, short bow, dagger, dart, sling)",
+      "Must follow taboos (restrictions increase with level)",
+      "Limited to one elemental school",
+      "Cannot use scrolls or learn from spellbooks"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2500},{"level":3,"xp":5000},{"level":4,"xp":10000},{"level":5,"xp":20000},
+        {"level":6,"xp":40000},{"level":7,"xp":60000},{"level":8,"xp":90000},{"level":9,"xp":135000},{"level":10,"xp":250000}
+      ],
+      "thac0": [20,20,20,19,19,19,18,18,18,17],
+      "xpExtraPerLevel": 375000
+    }
+  },
+  {
+    "name": "Berserker",
+    "group": "Warrior",
+    "source": "Vikings Campaign Sourcebook",
+    "xpProgressionType": "fighter",
+    "thac0ProgressionType": "warrior",
+    "savingThrowGroup": "warrior",
+    "hitDice": {
+      "initial": "1d10",
+      "levels": "1-9",
+      "afterLevel9": "3 per level",
+      "constitutionBonus": true,
+      "notes": "Warrior HD."
+    },
+    "weaponProficiencies": {
+      "initialSlots": 2,
+      "gainEveryNLevels": 3,
+      "penaltyNonProficient": -2,
+      "notes": "Cannot use missile weapons that lack melee function."
+    },
+    "nonWeaponProficiencies": {
+      "initialSlots": 3,
+      "gainEveryNLevels": 3,
+      "groups": {
+        "general": "normal cost",
+        "warrior": "normal cost",
+        "other": "+1 slot cost"
+      }
+    },
+    "classFeatures": [
+      "Berserk rage (increased Strength, AC, hp, charm/mind immunity)",
+      "Shape-change (wolf at 4th level, bear at higher levels)",
+      "Unpredictable alignment (must be Chaotic)",
+      "Exhaustion after rage"
+    ],
+    "levelProgression": {
+      "xpTable": [
+        {"level":1,"xp":0},{"level":2,"xp":2000},{"level":3,"xp":4000},{"level":4,"xp":8000},{"level":5,"xp":16000},
+        {"level":6,"xp":32000},{"level":7,"xp":64000},{"level":8,"xp":125000},{"level":9,"xp":250000},{"level":10,"xp":500000}
+      ],
+      "thac0": [20,19,18,17,16,15,14,13,12,11],
+      "xpExtraPerLevel": 250000
+    }
+  }
+]

@@ -1,0 +1,329 @@
+{
+  "racialSpecialAbilities": {
+    "description": "Habilidades especiales de cada raza PHB AD&D 2ª Edición (Tabla 8 y descripciones de capítulo 2)",
+    "source": "Player's Handbook Cap. 2 — Tabla 8 y descripciones por raza",
+    "note": "La Tabla 8 del PHB solo muestra ajustes de características. Las habilidades especiales se describen en el texto de cada raza. Este JSON unifica ambas fuentes.",
+
+    "races": [
+      {
+        "id": "human",
+        "nameEs": "Humano",
+        "nameEn": "Human",
+        "abilityAdjustments": {},
+        "infravision": false,
+        "specialAbilities": [
+          {
+            "id": "multiclassRestriction",
+            "nameEs": "Restricción multiclase / Doble clase",
+            "description": "Los humanos no pueden multiclasarse, pero son los únicos que pueden hacer doble clase (dual-class). Pueden cambiar de clase en cualquier momento si cumplen los requisitos de la nueva clase."
+          },
+          {
+            "id": "noLevelLimits",
+            "nameEs": "Sin límite de nivel",
+            "description": "Los humanos no tienen restricciones de nivel máximo en ninguna clase."
+          },
+          {
+            "id": "allClasses",
+            "nameEs": "Acceso a todas las clases",
+            "description": "Los humanos pueden ser cualquier clase, incluidas las opcionales."
+          }
+        ],
+        "languages": ["Común (nativo)", "+N idiomas adicionales por INT"],
+        "classRestrictions": "Ninguna",
+        "levelLimits": {}
+      },
+
+      {
+        "id": "dwarf",
+        "nameEs": "Enano",
+        "nameEn": "Dwarf",
+        "abilityAdjustments": { "CON": +1, "CHA": -1 },
+        "infravision": { "feet": 60, "meters": 18 },
+        "specialAbilities": [
+          {
+            "id": "combatBonus",
+            "nameEs": "Bono de combate vs. enemigos raciales",
+            "description": "+1 a tiradas de ataque cuerpo a cuerpo contra orcos, semi-orcos, goblins y hobgoblins."
+          },
+          {
+            "id": "defenseBonus",
+            "nameEs": "Bono defensivo vs. criaturas gigantes",
+            "description": "Las criaturas de clase gigante (gnolls, trolls, bugbears, ogros, ogros magi, titanes y gigantes) sufren -4 a sus tiradas de ataque contra enanos."
+          },
+          {
+            "id": "magicResistance",
+            "nameEs": "Resistencia mágica por CON",
+            "description": "+1 a salvaciones vs. varas, bastones, varitas y conjuros por cada 3,5 puntos de CON. Calculado como: floor(CON / 3.5).",
+            "table": [
+              { "con": "4-6",  "bonus": 1 },
+              { "con": "7-10", "bonus": 2 },
+              { "con": "11-13","bonus": 3 },
+              { "con": "14-17","bonus": 4 },
+              { "con": "18-19","bonus": 5 }
+            ],
+            "source": "PHB Tabla 9"
+          },
+          {
+            "id": "poisonResistance",
+            "nameEs": "Resistencia a venenos",
+            "description": "El mismo bono de CON de arriba también se aplica a salvaciones contra venenos."
+          },
+          {
+            "id": "detectUnderground",
+            "nameEs": "Detectar características subterráneas",
+            "description": "Al pasar por un pasaje, el enano detecta: pendientes (75%), nuevas construcciones de piedra (75%), deslizamientos y trampas en paredes y suelos (66%), trampas de pozos/plataformas/huecos (50%). También puede determinar su profundidad aproximada bajo tierra (50%) y dirección tras 10 minutos de viaje (50%).",
+            "detection": {
+              "slopingPassages":    { "chance": "75%", "die": "1-3 en 1d4" },
+              "newConstruction":    { "chance": "75%", "die": "1-3 en 1d4" },
+              "slidingWalls":       { "chance": "66%", "die": "1-2 en 1d6" },
+              "pitsTraps":          { "chance": "50%", "die": "1-2 en 1d4" },
+              "approximateDepth":   { "chance": "50%" },
+              "direction":          { "chance": "50%" }
+            }
+          },
+          {
+            "id": "magicItemPenalty",
+            "nameEs": "Penalización con objetos mágicos",
+            "description": "Si un objeto mágico no ha sido creado específicamente para la clase del enano, hay un 20% de probabilidad de que falle al usarlo. Se comprueba cada vez. Afecta a varas, bastones, varitas, anillos, amuletos, pociones, cuernos, joyas y la mayoría de objetos mágicos."
+          }
+        ],
+        "languages": ["Enano", "Común", "Gnomo", "Kobold", "Goblin", "Orco"],
+        "classRestrictions": "Fighter, Cleric, Thief, Assassin (multiclase Fighter/Cleric, Fighter/Thief, Thief/Cleric)",
+        "levelLimits": {
+          "fighter": 9,
+          "cleric": 10,
+          "thief": "ilimitado",
+          "assassin": 9,
+          "note": "Se puede superar el límite con puntuaciones altas en habilidades primarias (DMG Tabla 8)"
+        }
+      },
+
+      {
+        "id": "elf",
+        "nameEs": "Elfo",
+        "nameEn": "Elf",
+        "abilityAdjustments": { "DEX": +1, "CON": -1 },
+        "infravision": { "feet": 60, "meters": 18 },
+        "specialAbilities": [
+          {
+            "id": "sleepCharmResistance",
+            "nameEs": "Resistencia a sueño y encantamiento",
+            "description": "90% de resistencia a conjuros de sueño y encantamiento (charm). Incluso si fallan la tirada, reciben la salvación habitual contra esos conjuros."
+          },
+          {
+            "id": "secretDoorDetection",
+            "nameEs": "Detectar puertas secretas/ocultas",
+            "description": "Al pasar a 3 metros de una puerta secreta: 1 en 1d6. Buscando en área de 3x3 m: 1-2 en 1d6. Buscando puertas ocultas: 1-3 en 1d6."
+          },
+          {
+            "id": "bowBonus",
+            "nameEs": "Bono con arcos (no ballestas)",
+            "description": "+1 a tiradas de ataque con arcos (long bow, short bow, composite bow). No aplica a ballestas. No aplica al daño salvo que el arco sea especial y use el bono de FUE."
+          },
+          {
+            "id": "surpriseBonus",
+            "nameEs": "Sorpresa mejorada",
+            "description": "Los enemigos sufren -4 a su tirada de sorpresa si el elfo: (1) viaja solo, (2) está a 27+ metros de su grupo, o (3) está con otros elfos/halflings y todos llevan armadura no metálica. Si debe abrir una puerta, la penalización se reduce a -2."
+          }
+        ],
+        "languages": ["Élfico", "Común", "Gnomo", "Halfling", "Orco", "Hobgoblin", "Goblin"],
+        "classRestrictions": "Fighter, Mage, Thief, Ranger, Cleric (multiclase Fighter/Mage, Fighter/Thief, Mage/Thief, Fighter/Mage/Thief, Cleric/Fighter, Cleric/Ranger, Cleric/Mage)",
+        "levelLimits": {
+          "fighter": 7,
+          "mage": 11,
+          "thief": "ilimitado",
+          "ranger": 15,
+          "cleric": 12,
+          "note": "High Elf. Varía por subraza."
+        }
+      },
+
+      {
+        "id": "gnome",
+        "nameEs": "Gnomo",
+        "nameEn": "Gnome",
+        "abilityAdjustments": { "INT": +1, "WIS": -1 },
+        "infravision": { "feet": 60, "meters": 18 },
+        "specialAbilities": [
+          {
+            "id": "combatBonus",
+            "nameEs": "Bono de combate vs. enemigos raciales",
+            "description": "+1 a tiradas de ataque cuerpo a cuerpo contra kobolds y goblins."
+          },
+          {
+            "id": "defenseBonus",
+            "nameEs": "Bono defensivo vs. criaturas gigantes",
+            "description": "Las criaturas de clase gigante (gnolls, trolls, bugbears, ogros, ogros magi, titanes y gigantes) sufren -4 a sus tiradas de ataque contra gnomos."
+          },
+          {
+            "id": "magicResistance",
+            "nameEs": "Resistencia mágica por CON",
+            "description": "Igual que enanos: +1 a salvaciones vs. varas, bastones, varitas y conjuros por cada 3,5 puntos de CON. La misma tabla T9.",
+            "table": [
+              { "con": "4-6",  "bonus": 1 },
+              { "con": "7-10", "bonus": 2 },
+              { "con": "11-13","bonus": 3 },
+              { "con": "14-17","bonus": 4 },
+              { "con": "18-19","bonus": 5 }
+            ]
+          },
+          {
+            "id": "detectUnderground",
+            "nameEs": "Detectar características subterráneas",
+            "description": "Al pasar por un pasaje, el gnomo detecta: pendientes (80%), nuevas construcciones de piedra (70%), deslizamientos y trampas en paredes y suelos (60%). También puede determinar la profundidad aproximada (60%) y dirección (50%).",
+            "detection": {
+              "slopingPassages":  { "chance": "80%", "die": "1-4 en 1d6" },
+              "newConstruction":  { "chance": "70%", "die": "1-4 en 1d6" },
+              "slidingWalls":     { "chance": "60%", "die": "1-3 en 1d6" },
+              "approximateDepth": { "chance": "60%" },
+              "direction":        { "chance": "50%" }
+            }
+          },
+          {
+            "id": "illusionistBonus",
+            "nameEs": "Afinidad con Ilusionista",
+            "description": "Los gnomos pueden ser Ilusionistas sin las restricciones normales de la escuela (si se usan reglas opcionales de especialistas)."
+          },
+          {
+            "id": "animalCommunication",
+            "nameEs": "Comunicación con animales pequeños",
+            "description": "El gnomo puede hablar con mamíferos excavadores (topos, ardillas, ratones, etc.) en un lenguaje básico. Esta comunicación es limitada a conceptos simples."
+          }
+        ],
+        "languages": ["Gnomo", "Común", "Enano", "Halfling", "Goblin", "Kobold", "+ idioma de mamíferos excavadores"],
+        "classRestrictions": "Fighter, Illusionist, Cleric, Thief (multiclase Fighter/Illusionist, Fighter/Thief, Cleric/Illusionist, Cleric/Thief, Illusionist/Thief, Fighter/Cleric)",
+        "levelLimits": {
+          "fighter": 6,
+          "illusionist": "ilimitado",
+          "cleric": 9,
+          "thief": "ilimitado"
+        }
+      },
+
+      {
+        "id": "halfElf",
+        "nameEs": "Semielfo",
+        "nameEn": "Half-Elf",
+        "abilityAdjustments": {},
+        "infravision": { "feet": 60, "meters": 18 },
+        "specialAbilities": [
+          {
+            "id": "sleepCharmResistance",
+            "nameEs": "Resistencia parcial a sueño y encantamiento",
+            "description": "30% de resistencia a conjuros de sueño y encantamiento (charm). Menor que la del elfo puro (90%)."
+          },
+          {
+            "id": "secretDoorDetection",
+            "nameEs": "Detectar puertas secretas/ocultas",
+            "description": "Al pasar a 3 metros de una puerta secreta: 1 en 1d6. Buscando en área de 3x3 m: 1-3 en 1d6 (puerta secreta), 1-2 en 1d6 (puerta oculta)."
+          }
+        ],
+        "languages": ["Común", "Élfico", "Gnomo", "Halfling", "Goblin", "Hobgoblin", "Orco", "Gnoll"],
+        "classRestrictions": "Fighter, Ranger, Mage, Cleric, Druid, Thief, Bard (multiclase Fighter/Mage, Fighter/Thief, Fighter/Mage/Thief, Mage/Thief, Cleric/Fighter, Cleric/Ranger, Druid/Fighter, Druid/Ranger, Druid/Mage)",
+        "levelLimits": {
+          "fighter": 12,
+          "ranger": 15,
+          "mage": 12,
+          "cleric": 14,
+          "druid": "ilimitado",
+          "thief": "ilimitado",
+          "bard": "ilimitado"
+        }
+      },
+
+      {
+        "id": "halfling",
+        "nameEs": "Halfling",
+        "nameEn": "Halfling",
+        "abilityAdjustments": { "DEX": +1, "STR": -1 },
+        "infravision": false,
+        "specialAbilities": [
+          {
+            "id": "magicResistance",
+            "nameEs": "Resistencia mágica y a venenos por CON",
+            "description": "Igual que enanos y gnomos: +1 a salvaciones vs. varas, bastones, varitas, conjuros y venenos por cada 3,5 puntos de CON. Usa la misma Tabla 9.",
+            "table": [
+              { "con": "4-6",  "bonus": 1 },
+              { "con": "7-10", "bonus": 2 },
+              { "con": "11-13","bonus": 3 },
+              { "con": "14-17","bonus": 4 },
+              { "con": "18-19","bonus": 5 }
+            ],
+            "note": "A diferencia de enanos y gnomos, los halflings NO tienen penalización con objetos mágicos."
+          },
+          {
+            "id": "surpriseBonus",
+            "nameEs": "Sorpresa mejorada",
+            "description": "Los enemigos sufren -4 a su tirada de sorpresa si el halfling no lleva armadura metálica Y está al menos a 27 metros de cualquier miembro del grupo que no sea elfo en armadura no metálica. Si debe abrir una puerta, la penalización se reduce a -2."
+          },
+          {
+            "id": "slingShotBonus",
+            "nameEs": "Bono con honda y arco",
+            "description": "+3 a tiradas de ataque con honda. Los halflings son notablemente hábiles con armas de proyectil pequeñas.",
+            "note": "Algunas fuentes dan +1 con arcos cortos además del bono con honda."
+          },
+          {
+            "id": "detectSlopes",
+            "nameEs": "Detectar pendientes y orientación",
+            "description": "Los halflings de tipo Stout (y similares) detectan pendientes bajo tierra con 75% de probabilidad y determinan su orientación (norte/sur/etc.) con 50% de probabilidad.",
+            "appliesTo": "Principalmente Hairfoot y Stout. El Tallfellow tiene algunas habilidades élficas en su lugar."
+          }
+        ],
+        "subraces": [
+          {
+            "id": "hairfoot",
+            "nameEs": "Hairfoot (Peludito)",
+            "description": "El más común. Vive en zonas rurales. Tiene las habilidades raciales estándar del halfling.",
+            "extraAbilities": []
+          },
+          {
+            "id": "stout",
+            "nameEs": "Stout (Robusto)",
+            "description": "Parecido a un gnomo/enano. Tiene infravision y habilidades de detección bajo tierra.",
+            "extraAbilities": [
+              "Infravision 60 pies",
+              "Detectar pendientes (75%)",
+              "Detectar construcciones nuevas (60%)",
+              "Detectar paredes deslizantes (50%)",
+              "Determinar orientación bajo tierra (50%)"
+            ]
+          },
+          {
+            "id": "tallfellow",
+            "nameEs": "Tallfellow (Altísimo)",
+            "description": "Más alto, con sangre élfica. Tiene algunas habilidades de elfo.",
+            "extraAbilities": [
+              "Detectar puertas secretas como elfos (1 en 1d6 pasando, 1-2 en 1d6 buscando)"
+            ]
+          }
+        ],
+        "languages": ["Halfling", "Común", "Élfico", "Gnomo", "Goblin", "Orco"],
+        "classRestrictions": "Fighter, Thief (multiclase Fighter/Thief)",
+        "levelLimits": {
+          "fighter": 6,
+          "thief": "ilimitado",
+          "note": "Los Hairfoot fighters no tiran para FUE excepcional."
+        }
+      }
+    ],
+
+    "constitutionSavingThrowTable": {
+      "description": "Tabla 9 del PHB: Bonos de salvación por CON para razas con resistencia mágica (Enano, Gnomo, Halfling)",
+      "source": "PHB Tabla 9",
+      "table": [
+        { "conRange": "4-6",  "bonus": 1 },
+        { "conRange": "7-10", "bonus": 2 },
+        { "conRange": "11-13","bonus": 3 },
+        { "conRange": "14-17","bonus": 4 },
+        { "conRange": "18-19","bonus": 5 }
+      ],
+      "appliesTo": ["vs. varas", "vs. bastones", "vs. varitas", "vs. conjuros", "vs. venenos (enanos y halflings)"]
+    },
+
+    "generalNotes": {
+      "levelLimitsOverride": "Todas las razas no humanas pueden superar sus límites de nivel si tienen puntuaciones muy altas en sus habilidades primarias. Consultar DMG Tabla 8.",
+      "multiclassRules": "Solo los no humanos pueden multiclasarse. Los humanos pueden hacer doble clase (dual class).",
+      "abilityAdjustmentsNote": "Los ajustes de características (T8) se aplican tras la tirada inicial y pueden llevar puntuaciones fuera del rango racial mínimo/máximo normal si la raza lo permite."
+    }
+  }
+}

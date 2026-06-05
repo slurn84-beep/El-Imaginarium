@@ -1,0 +1,17 @@
+{
+  "thiefBaseSkills": [
+    { "id": "pick_pockets", "nameEs": "Vaciar Bolsillos", "nameEn": "Pick Pockets", "base": 15 },
+    { "id": "open_locks", "nameEs": "Abrir Cerraduras", "nameEn": "Open Locks", "base": 10 },
+    { "id": "find_remove_traps", "nameEs": "Hallar y Retirar Trampas", "nameEn": "Find/Remove Traps", "base": 5 },
+    { "id": "move_silently", "nameEs": "Moverse en Silencio", "nameEn": "Move Silently", "base": 10 },
+    { "id": "hide_in_shadows", "nameEs": "Esconderse en Sombras", "nameEn": "Hide in Shadows", "base": 5 },
+    { "id": "detect_noise", "nameEs": "Detectar Ruidos", "nameEn": "Detect Noise", "base": 15 },
+    { "id": "climb_walls", "nameEs": "Escalar Paredes", "nameEn": "Climb Walls", "base": 60 },
+    { "id": "read_languages", "nameEs": "Leer Lenguajes", "nameEn": "Read Languages", "base": 0 },
+    { "id": "detect_magic", "nameEs": "Detectar Magia", "nameEn": "Detect Magic", "base": 0 },
+    { "id": "detect_illusions", "nameEs": "Detectar Ilusiones", "nameEn": "Detect Illusions", "base": 0 },
+    { "id": "dig", "nameEs": "Cavar", "nameEn": "Dig", "base": 10 },
+    { "id": "bribe", "nameEs": "Sobornar", "nameEn": "Bribe", "base": 15 },
+    { "id": "escape_bonds", "nameEs": "Escapar de Ataduras", "nameEn": "Escape Bonds", "base": 20 }
+  ]
+}

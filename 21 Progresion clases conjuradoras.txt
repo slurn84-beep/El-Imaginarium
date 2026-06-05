@@ -1,0 +1,206 @@
+{
+  "spellcasting_classes": [
+    {
+      "name": "Bard",
+      "spellcasting": true,
+      "type": "Arcane (Wizard spells from schools of Enchantment/Charm, Illusion, Divination)",
+      "progression": [
+        { "level": 1, "spell_slots": [0, 0, 0, 0, 0, 0] },
+        { "level": 2, "spell_slots": [1, 0, 0, 0, 0, 0] },
+        { "level": 3, "spell_slots": [2, 0, 0, 0, 0, 0] },
+        { "level": 4, "spell_slots": [2, 1, 0, 0, 0, 0] },
+        { "level": 5, "spell_slots": [3, 1, 0, 0, 0, 0] },
+        { "level": 6, "spell_slots": [3, 2, 0, 0, 0, 0] },
+        { "level": 7, "spell_slots": [3, 2, 1, 0, 0, 0] },
+        { "level": 8, "spell_slots": [3, 3, 1, 0, 0, 0] },
+        { "level": 9, "spell_slots": [3, 3, 2, 0, 0, 0] },
+        { "level": 10, "spell_slots": [3, 3, 2, 1, 0, 0] },
+        { "level": 11, "spell_slots": [3, 3, 3, 1, 0, 0] },
+        { "level": 12, "spell_slots": [3, 3, 3, 2, 0, 0] },
+        { "level": 13, "spell_slots": [3, 3, 3, 2, 1, 0] },
+        { "level": 14, "spell_slots": [3, 3, 3, 3, 1, 0] },
+        { "level": 15, "spell_slots": [3, 3, 3, 3, 2, 0] },
+        { "level": 16, "spell_slots": [4, 3, 3, 3, 2, 1] },
+        { "level": 17, "spell_slots": [4, 4, 3, 3, 3, 1] },
+        { "level": 18, "spell_slots": [4, 4, 4, 3, 3, 2] },
+        { "level": 19, "spell_slots": [4, 4, 4, 4, 3, 2] },
+        { "level": 20, "spell_slots": [4, 4, 4, 4, 4, 3] }
+      ]
+    },
+    {
+      "name": "Cleric",
+      "spellcasting": true,
+      "type": "Divine (Priest spells)",
+      "progression": [
+        { "level": 1, "slots": [1, 0, 0, 0, 0, 0, 0] },
+        { "level": 2, "slots": [2, 0, 0, 0, 0, 0, 0] },
+        { "level": 3, "slots": [2, 1, 0, 0, 0, 0, 0] },
+        { "level": 4, "slots": [3, 2, 0, 0, 0, 0, 0] },
+        { "level": 5, "slots": [3, 3, 1, 0, 0, 0, 0] },
+        { "level": 6, "slots": [3, 3, 2, 0, 0, 0, 0] },
+        { "level": 7, "slots": [3, 3, 2, 1, 0, 0, 0] },
+        { "level": 8, "slots": [3, 3, 3, 2, 0, 0, 0] },
+        { "level": 9, "slots": [4, 4, 3, 2, 1, 0, 0] },
+        { "level": 10, "slots": [4, 4, 3, 3, 2, 0, 0] },
+        { "level": 11, "slots": [5, 4, 4, 3, 2, 1, 0] },
+        { "level": 12, "slots": [6, 5, 5, 3, 2, 2, 0] },
+        { "level": 13, "slots": [6, 6, 6, 4, 2, 2, 0] },
+        { "level": 14, "slots": [6, 6, 6, 5, 3, 2, 1] },
+        { "level": 15, "slots": [6, 6, 6, 6, 4, 2, 1] },
+        { "level": 16, "slots": [7, 7, 6, 6, 4, 2, 1] },
+        { "level": 17, "slots": [7, 7, 7, 6, 4, 3, 2] },
+        { "level": 18, "slots": [7, 7, 7, 7, 4, 3, 2] },
+        { "level": 19, "slots": [7, 7, 7, 7, 5, 4, 2] },
+        { "level": 20, "slots": [7, 7, 7, 7, 5, 4, 3] }
+      ]
+    },
+    {
+      "name": "Crusader",
+      "spellcasting": true,
+      "type": "Divine (Priest spells, limited spheres)",
+      "progression": "Same as Cleric"
+    },
+    {
+      "name": "Druid",
+      "spellcasting": true,
+      "type": "Divine (Priest spells from plant, animal, elemental, weather spheres)",
+      "progression": [
+        { "level": 1, "slots": [1, 0, 0, 0, 0, 0, 0] },
+        { "level": 2, "slots": [2, 0, 0, 0, 0, 0, 0] },
+        { "level": 3, "slots": [2, 1, 0, 0, 0, 0, 0] },
+        { "level": 4, "slots": [3, 2, 0, 0, 0, 0, 0] },
+        { "level": 5, "slots": [3, 3, 1, 0, 0, 0, 0] },
+        { "level": 6, "slots": [3, 3, 2, 0, 0, 0, 0] },
+        { "level": 7, "slots": [3, 3, 2, 1, 0, 0, 0] },
+        { "level": 8, "slots": [3, 3, 3, 2, 0, 0, 0] },
+        { "level": 9, "slots": [4, 4, 3, 2, 1, 0, 0] },
+        { "level": 10, "slots": [4, 4, 3, 3, 2, 0, 0] },
+        { "level": 11, "slots": [5, 4, 4, 3, 2, 1, 0] },
+        { "level": 12, "slots": [6, 5, 5, 3, 2, 2, 0] },
+        { "level": 13, "slots": [6, 6, 6, 4, 2, 2, 0] },
+        { "level": 14, "slots": [6, 6, 6, 5, 3, 2, 1] },
+        { "level": 15, "slots": [6, 6, 6, 6, 4, 2, 1] },
+        { "level": 16, "slots": [6, 6, 6, 6, 4, 2, 1] },
+        { "level": 17, "slots": [6, 6, 6, 6, 4, 2, 1] },
+        { "level": 18, "slots": [6, 6, 6, 6, 4, 2, 1] },
+        { "level": 19, "slots": [6, 6, 6, 6, 4, 2, 1] },
+        { "level": 20, "slots": [6, 6, 6, 6, 4, 2, 1] }
+      ]
+    },
+    {
+      "name": "Mage",
+      "spellcasting": true,
+      "type": "Arcane (Wizard spells)",
+      "progression": [
+        { "level": 1, "slots": [1, 0, 0, 0, 0, 0, 0, 0, 0] },
+        { "level": 2, "slots": [2, 0, 0, 0, 0, 0, 0, 0, 0] },
+        { "level": 3, "slots": [2, 1, 0, 0, 0, 0, 0, 0, 0] },
+        { "level": 4, "slots": [3, 2, 0, 0, 0, 0, 0, 0, 0] },
+        { "level": 5, "slots": [4, 2, 1, 0, 0, 0, 0, 0, 0] },
+        { "level": 6, "slots": [4, 2, 2, 0, 0, 0, 0, 0, 0] },
+        { "level": 7, "slots": [4, 3, 2, 1, 0, 0, 0, 0, 0] },
+        { "level": 8, "slots": [4, 3, 3, 2, 0, 0, 0, 0, 0] },
+        { "level": 9, "slots": [4, 3, 3, 2, 1, 0, 0, 0, 0] },
+        { "level": 10, "slots": [4, 4, 3, 2, 2, 0, 0, 0, 0] },
+        { "level": 11, "slots": [4, 4, 4, 3, 3, 0, 0, 0, 0] },
+        { "level": 12, "slots": [4, 4, 4, 4, 4, 1, 0, 0, 0] },
+        { "level": 13, "slots": [5, 5, 5, 4, 4, 2, 0, 0, 0] },
+        { "level": 14, "slots": [5, 5, 5, 4, 4, 2, 1, 0, 0] },
+        { "level": 15, "slots": [5, 5, 5, 5, 5, 2, 1, 0, 0] },
+        { "level": 16, "slots": [5, 5, 5, 5, 5, 3, 2, 1, 0] },
+        { "level": 17, "slots": [5, 5, 5, 5, 5, 3, 3, 2, 0] },
+        { "level": 18, "slots": [5, 5, 5, 5, 5, 3, 3, 2, 1] },
+        { "level": 19, "slots": [5, 5, 5, 5, 5, 3, 3, 2, 1] },
+        { "level": 20, "slots": [5, 5, 5, 5, 5, 4, 3, 3, 2] }
+      ]
+    },
+    {
+      "name": "Paladin",
+      "spellcasting": true,
+      "type": "Divine (Priest spells, limited spheres; starts at level 4 by house rule)",
+      "progression": [
+        { "level": 1, "slots": [0, 0, 0, 0, 0, 0, 0] },
+        { "level": 2, "slots": [0, 0, 0, 0, 0, 0, 0] },
+        { "level": 3, "slots": [0, 0, 0, 0, 0, 0, 0] },
+        { "level": 4, "slots": [1, 0, 0, 0, 0, 0, 0] },
+        { "level": 5, "slots": [2, 0, 0, 0, 0, 0, 0] },
+        { "level": 6, "slots": [2, 1, 0, 0, 0, 0, 0] },
+        { "level": 7, "slots": [2, 2, 0, 0, 0, 0, 0] },
+        { "level": 8, "slots": [2, 2, 1, 0, 0, 0, 0] },
+        { "level": 9, "slots": [3, 2, 1, 0, 0, 0, 0] },
+        { "level": 10, "slots": [3, 3, 1, 0, 0, 0, 0] },
+        { "level": 11, "slots": [3, 3, 2, 0, 0, 0, 0] },
+        { "level": 12, "slots": [3, 3, 2, 1, 0, 0, 0] },
+        { "level": 13, "slots": [4, 3, 2, 1, 0, 0, 0] },
+        { "level": 14, "slots": [4, 4, 2, 1, 0, 0, 0] },
+        { "level": 15, "slots": [4, 4, 3, 2, 0, 0, 0] },
+        { "level": 16, "slots": [4, 4, 3, 2, 1, 0, 0] },
+        { "level": 17, "slots": [5, 4, 3, 2, 1, 0, 0] },
+        { "level": 18, "slots": [5, 5, 3, 3, 1, 0, 0] },
+        { "level": 19, "slots": [5, 5, 4, 3, 2, 0, 0] },
+        { "level": 20, "slots": [5, 5, 4, 3, 2, 1, 0] }
+      ]
+    },
+    {
+      "name": "Ranger",
+      "spellcasting": true,
+      "type": "Divine (Priest spells from plant and animal spheres; starts at level 4 by house rule)",
+      "progression": [
+        { "level": 1, "slots": [0, 0, 0, 0, 0, 0] },
+        { "level": 2, "slots": [0, 0, 0, 0, 0, 0] },
+        { "level": 3, "slots": [0, 0, 0, 0, 0, 0] },
+        { "level": 4, "slots": [1, 0, 0, 0, 0, 0] },
+        { "level": 5, "slots": [2, 0, 0, 0, 0, 0] },
+        { "level": 6, "slots": [2, 1, 0, 0, 0, 0] },
+        { "level": 7, "slots": [2, 2, 0, 0, 0, 0] },
+        { "level": 8, "slots": [2, 2, 1, 0, 0, 0] },
+        { "level": 9, "slots": [3, 2, 1, 0, 0, 0] },
+        { "level": 10, "slots": [3, 3, 1, 0, 0, 0] },
+        { "level": 11, "slots": [3, 3, 2, 0, 0, 0] },
+        { "level": 12, "slots": [3, 3, 2, 1, 0, 0] },
+        { "level": 13, "slots": [4, 3, 2, 1, 0, 0] },
+        { "level": 14, "slots": [4, 4, 2, 1, 0, 0] },
+        { "level": 15, "slots": [4, 4, 3, 2, 0, 0] },
+        { "level": 16, "slots": [4, 4, 3, 2, 1, 0] },
+        { "level": 17, "slots": [5, 4, 3, 2, 1, 0] },
+        { "level": 18, "slots": [5, 5, 3, 3, 1, 0] },
+        { "level": 19, "slots": [5, 5, 4, 3, 2, 0] },
+        { "level": 20, "slots": [5, 5, 4, 3, 2, 1] }
+      ]
+    },
+    {
+      "name": "Shaman",
+      "spellcasting": true,
+      "type": "Divine (Priest spells, similar to Cleric)",
+      "progression": "Same as Cleric"
+    },
+    {
+      "name": "Specialist Wizard",
+      "spellcasting": true,
+      "type": "Arcane (Wizard spells, +1 spell per level from specialty school, -1 from opposition schools)",
+      "progression": "Same as Mage, but with bonus/penalty spells"
+    },
+    {
+      "name": "Warlock",
+      "spellcasting": true,
+      "type": "Arcane (Spell Point system, see Player's Option: Spells & Magic)",
+      "progression": "Uses spell points instead of slots. Points per level: [4,8,15,25,40,55,70,95,120,150,200,250,300,350,400,475,550,625,700,800] (levels 1-20)",
+      "spell_points_by_level": [4,8,15,25,40,55,70,95,120,150,200,250,300,350,400,475,550,625,700,800]
+    },
+    {
+      "name": "Runecaster",
+      "spellcasting": true,
+      "type": "Rune magic (warrior class with rune casting, see Vikings Campaign Sourcebook)",
+      "progression": "Rune abilities gained at levels 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 (one new rune per two levels). No standard spell slots."
+    },
+    {
+      "name": "Templar",
+      "spellcasting": true,
+      "type": "Divine (Priest spells, Dark Sun setting, restricted to elemental spheres)",
+      "progression": "Same as Cleric, but may have limitations based on sorcerer-king"
+    }
+  ],
+  "non_spellcasting_classes": [
+    "Assassin", "Barbarian", "Berserker", "Fighter", "Gladiator", "Thief", "Monk", "Ninja", "Psionicist"
+  ]
+}

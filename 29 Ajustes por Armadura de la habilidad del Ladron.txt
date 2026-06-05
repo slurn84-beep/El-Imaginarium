@@ -1,0 +1,121 @@
+{
+  "thiefArmorAdjustments": {
+    "pickPockets": {
+      "nameEs": "Vaciar Bolsillos",
+      "nameEn": "Pick Pockets",
+      "none": 5,
+      "elvenChain": -20,
+      "studdedLeather": -30,
+      "chainMail": -25,
+      "heavyArmor": null
+    },
+    "openLocks": {
+      "nameEs": "Abrir Cerraduras",
+      "nameEn": "Open Locks",
+      "none": 0,
+      "elvenChain": -5,
+      "studdedLeather": -10,
+      "chainMail": -10,
+      "heavyArmor": null
+    },
+    "findRemoveTraps": {
+      "nameEs": "Hallar y Retirar Trampas",
+      "nameEn": "Find/Remove Traps",
+      "none": 0,
+      "elvenChain": -5,
+      "studdedLeather": -10,
+      "chainMail": -10,
+      "heavyArmor": null
+    },
+    "moveSilently": {
+      "nameEs": "Moverse en Silencio",
+      "nameEn": "Move Silently",
+      "none": 10,
+      "elvenChain": -10,
+      "studdedLeather": -20,
+      "chainMail": -15,
+      "heavyArmor": null
+    },
+    "hideInShadows": {
+      "nameEs": "Esconderse en Sombras",
+      "nameEn": "Hide in Shadows",
+      "none": 5,
+      "elvenChain": -10,
+      "studdedLeather": -20,
+      "chainMail": -15,
+      "heavyArmor": null
+    },
+    "detectNoise": {
+      "nameEs": "Detectar Ruidos",
+      "nameEn": "Detect Noise",
+      "none": 0,
+      "elvenChain": -5,
+      "studdedLeather": -10,
+      "chainMail": -5,
+      "heavyArmor": null
+    },
+    "climbWalls": {
+      "nameEs": "Escalar Paredes",
+      "nameEn": "Climb Walls",
+      "none": 10,
+      "elvenChain": -20,
+      "studdedLeather": -30,
+      "chainMail": -25,
+      "heavyArmor": null
+    },
+    "readLanguages": {
+      "nameEs": "Leer Lenguajes",
+      "nameEn": "Read Languages",
+      "none": 0,
+      "elvenChain": 0,
+      "studdedLeather": 0,
+      "chainMail": 0,
+      "heavyArmor": 0
+    },
+    "detectMagic": {
+      "nameEs": "Detectar Magia",
+      "nameEn": "Detect Magic",
+      "none": 0,
+      "elvenChain": 0,
+      "studdedLeather": 0,
+      "chainMail": 0,
+      "heavyArmor": 0
+    },
+    "detectIllusions": {
+      "nameEs": "Detectar Ilusiones",
+      "nameEn": "Detect Illusions",
+      "none": 0,
+      "elvenChain": 0,
+      "studdedLeather": 0,
+      "chainMail": 0,
+      "heavyArmor": 0
+    },
+    "dig": {
+      "nameEs": "Cavar",
+      "nameEn": "Dig",
+      "none": 10,
+      "elvenChain": -20,
+      "studdedLeather": -30,
+      "chainMail": -25,
+      "heavyArmor": null
+    },
+    "bribe": {
+      "nameEs": "Sobornar",
+      "nameEn": "Bribe",
+      "none": 0,
+      "elvenChain": 0,
+      "studdedLeather": 0,
+      "chainMail": 0,
+      "heavyArmor": 0
+    },
+    "escapeBonds": {
+      "nameEs": "Escapar de Ataduras",
+      "nameEn": "Escape Bonds",
+      "none": 10,
+      "elvenChain": -20,
+      "studdedLeather": -30,
+      "chainMail": -25,
+      "heavyArmor": null
+    }
+  }
+}

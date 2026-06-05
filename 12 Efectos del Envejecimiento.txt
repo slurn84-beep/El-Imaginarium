@@ -1,0 +1,98 @@
+{
+  "source": "PHB Tablas 9 y 12 — Bonos de Salvación por CON y Efectos del Envejecimiento",
+
+  "constitutionSavingThrowBonuses": {
+    "description": "Tabla 9 PHB: Bonus a salvaciones por Constitución. Aplica a Enanos, Gnomos y Halflings.",
+    "note": "Bonus aplica vs. varas/bastones/varitas/conjuros. Enanos y Halflings también vs. venenos.",
+    "table": [
+      { "conRange": "4-6",   "bonus": "+1" },
+      { "conRange": "7-10",  "bonus": "+2" },
+      { "conRange": "11-13", "bonus": "+3" },
+      { "conRange": "14-17", "bonus": "+4" },
+      { "conRange": "18-19", "bonus": "+5" }
+    ],
+    "appliesTo": {
+      "dwarf":    ["vs. varas", "vs. bastones", "vs. varitas", "vs. conjuros", "vs. venenos"],
+      "gnome":    ["vs. varas", "vs. bastones", "vs. varitas", "vs. conjuros"],
+      "halfling": ["vs. varas", "vs. bastones", "vs. varitas", "vs. conjuros", "vs. venenos"]
+    }
+  },
+
+  "agingEffects": {
+    "description": "Tabla 12 PHB: Efectos del envejecimiento sobre las características",
+    "stages": {
+      "middleAge": {
+        "nameEs": "Mediana Edad",
+        "fraction": "1/2 de la edad máxima base",
+        "effects": { "STR": -1, "CON": -1, "INT": +1, "WIS": +1 },
+        "note": "Los efectos son acumulativos con las etapas siguientes."
+      },
+      "old": {
+        "nameEs": "Vejez",
+        "fraction": "2/3 de la edad máxima base",
+        "effects": { "STR": -2, "DEX": -2, "CON": -1, "WIS": +1 },
+        "note": "Acumulativo sobre mediana edad."
+      },
+      "venerable": {
+        "nameEs": "Ancianidad",
+        "fraction": "Edad máxima base",
+        "effects": { "STR": -1, "DEX": -1, "CON": -1, "INT": +1, "WIS": +1 },
+        "note": "Acumulativo sobre vejez."
+      }
+    },
+    "cumulativeTotals": {
+      "description": "Totales acumulados desde joven hasta ancianidad",
+      "STR": -4, "DEX": -3, "CON": -3, "INT": +2, "WIS": +3
+    },
+    "raceThresholds": [
+      {
+        "race": "Humano",
+        "middleAge": 45,
+        "old": 60,
+        "venerable": 90,
+        "maximumAge": "90 + 2d20"
+      },
+      {
+        "race": "Enano",
+        "middleAge": 125,
+        "old": 167,
+        "venerable": 250,
+        "maximumAge": "250 + 2d100"
+      },
+      {
+        "race": "Elfo",
+        "middleAge": 175,
+        "old": 233,
+        "venerable": 350,
+        "maximumAge": "350 + 4d100",
+        "note": "Al alcanzar la edad máxima el elfo no muere: se siente compelido a emigrar a tierras misteriosas."
+      },
+      {
+        "race": "Gnomo",
+        "middleAge": 100,
+        "old": 133,
+        "venerable": 200,
+        "maximumAge": "200 + 3d100"
+      },
+      {
+        "race": "Semielfo",
+        "middleAge": 62,
+        "old": 83,
+        "venerable": 125,
+        "maximumAge": "125 + 3d20"
+      },
+      {
+        "race": "Halfling",
+        "middleAge": 50,
+        "old": 67,
+        "venerable": 100,
+        "maximumAge": "100 + 1d100"
+      }
+    ],
+    "additionalRules": [
+      "Los efectos del envejecimiento no pueden reducir una característica por debajo de 1.",
+      "El envejecimiento mágico (hechizos, no-muertos, etc.) aplica los mismos efectos de forma instantánea.",
+      "La restauración mágica del envejecimiento revierte los penalizadores pero no los bonos de INT/WIS."
+    ]
+  }
+}
