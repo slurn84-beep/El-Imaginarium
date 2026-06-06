@@ -1,0 +1,29 @@
+{
+  "title": "Nonweapon Proficiency Group Crossovers (Actualizada)",
+  "description": "Clases y sus grupos de competencias no armamentísticas según el repositorio El-Imaginarium. Los grupos determinan qué pericias puede aprender cada clase sin penalizaciones por coste.",
+  "source": "AD&D 2nd Edition - Player's Handbook & Complete Handbooks / repositorio El-Imaginarium",
+  "data": [
+    { "class": "Bardo", "groups": ["Rogue", "General"] },
+    { "class": "Clérigo", "groups": ["Priest", "General"] },
+    { "class": "Druida", "groups": ["Priest", "General"] },
+    { "class": "Guerrero", "groups": ["Warrior", "General"] },
+    { "class": "Mago", "groups": ["Wizard", "General"] },
+    { "class": "Mago Especialista", "groups": ["Wizard", "General"] },
+    { "class": "Paladín", "groups": ["Warrior", "General"] },
+    { "class": "Guardabosques", "groups": ["Warrior", "General"] },
+    { "class": "Ladrón", "groups": ["Rogue", "General"] },
+    { "class": "Asesino", "groups": ["Rogue", "General"] },
+    { "class": "Bárbaro", "groups": ["Warrior", "General"] },
+    { "class": "Cruzado", "groups": ["Priest", "General", "Warrior"] },
+    { "class": "Monje", "groups": ["Warrior", "General"] },
+    { "class": "Psiónico", "groups": ["Priest", "General"] },
+    { "class": "Chamán", "groups": ["Priest", "General", "Warrior"] },
+    { "class": "Brujo", "groups": ["Wizard", "General"] },
+    { "class": "Gladiador", "groups": ["Warrior", "General"] },
+    { "class": "Templario", "groups": ["Warrior", "Priest", "General"] },
+    { "class": "Ninja", "groups": ["Rogue", "Warrior", "General"] },
+    { "class": "Wu-Jen", "groups": ["Wizard", "General"] },
+    { "class": "Berserker", "groups": ["Warrior", "General"] },
+    { "class": "Runecaster", "groups": ["Priest", "General"] }
+  ]
+}
