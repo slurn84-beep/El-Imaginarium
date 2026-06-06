@@ -1,0 +1,45 @@
+{
+  "tabla": "Tabla 34: Casillas de PERICIA",
+  "fuente": "AD&D 2nd Edition - Player's Handbook (Capítulo 5: Proficiencies)",
+  "descripcion": "Determina las casillas iniciales de armas y pericias no armamentísticas, la frecuencia con que se ganan nuevas casillas, y la penalización por usar un arma no dominada.",
+  "filas": [
+    {
+      "grupo": "Sacerdote",
+      "armas_iniciales": 2,
+      "armas_nivel_gana": 4,
+      "penalizacion_sin_pericia": -3,
+      "no_armas_iniciales": 4,
+      "no_armas_nivel_gana": 3
+    },
+    {
+      "grupo": "Pícaro",
+      "armas_iniciales": 2,
+      "armas_nivel_gana": 4,
+      "penalizacion_sin_pericia": -3,
+      "no_armas_iniciales": 3,
+      "no_armas_nivel_gana": 4
+    },
+    {
+      "grupo": "Guerrero",
+      "armas_iniciales": 4,
+      "armas_nivel_gana": 3,
+      "penalizacion_sin_pericia": -2,
+      "no_armas_iniciales": 3,
+      "no_armas_nivel_gana": 3
+    },
+    {
+      "grupo": "Mago",
+      "armas_iniciales": 1,
+      "armas_nivel_gana": 6,
+      "penalizacion_sin_pericia": -5,
+      "no_armas_iniciales": 4,
+      "no_armas_nivel_gana": 3
+    }
+  ],
+  "notas": {
+    "armas_nivel_gana": "Cada X niveles se obtiene una nueva casilla de arma (ej. Guerrero cada 3 niveles obtiene 1 casilla adicional).",
+    "no_armas_nivel_gana": "Cada X niveles se obtiene una nueva casilla de pericia no armamentística.",
+    "penalizacion_sin_pericia": "Penalización a la tirada de ataque al usar un arma sin la casilla de dominio correspondiente.",
+    "bonificador_inteligencia": "Si se usan las reglas de pericias no armamentísticas, la puntuación de Inteligencia puede otorgar casillas adicionales al empezar (ver Tabla 4)."
+  }
+}
