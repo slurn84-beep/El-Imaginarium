@@ -1,6 +1,8 @@
 [
   {
     "name": "Bardo",
+    "name_en": "Bard",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Bard_(PHB)",
     "group": "Rogue",
     "source": "Player's Handbook",
     "xpProgressionType": "rogue",
@@ -10,8 +12,11 @@
       "initial": "1d6",
       "levels": "1-9",
       "afterLevel9": "2 per level",
-      "constitutionBonus": true,
-      "notes": "Standard rogue HP"
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      }
     },
     "startingMoney": "2d6 × 10 gp",
     "armor": "Leather armor, studded leather, elven chain (with restrictions)",
@@ -104,6 +109,8 @@
   },
   {
     "name": "Clérigo",
+    "name_en": "Cleric",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Cleric_(PHB)",
     "group": "Priest",
     "source": "Player's Handbook",
     "xpProgressionType": "priest",
@@ -113,7 +120,11 @@
       "initial": "1d8",
       "levels": "1-9",
       "afterLevel9": "2 per level",
-      "constitutionBonus": true
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      }
     },
     "startingMoney": "2d4 × 10 gp",
     "armor": "Any armor",
@@ -169,6 +180,8 @@
   },
   {
     "name": "Druida",
+    "name_en": "Druid",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Druid_(PHB)",
     "group": "Priest",
     "source": "Player's Handbook",
     "xpProgressionType": "druid",
@@ -178,7 +191,11 @@
       "initial": "1d8",
       "levels": "1-9",
       "afterLevel9": "2 per level",
-      "constitutionBonus": true
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      }
     },
     "startingMoney": "2d4 × 10 gp",
     "armor": "Leather armor, hide armor, wooden shield",
@@ -236,6 +253,8 @@
   },
   {
     "name": "Guerrero",
+    "name_en": "Fighter",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Fighter_(PHB)",
     "group": "Warrior",
     "source": "Player's Handbook",
     "xpProgressionType": "fighter",
@@ -245,7 +264,11 @@
       "initial": "1d10",
       "levels": "1-9",
       "afterLevel9": "3 per level",
-      "constitutionBonus": true,
+      "constitutionBonus": {
+        "applies": true,
+        "type": "fighter",
+        "notes": "Única clase que recibe el bono entre paréntesis de Constitución (HP fighter bonus)"
+      },
       "notes": "Gains additional +1 HP per level from Constitution above 16 (warrior bonus)"
     },
     "startingMoney": "5d4 × 10 gp",
@@ -296,6 +319,8 @@
   },
   {
     "name": "Mago",
+    "name_en": "Mage",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Mage_(PHB)",
     "group": "Wizard",
     "source": "Player's Handbook",
     "xpProgressionType": "wizard",
@@ -305,7 +330,11 @@
       "initial": "1d4",
       "levels": "1-9",
       "afterLevel9": "1 per level",
-      "constitutionBonus": true
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      }
     },
     "startingMoney": "2d4 × 10 gp",
     "armor": "None",
@@ -357,6 +386,8 @@
   },
   {
     "name": "Paladín",
+    "name_en": "Paladin",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Paladin_(PHB)",
     "group": "Warrior",
     "source": "Player's Handbook",
     "xpProgressionType": "warrior",
@@ -366,7 +397,11 @@
       "initial": "1d10",
       "levels": "1-9",
       "afterLevel9": "3 per level",
-      "constitutionBonus": true,
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución (no el de guerrero según la tabla PHB)"
+      },
       "notes": "Gains warrior CON bonus"
     },
     "startingMoney": "5d4 × 10 gp",
@@ -432,6 +467,8 @@
   },
   {
     "name": "Guardabosques",
+    "name_en": "Ranger",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Ranger_(PHB)",
     "group": "Warrior",
     "source": "Player's Handbook",
     "xpProgressionType": "warrior",
@@ -441,7 +478,11 @@
       "initial": "1d10",
       "levels": "1-9",
       "afterLevel9": "3 per level",
-      "constitutionBonus": true,
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución (no el de guerrero según la tabla PHB)"
+      },
       "notes": "Warrior CON bonus"
     },
     "startingMoney": "5d4 × 10 gp",
@@ -506,6 +547,8 @@
   },
   {
     "name": "Ladrón",
+    "name_en": "Thief",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Thief_(PHB)",
     "group": "Rogue",
     "source": "Player's Handbook",
     "xpProgressionType": "rogue",
@@ -515,7 +558,11 @@
       "initial": "1d6",
       "levels": "1-9",
       "afterLevel9": "2 per level",
-      "constitutionBonus": true
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      }
     },
     "startingMoney": "2d6 × 10 gp",
     "armor": "Leather armor, studded leather, elven chain (with penalties)",
@@ -576,6 +623,8 @@
   },
   {
     "name": "Asesino",
+    "name_en": "Assassin",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Assassin_(Class)",
     "group": "Rogue",
     "source": "The Complete Thief's Handbook",
     "xpProgressionType": "rogue",
@@ -585,7 +634,11 @@
       "initial": "1d6",
       "levels": "1-9",
       "afterLevel9": "2 per level",
-      "constitutionBonus": true
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      }
     },
     "startingMoney": "2d6 × 10 gp",
     "armor": "Leather armor, studded leather, elven chain",
@@ -648,6 +701,8 @@
   },
   {
     "name": "Bárbaro",
+    "name_en": "Barbarian",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Barbarian_(Class)",
     "group": "Warrior",
     "source": "The Complete Barbarian's Handbook",
     "xpProgressionType": "fighter",
@@ -657,7 +712,11 @@
       "initial": "1d12",
       "levels": "1-9",
       "afterLevel9": "3 per level",
-      "constitutionBonus": true
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución (no el de guerrero según la tabla PHB)"
+      }
     },
     "startingMoney": "3d6 × 10 gp",
     "armor": "Hide armor, leather, studded leather, no metal armor",
@@ -712,6 +771,8 @@
   },
   {
     "name": "Runecaster",
+    "name_en": "Runecaster",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Runecaster_(Class)",
     "group": "Warrior",
     "source": "Vikings Campaign Sourcebook",
     "xpProgressionType": "fighter",
@@ -721,8 +782,11 @@
       "initial": "1d10",
       "levels": "1-9",
       "afterLevel9": "3 per level",
-      "constitutionBonus": true,
-      "notes": "Does not gain fighter bonus HP from high Constitution (standard CON bonus only)"
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "No recibe el bono de guerrero (excepción explícita)"
+      }
     },
     "startingMoney": "5d4 × 10 gp",
     "armor": "Any armor",
@@ -793,6 +857,8 @@
   },
   {
     "name": "Cruzado",
+    "name_en": "Crusader",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Crusader_(Class)",
     "group": "Priest",
     "source": "Warriors and Priests of the Realms",
     "xpProgressionType": "priest",
@@ -802,7 +868,11 @@
       "initial": "1d10",
       "levels": "1-9",
       "afterLevel9": "2 per level",
-      "constitutionBonus": true,
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución (clase sacerdote)"
+      },
       "notes": "Fighter HD. Gains priest saving throws."
     },
     "weaponProficiencies": {
@@ -842,6 +912,8 @@
   },
   {
     "name": "Monje (Conjurador)",
+    "name_en": "Monk (Spellcaster)",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Monk_(Class)",
     "group": "Priest",
     "source": "Player's Option: Spells & Magic",
     "xpProgressionType": "priest",
@@ -851,7 +923,11 @@
       "initial": "1d4",
       "levels": "1-9",
       "afterLevel9": "2 per level",
-      "constitutionBonus": true,
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      },
       "notes": "Low HD but gains full HD each level."
     },
     "weaponProficiencies": {
@@ -891,6 +967,8 @@
   },
   {
     "name": "Monje (Luchador)",
+    "name_en": "Monk (Martial Artist)",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Monk_(Class)",
     "group": "Rogue",
     "source": "The Scarlet Brotherhood",
     "xpProgressionType": "rogue",
@@ -900,7 +978,11 @@
       "initial": "1d8",
       "levels": "1-9",
       "afterLevel9": "2 per level",
-      "constitutionBonus": true,
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      },
       "notes": "Unarmed and martial arts specialization."
     },
     "weaponProficiencies": {
@@ -936,6 +1018,8 @@
   },
   {
     "name": "Psiónico",
+    "name_en": "Psionicist",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Psionicist_(Class)",
     "group": "Psionicist",
     "source": "The Complete Psionics Handbook",
     "xpProgressionType": "rogue",
@@ -945,7 +1029,11 @@
       "initial": "1d6",
       "levels": "1-9",
       "afterLevel9": "2 per level",
-      "constitutionBonus": true
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      }
     },
     "weaponProficiencies": {
       "initialSlots": 2,
@@ -988,6 +1076,8 @@
   },
   {
     "name": "Chamán",
+    "name_en": "Shaman",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Shaman_(Class)",
     "group": "Priest",
     "source": "Shaman (accessory)",
     "xpProgressionType": "priest",
@@ -997,7 +1087,11 @@
       "initial": "1d8",
       "levels": "1-9",
       "afterLevel9": "2 per level",
-      "constitutionBonus": false,
+      "constitutionBonus": {
+        "applies": true,
+        "type": "limited",
+        "notes": "Solo recibe bono de Constitución en niveles 1-9"
+      },
       "notes": "CON bonus only applies for levels 1-9."
     },
     "weaponProficiencies": {
@@ -1037,6 +1131,8 @@
   },
   {
     "name": "Brujo",
+    "name_en": "Warlock",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Warlock_(Class)",
     "group": "Wizard",
     "source": "Player's Option: Spells & Magic",
     "xpProgressionType": "wizard",
@@ -1045,7 +1141,11 @@
     "hitDice": {
       "initial": "1d4",
       "levels": "1-20",
-      "constitutionBonus": true
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      }
     },
     "weaponProficiencies": {
       "initialSlots": 1,
@@ -1082,6 +1182,8 @@
   },
   {
     "name": "Gladiador",
+    "name_en": "Gladiator",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Gladiator_(Class)",
     "group": "Warrior",
     "source": "Dark Sun Campaign Setting Revised",
     "xpProgressionType": "fighter",
@@ -1091,7 +1193,11 @@
       "initial": "1d10",
       "levels": "1-9",
       "afterLevel9": "3 per level",
-      "constitutionBonus": true
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución (no el de guerrero según la tabla PHB)"
+      }
     },
     "weaponProficiencies": {
       "initialSlots": 4,
@@ -1127,6 +1233,8 @@
   },
   {
     "name": "Templario",
+    "name_en": "Templar",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Templar_(Class)",
     "group": "Priest",
     "source": "Dark Sun Campaign Setting Revised",
     "xpProgressionType": "priest",
@@ -1136,7 +1244,11 @@
       "initial": "1d8",
       "levels": "1-9",
       "afterLevel9": "2 per level",
-      "constitutionBonus": true
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      }
     },
     "weaponProficiencies": {
       "initialSlots": 2,
@@ -1174,6 +1286,8 @@
   },
   {
     "name": "Ninja",
+    "name_en": "Ninja",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Ninja_(Class)",
     "group": "Rogue",
     "source": "The Complete Ninja's Handbook",
     "xpProgressionType": "rogue",
@@ -1183,7 +1297,11 @@
       "initial": "1d6",
       "levels": "1-9",
       "afterLevel9": "2 per level",
-      "constitutionBonus": true,
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      },
       "notes": "Rogue HD."
     },
     "weaponProficiencies": {
@@ -1219,6 +1337,8 @@
   },
   {
     "name": "Wu Jen",
+    "name_en": "Wu Jen",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Wu-Jen_(Class)",
     "group": "Wizard",
     "source": "The Complete Wizard's Handbook",
     "xpProgressionType": "wizard",
@@ -1228,7 +1348,11 @@
       "initial": "1d4+1",
       "levels": "2-20",
       "afterLevel9": "1 per level",
-      "constitutionBonus": true,
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución"
+      },
       "notes": "Different HD at level 1 (d4+1) and levels 2-20 (d6)."
     },
     "weaponProficiencies": {
@@ -1269,6 +1393,8 @@
   },
   {
     "name": "Berserker",
+    "name_en": "Berserker",
+    "wiki_url": "https://adnd2e.fandom.com/wiki/Berserker_(Class)",
     "group": "Warrior",
     "source": "Vikings Campaign Sourcebook",
     "xpProgressionType": "fighter",
@@ -1278,7 +1404,11 @@
       "initial": "1d10",
       "levels": "1-9",
       "afterLevel9": "3 per level",
-      "constitutionBonus": true,
+      "constitutionBonus": {
+        "applies": true,
+        "type": "standard",
+        "notes": "Bono estándar de Constitución (no el de guerrero según la tabla PHB)"
+      },
       "notes": "Warrior HD."
     },
     "weaponProficiencies": {
