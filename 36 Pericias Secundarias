@@ -1,0 +1,32 @@
+{
+  "title": "Secondary Skills",
+  "description": "A simplified method to determine a character's background. The DM rolls d100 to see what secondary skill the character learned before adventuring.",
+  "source": "AD&D 2nd Edition - Player's Handbook (Chapter 5: Proficiencies)",
+  "data": [
+    { "range": "01-02", "skill": "Armorer", "description": "make, repair & evaluate armor and weapons" },
+    { "range": "03-04", "skill": "Bowyer/Fletcher", "description": "make, repair, & evaluate bows and arrows" },
+    { "range": "05-10", "skill": "Farmer", "description": "basic agriculture" },
+    { "range": "11-14", "skill": "Fisher", "description": "swimming, nets, and small boat handling" },
+    { "range": "15-20", "skill": "Forester", "description": "basic wood lore, lumbering" },
+    { "range": "21-23", "skill": "Gambler", "description": "knowledge of gambling games" },
+    { "range": "24-27", "skill": "Groom", "description": "animal handling" },
+    { "range": "28-32", "skill": "Hunter", "description": "basic wood lore, butchering, basic tracking" },
+    { "range": "33-34", "skill": "Jeweler", "description": "appraisal of gems and jewelry" },
+    { "range": "35-37", "skill": "Leather worker", "description": "skinning, tanning" },
+    { "range": "38-39", "skill": "Limner/Painter", "description": "map making, appraisal of art objects" },
+    { "range": "40-42", "skill": "Mason", "description": "stone-cutting" },
+    { "range": "43-44", "skill": "Miner", "description": "stone-cutting, assaying" },
+    { "range": "45-46", "skill": "Navigator", "description": "astronomy, sailing, swimming, navigation" },
+    { "range": "47-49", "skill": "Sailor", "description": "sailing, swimming" },
+    { "range": "50-51", "skill": "Scribe", "description": "reading, writing, basic math" },
+    { "range": "52-53", "skill": "Shipwright", "description": "sailing, carpentry" },
+    { "range": "54-56", "skill": "Tailor/Weaver", "description": "weaving, sewing, embroidery" },
+    { "range": "57-59", "skill": "Teamster/Freighter", "description": "animal handling, wagon-repair" },
+    { "range": "60-62", "skill": "Trader/Barterer", "description": "appraisal of common goods" },
+    { "range": "63-66", "skill": "Trapper/Furrier", "description": "basic wood lore, skinning" },
+    { "range": "67-68", "skill": "Weaponsmith", "description": "make, repair, & evaluate weapons" },
+    { "range": "69-71", "skill": "Woodworker/Carpenter", "description": "carpentry, carving" },
+    { "range": "72-85", "skill": "No skill of measurable worth", "description": "" },
+    { "range": "86-00", "skill": "Roll twice", "description": "reroll any result of 86-00" }
+  ]
+}
