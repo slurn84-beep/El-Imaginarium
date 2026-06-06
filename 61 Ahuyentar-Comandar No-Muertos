@@ -1,0 +1,134 @@
+{
+  "source": "AD&D 2nd Edition - Player's Handbook & Dungeon Master's Guide",
+  "description": "Reglas para que un clérigo/paladín ahuyente o comande no-muertos.",
+  "rules": {
+    "general": {
+      "description": "Los sacerdotes y paladines pueden usar esta habilidad especial otorgada por su deidad para ahuyentar o destruir a los no-muertos. Los druidas no pueden usarla, y los sacerdotes de mitologías específicas pueden hacerlo a discreción del DM.",
+      "roll": "1d20",
+      "target_number": "Buscar en la tabla cruzando el tipo/DE del no-muerto con el nivel del personaje (el paladín usa la columna de dos niveles menos).",
+      "outcomes": {
+        "number": "Si hay un número, se debe igualar o superar para que la tirada sea exitosa.",
+        "T": "El intento es automáticamente exitoso (el no-muerto es ahuyentado).",
+        "D": "El no-muerto es destruido (o queda completamente subyugado por un clérigo maligno).",
+        "-": "No se puede afectar a ese tipo de no-muerto."
+      },
+      "paladin": {
+        "level_modifier": "El paladín ahuyenta a los no-muertos como si fuera dos niveles más bajo.",
+        "example": "Un paladín de 5º nivel usa la columna de nivel 3 en la tabla de Ahuyentar No-Muertos."
+      },
+      "attempts": {
+        "per_encounter": "Solo se puede hacer un intento por personaje por encuentro.",
+        "multiple_characters": "Varios personajes pueden hacer intentos simultáneamente."
+      },
+      "action": "Intentar ahuyentar es una acción que requiere una ronda, ocurre durante el turno de iniciativa del personaje. Requiere manos libres y poder hablar. No se interrumpe si el personaje es atacado.",
+      "effect": {
+        "number_affected": "Un éxito o destrucción afecta a 2d6 no-muertos. En un grupo mixto, se afecta primero a los de menor dado de golpe (DG). Un '*'' en la tabla significa que se ven afectados 2d4 criaturas adicionales de ese tipo.",
+        "mixed_group": "Solo se tira un dado, independientemente del número de no-muertos. El resultado se aplica individualmente para cada tipo."
+      },
+      "turned_behavior": {
+        "bound_undead": "Los no-muertos ligados a otro (como esqueletos) se retiran y permiten el paso.",
+        "free_willed": "Los no-muertos con voluntad propia huyen hasta salir de la vista. Si no pueden escapar, se mantienen al menos a 3 metros (10 pies) de distancia, siempre que el personaje mantenga el efecto. Si el personaje los fuerza a acercarse, el efecto se rompe."
+      },
+      "example": "Gorus, un sacerdote de 7º nivel, se enfrenta a 2 esqueletos, un wight y un spectre. Tira un 12 en su intento. Los esqueletos son destruidos (resultado D). El wight es ahuyentado (T). El spectre no se ve afectado (necesitaba un 16)."
+    },
+    "evil_priests_and_undead": {
+      "description": "Los clérigos malignos no pueden ahuyentar a los no-muertos, sino que intentan comandarlos.",
+      "roll": "Mismo proceso que ahuyentar, usando la misma tabla.",
+      "outcomes": {
+        "T": "Los no-muertos obedecen automáticamente al clérigo maligno.",
+        "D": "Los no-muertos se vuelven completamente subservientes al clérigo maligno."
+      },
+      "max_commanded": "Se pueden comandar hasta 12 no-muertos.",
+      "turning_paladins": "Un sacerdote maligno puede intentar ahuyentar a un paladín como si fuera no-muerto, pero con una penalización: se trata como si el sacerdote fuera tres niveles más bajo. Los resultados 'D' se tratan como 'T'.",
+      "example": "Un sacerdote maligno de 7º nivel trataría de ahuyentar a un paladín de 7º nivel (7 DG) usando la columna de nivel 4."
+    },
+    "turning_table": {
+      "title": "Tabla 61/47: Ahuyentar No-Muertos",
+      "notes": [
+        "* Se ahuyentan 2d4 criaturas adicionales de este tipo.",
+        "** Criaturas especiales (no-muertos únicos, de los Planos Exteriores, etc.)."
+      ],
+      "data": [
+        {
+          "undead_type": "Esqueleto o 1 DG",
+          "priest_levels": {
+            "1": 10, "2": 7, "3": 4, "4": "T", "5": "T", "6": "D", "7": "D", "8": "D*", "9": "D*", "10-11": "D*", "12-13": "D*", "14+": "D*"
+          }
+        },
+        {
+          "undead_type": "Zombi",
+          "priest_levels": {
+            "1": 13, "2": 10, "3": 7, "4": 4, "5": "T", "6": "T", "7": "D", "8": "D", "9": "D*", "10-11": "D*", "12-13": "D*", "14+": "D*"
+          }
+        },
+        {
+          "undead_type": "Ghoul o 2 DG",
+          "priest_levels": {
+            "1": 16, "2": 13, "3": 10, "4": 7, "5": 4, "6": "T", "7": "T", "8": "D", "9": "D", "10-11": "D*", "12-13": "D*", "14+": "D*"
+          }
+        },
+        {
+          "undead_type": "Sombra o 3-4 DG",
+          "priest_levels": {
+            "1": 19, "2": 16, "3": 13, "4": 10, "5": 7, "6": 4, "7": "T", "8": "T", "9": "D", "10-11": "D", "12-13": "D*", "14+": "D*"
+          }
+        },
+        {
+          "undead_type": "Wight o 5 DG",
+          "priest_levels": {
+            "1": 20, "2": 19, "3": 16, "4": 13, "5": 10, "6": 7, "7": 4, "8": "T", "9": "T", "10-11": "D", "12-13": "D", "14+": "D*"
+          }
+        },
+        {
+          "undead_type": "Ghast",
+          "priest_levels": {
+            "1": "-", "2": 20, "3": 19, "4": 16, "5": 13, "6": 10, "7": 7, "8": 4, "9": "T", "10-11": "T", "12-13": "D", "14+": "D"
+          }
+        },
+        {
+          "undead_type": "Espectro o 6 DG",
+          "priest_levels": {
+            "1": "-", "2": "-", "3": 20, "4": 19, "5": 16, "6": 13, "7": 10, "8": 7, "9": 4, "10-11": "T", "12-13": "T", "14+": "D"
+          }
+        },
+        {
+          "undead_type": "Momia o 7 DG",
+          "priest_levels": {
+            "1": "-", "2": "-", "3": "-", "4": 20, "5": 19, "6": 16, "7": 13, "8": 10, "9": 7, "10-11": 4, "12-13": "T", "14+": "T"
+          }
+        },
+        {
+          "undead_type": "Spectre o 8 DG",
+          "priest_levels": {
+            "1": "-", "2": "-", "3": "-", "4": "-", "5": 20, "6": 19, "7": 16, "8": 13, "9": 10, "10-11": 7, "12-13": 4, "14+": "T"
+          }
+        },
+        {
+          "undead_type": "Vampiro o 9 DG",
+          "priest_levels": {
+            "1": "-", "2": "-", "3": "-", "4": "-", "5": "-", "6": 20, "7": 19, "8": 16, "9": 13, "10-11": 10, "12-13": 7, "14+": 4
+          }
+        },
+        {
+          "undead_type": "Fantasma o 10 DG",
+          "priest_levels": {
+            "1": "-", "2": "-", "3": "-", "4": "-", "5": "-", "6": "-", "7": 20, "8": 19, "9": 16, "10-11": 13, "12-13": 10, "14+": 7
+          }
+        },
+        {
+          "undead_type": "Liche o 11+ DG",
+          "priest_levels": {
+            "1": "-", "2": "-", "3": "-", "4": "-", "5": "-", "6": "-", "7": "-", "8": 20, "9": 19, "10-11": 16, "12-13": 13, "14+": 10
+          }
+        },
+        {
+          "undead_type": "Especial**",
+          "priest_levels": {
+            "1": "-", "2": "-", "3": "-", "4": "-", "5": "-", "6": "-", "7": "-", "8": "-", "9": 20, "10-11": 19, "12-13": 16, "14+": 13
+          }
+        }
+      ]
+    }
+  },
+  "summary": "Espero que este JSON te sirva como referencia para las reglas de Ahuyentar/Comandar Muertos Vivientes. Si necesitas alguna aclaración adicional, no dudes en pedírmela."
+}
