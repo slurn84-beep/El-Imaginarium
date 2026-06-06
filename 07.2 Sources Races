@@ -1,0 +1,701 @@
+{
+  "_comment": "Razas unificadas de AD&D 2nd Edition a partir de los archivos locales y enlaces al wiki",
+  "wiki_sources": [
+    {
+      "nameEs": "Aarakocra",
+      "nameEn": "Aarakocra",
+      "id": "aarakocra",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Aarakocra_(Race)#The_Complete_Book_of_Humanoids"
+    },
+    {
+      "nameEs": "Aasimar",
+      "nameEn": "Aasimar",
+      "id": "aasimar",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Aasimar_(Race)"
+    },
+    {
+      "nameEs": "Alaghi",
+      "nameEn": "Alaghi",
+      "id": "alaghi",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Alaghi_(Race)"
+    },
+    {
+      "nameEs": "Bariaur",
+      "nameEn": "Bariaur",
+      "id": "bariaur",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Bariaur_(Race)"
+    },
+    {
+      "nameEs": "Bugbear",
+      "nameEn": "Bugbear",
+      "id": "bugbear",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Bugbear_(Race)"
+    },
+    {
+      "nameEs": "Bullywug",
+      "nameEn": "Bullywug",
+      "id": "bullywug",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Bullywug_(Race)"
+    },
+    {
+      "nameEs": "Centaur",
+      "nameEn": "Centaur",
+      "id": "centaur",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Centaur_(Race)"
+    },
+    {
+      "nameEs": "Crabman",
+      "nameEn": "Crabman",
+      "id": "crabman",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Crabman_(Race)"
+    },
+    {
+      "nameEs": "Dragon Amethyst",
+      "nameEn": "Amethyst Dragon",
+      "id": "dragon_amethyst",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Amethyst_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Black",
+      "nameEn": "Black Dragon",
+      "id": "dragon_black",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Black_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Blue",
+      "nameEn": "Blue Dragon",
+      "id": "dragon_blue",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Blue_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Brass",
+      "nameEn": "Brass Dragon",
+      "id": "dragon_brass",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Brass_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Bronze",
+      "nameEn": "Bronze Dragon",
+      "id": "dragon_bronze",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Bronze_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Cloud",
+      "nameEn": "Cloud Dragon",
+      "id": "dragon_cloud",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Cloud_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Copper",
+      "nameEn": "Copper Dragon",
+      "id": "dragon_copper",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Copper_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Crystal",
+      "nameEn": "Crystal Dragon",
+      "id": "dragon_crystal",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Crystal_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Deep",
+      "nameEn": "Deep Dragon",
+      "id": "dragon_deep",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Deep_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Drow",
+      "nameEn": "Drow-Dragon",
+      "id": "dragon_drow",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Drow-Dragon"
+    },
+    {
+      "nameEs": "Dragon Emerald",
+      "nameEn": "Emerald Dragon",
+      "id": "dragon_emerald",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Emerald_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Gold",
+      "nameEn": "Gold Dragon",
+      "id": "dragon_gold",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Gold_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Green",
+      "nameEn": "Green Dragon",
+      "id": "dragon_green",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Green_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Mercury",
+      "nameEn": "Mercury Dragon",
+      "id": "dragon_mercury",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Mercury_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Mist",
+      "nameEn": "Mist Dragon",
+      "id": "dragon_mist",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Mist_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Red",
+      "nameEn": "Red Dragon",
+      "id": "dragon_red",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Red_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Sapphire",
+      "nameEn": "Sapphire Dragon",
+      "id": "dragon_sapphire",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Sapphire_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Shadow",
+      "nameEn": "Shadow Dragon",
+      "id": "dragon_shadow",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Shadow_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Silver",
+      "nameEn": "Silver Dragon",
+      "id": "dragon_silver",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Silver_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Steel",
+      "nameEn": "Steel Dragon",
+      "id": "dragon_steel",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Steel_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Topaz",
+      "nameEn": "Topaz Dragon",
+      "id": "dragon_topaz",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Topaz_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon White",
+      "nameEn": "White Dragon",
+      "id": "dragon_white",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/White_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dragon Yellow",
+      "nameEn": "Yellow Dragon",
+      "id": "dragon_yellow",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Yellow_Dragon_(Race)"
+    },
+    {
+      "nameEs": "Dryad",
+      "nameEn": "Dryad",
+      "id": "dryad",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Dryad_(Race)"
+    },
+    {
+      "nameEs": "Duende",
+      "nameEn": "Goblin",
+      "id": "goblin",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Goblin_(Race)"
+    },
+    {
+      "nameEs": "Dwarf",
+      "nameEn": "Dwarf",
+      "id": "dwarf",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Dwarf"
+    },
+    {
+      "nameEs": "Dwarf Athasian",
+      "nameEn": "Athasian Dwarf",
+      "id": "dwarf_athasian",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Athasian_Dwarf_(Race)"
+    },
+    {
+      "nameEs": "Dwarf Deep",
+      "nameEn": "Deep Dwarf",
+      "id": "dwarf_deep",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Deep_Dwarf"
+    },
+    {
+      "nameEs": "Dwarf Duergar",
+      "nameEn": "Duergar",
+      "id": "dwarf_duergar",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Duergar"
+    },
+    {
+      "nameEs": "Dwarf Gully",
+      "nameEn": "Gully Dwarf",
+      "id": "dwarf_gully",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Gully_Dwarf"
+    },
+    {
+      "nameEs": "Dwarf Hill",
+      "nameEn": "Hill Dwarf",
+      "id": "dwarf_hill",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Hill_Dwarf"
+    },
+    {
+      "nameEs": "Dwarf Mountain",
+      "nameEn": "Mountain Dwarf",
+      "id": "dwarf_mountain",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Mountain_Dwarf"
+    },
+    {
+      "nameEs": "Dwarf Sundered",
+      "nameEn": "Sundered Dwarf",
+      "id": "dwarf_sundered",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Sundered_Dwarf"
+    },
+    {
+      "nameEs": "Dwarf Urdunnir",
+      "nameEn": "Dwarf Urdunnir",
+      "id": "dwarf_urdunnir",
+      "wiki_url": "https://mojobob.com/roleplay/monstrousmanual/d/dwarurdu.html"
+    },
+    {
+      "nameEs": "Elf",
+      "nameEn": "Elf",
+      "id": "elf",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Elf_(Race)"
+    },
+    {
+      "nameEs": "Elf Aquatic",
+      "nameEn": "Aquatic Elf",
+      "id": "elf_aquatic",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Aquatic_Elf"
+    },
+    {
+      "nameEs": "Elf Athasian",
+      "nameEn": "Athasian Elf",
+      "id": "elf_athasian",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Athasian_Elf_(Race)"
+    },
+    {
+      "nameEs": "Elf Drow",
+      "nameEn": "Drow",
+      "id": "elf_drow",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Drow"
+    },
+    {
+      "nameEs": "Elf Grey",
+      "nameEn": "Grey Elf",
+      "id": "elf_grey",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Grey_Elf"
+    },
+    {
+      "nameEs": "Elf Half",
+      "nameEn": "Half-Elf",
+      "id": "elf_half",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Half-Elf_(Race)"
+    },
+    {
+      "nameEs": "Elf High",
+      "nameEn": "High Elf",
+      "id": "elf_high",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/High_Elf"
+    },
+    {
+      "nameEs": "Elf Rockseer",
+      "nameEn": "Rockseer Elf",
+      "id": "elf_rockseer",
+      "wiki_url": "https://mojobob.com/roleplay/monstrousmanual/e/elfrocse.html"
+    },
+    {
+      "nameEs": "Elf Sidhe",
+      "nameEn": "The Sidhe",
+      "id": "elf_sidhe",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/The_Sidhe_(Race)"
+    },
+    {
+      "nameEs": "Elf Snow",
+      "nameEn": "Snow Elf",
+      "id": "elf_snow",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Snow_Elf"
+    },
+    {
+      "nameEs": "Elf Sylvan",
+      "nameEn": "Sylvan Elf",
+      "id": "elf_sylvan",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Sylvan_Elf"
+    },
+    {
+      "nameEs": "Elf Winged - Avariel",
+      "nameEn": "Avariel",
+      "id": "elf_avariel",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Avariel"
+    },
+    {
+      "nameEs": "Enano",
+      "nameEn": "Dwarf",
+      "id": "dwarf_phb",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Dwarf"
+    },
+    {
+      "nameEs": "Firbolg",
+      "nameEn": "Firbolg",
+      "id": "firbolg",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Firbolg_(Race)"
+    },
+    {
+      "nameEs": "Genasi (Air)",
+      "nameEn": "Air Genasi",
+      "id": "genasi_air",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Air_Genasi_(Race)"
+    },
+    {
+      "nameEs": "Genasi (Earth)",
+      "nameEn": "Earth Genasi",
+      "id": "genasi_earth",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Earth_Genasi_(Race)"
+    },
+    {
+      "nameEs": "Genasi (Fire)",
+      "nameEn": "Fire Genasi",
+      "id": "genasi_fire",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Fire_Genasi_(Race)"
+    },
+    {
+      "nameEs": "Genasi (Water)",
+      "nameEn": "Water Genasi",
+      "id": "genasi_water",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Water_Genasi_(Race)"
+    },
+    {
+      "nameEs": "Githyanki",
+      "nameEn": "Githyanki",
+      "id": "githyanki",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Githyanki_(Race)"
+    },
+    {
+      "nameEs": "Githzerai",
+      "nameEn": "Githzerai",
+      "id": "githzerai",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Githzerai_(Race)"
+    },
+    {
+      "nameEs": "Gnoll",
+      "nameEn": "Gnoll",
+      "id": "gnoll",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Gnoll_(Race)"
+    },
+    {
+      "nameEs": "Gnome",
+      "nameEn": "Gnome",
+      "id": "gnome",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Gnome"
+    },
+    {
+      "nameEs": "Gnome Deep",
+      "nameEn": "Deep Gnome",
+      "id": "gnome_deep",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Deep_Gnome"
+    },
+    {
+      "nameEs": "Gnome Forest",
+      "nameEn": "Forest Gnome",
+      "id": "gnome_forest",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Forest_Gnome"
+    },
+    {
+      "nameEs": "Gnome Rock",
+      "nameEn": "Rock Gnome",
+      "id": "gnome_rock",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Rock_Gnome"
+    },
+    {
+      "nameEs": "Gnome Tinker",
+      "nameEn": "Tinker Gnome",
+      "id": "gnome_tinker",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Tinker_Gnome"
+    },
+    {
+      "nameEs": "Half-Dragon Bronze",
+      "nameEn": "Bronze Half-Dragon",
+      "id": "half_dragon_bronze",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Bronze_Half-Dragon"
+    },
+    {
+      "nameEs": "Half-Dragon Chiang Lung",
+      "nameEn": "Chiang Lung Half-Dragon",
+      "id": "half_dragon_chiang_lung",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Chiang_Lung_Half-Dragon"
+    },
+    {
+      "nameEs": "Half-Dragon Gold",
+      "nameEn": "Gold Half-Dragon",
+      "id": "half_dragon_gold",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Gold_Half-Dragon"
+    },
+    {
+      "nameEs": "Half-Dragon Greyhawk",
+      "nameEn": "Greyhawk Half-Dragon",
+      "id": "half_dragon_greyhawk",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Greyhawk_Half-Dragon"
+    },
+    {
+      "nameEs": "Half-Dragon Iron",
+      "nameEn": "Iron Half-Dragon",
+      "id": "half_dragon_iron",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Iron_Half-Dragon"
+    },
+    {
+      "nameEs": "Half-Dragon Shen Lung",
+      "nameEn": "Shen Lung Half-Dragon",
+      "id": "half_dragon_shen_lung",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Shen_Lung_Half-Dragon"
+    },
+    {
+      "nameEs": "Half-Dragon Silver",
+      "nameEn": "Silver Half-Dragon",
+      "id": "half_dragon_silver",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Silver_Half-Dragon"
+    },
+    {
+      "nameEs": "Half-Dragon Steel",
+      "nameEn": "Steel Half-Dragon",
+      "id": "half_dragon_steel",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Steel_Half-Dragon"
+    },
+    {
+      "nameEs": "Half-Giant",
+      "nameEn": "Half-Giant",
+      "id": "half_giant",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Half-Giant_(Race)"
+    },
+    {
+      "nameEs": "Half-Ogre",
+      "nameEn": "Half-Ogre",
+      "id": "half_ogre",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Half-Ogre_(Race)"
+    },
+    {
+      "nameEs": "Half-Orc",
+      "nameEn": "Half-Orc",
+      "id": "half_orc",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Half-Orc_(Race)"
+    },
+    {
+      "nameEs": "Half-Vistani",
+      "nameEn": "Half-Vistani",
+      "id": "half_vistani",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Half-Vistani_(domains_of_dread)"
+    },
+    {
+      "nameEs": "Halfling",
+      "nameEn": "Halfling",
+      "id": "halfling",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Halfling"
+    },
+    {
+      "nameEs": "Halfling Athasian",
+      "nameEn": "Athasian Halfling",
+      "id": "halfling_athasian",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Athasian_Halfling_(Race)"
+    },
+    {
+      "nameEs": "Halfling Hairfoot",
+      "nameEn": "Hairfoot Halfling",
+      "id": "halfling_hairfoot",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Hairfoot"
+    },
+    {
+      "nameEs": "Hobgoblin",
+      "nameEn": "Hobgoblin",
+      "id": "hobgoblin",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Hobgoblin_(Race)"
+    },
+    {
+      "nameEs": "Humano",
+      "nameEn": "Human",
+      "id": "human",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Human#Human_(Standard)"
+    },
+    {
+      "nameEs": "Humano Común",
+      "nameEn": "Human (Common)",
+      "id": "human_common",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Human#Human_(Standard)"
+    },
+    {
+      "nameEs": "Humano Vikingo",
+      "nameEn": "Human (Viking)",
+      "id": "human_viking",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Human#Human_(Viking)"
+    },
+    {
+      "nameEs": "Humano (Plano)",
+      "nameEn": "Human (Planar)",
+      "id": "human_planar",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Human#Human_(Planar)"
+    },
+    {
+      "nameEs": "Humano Atasiano",
+      "nameEn": "Athasian Human",
+      "id": "human_athasian",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Athasian_Human_(Race)"
+    },
+    {
+      "nameEs": "Kender",
+      "nameEn": "Kender",
+      "id": "kender",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Kender#The_Complete_Book_of_Gnomes_&_Halflings_Version"
+    },
+    {
+      "nameEs": "Kobold",
+      "nameEn": "Kobold",
+      "id": "kobold",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Kobold_(Race)"
+    },
+    {
+      "nameEs": "Lizard Man",
+      "nameEn": "Lizard Man",
+      "id": "lizard_man",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Lizard_Man_(Race)#Standard_(The_Complete_Book_of_Humanoids)"
+    },
+    {
+      "nameEs": "Lizard Man Spelljammer",
+      "nameEn": "Lizard Man (Spelljammer)",
+      "id": "lizard_man_spelljammer",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Lizard_Man_(Race)#Spelljammer_(Complete_Spacefarer's_Handbook)"
+    },
+    {
+      "nameEs": "Lizard Man (Bakali)",
+      "nameEn": "Bakali",
+      "id": "lizard_man_bakali",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Lizard_Man_(Race)#Bakali_(Dragonlance_Appendix)"
+    },
+    {
+      "nameEs": "Maedar Medusa",
+      "nameEn": "Maedar Medusa",
+      "id": "maedar_medusa",
+      "wiki_url": "https://mojobob.com/roleplay/monstrousmanual/m/medumaed.html"
+    },
+    {
+      "nameEs": "Mediano",
+      "nameEn": "Halfling",
+      "id": "halfling_phb",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Halfling"
+    },
+    {
+      "nameEs": "Minotaur",
+      "nameEn": "Minotaur",
+      "id": "minotaur",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Minotaur_(Race)"
+    },
+    {
+      "nameEs": "Minotaur (Krynn)",
+      "nameEn": "Minotaur (Krynn)",
+      "id": "minotaur_krynn",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Minotaur_(Race)#Krynn_Minotaur"
+    },
+    {
+      "nameEs": "Ogre",
+      "nameEn": "Ogre",
+      "id": "ogre",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Ogre_(Race)"
+    },
+    {
+      "nameEs": "Ogre Mage",
+      "nameEn": "Ogre Mage",
+      "id": "ogre_mage",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Ogre_Mage_(Race)"
+    },
+    {
+      "nameEs": "Orc",
+      "nameEn": "Orc",
+      "id": "orc",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Orc_(Race)"
+    },
+    {
+      "nameEs": "Pixie",
+      "nameEn": "Pixie",
+      "id": "pixie",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Pixie"
+    },
+    {
+      "nameEs": "Rakasta",
+      "nameEn": "Rakasta",
+      "id": "rakasta",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Rakasta_(Race)"
+    },
+    {
+      "nameEs": "Satyr",
+      "nameEn": "Satyr",
+      "id": "satyr",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Satyr"
+    },
+    {
+      "nameEs": "Saurial Bladeback",
+      "nameEn": "Saurial (Bladeback)",
+      "id": "saurial_bladeback",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Saurial#Bladeback_Saurial"
+    },
+    {
+      "nameEs": "Saurial Finback",
+      "nameEn": "Saurial (Finback)",
+      "id": "saurial_finback",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Saurial#Finback_Saurial"
+    },
+    {
+      "nameEs": "Saurial Flyer",
+      "nameEn": "Saurial (Flyer)",
+      "id": "saurial_flyer",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Saurial#Flyer_Saurial"
+    },
+    {
+      "nameEs": "Saurial Hornhead",
+      "nameEn": "Saurial (Hornhead)",
+      "id": "saurial_hornhead",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Saurial#Hornhead_Saurial"
+    },
+    {
+      "nameEs": "Semielfo",
+      "nameEn": "Half-Elf",
+      "id": "half_elf",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Half-Elf_(POSP)"
+    },
+    {
+      "nameEs": "Thri-Kreen",
+      "nameEn": "Thri-Kreen",
+      "id": "thri_kreen",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Thri-Kreen_(Race)"
+    },
+    {
+      "nameEs": "Tiefling",
+      "nameEn": "Tiefling",
+      "id": "tiefling",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Tiefling_(Race)"
+    },
+    {
+      "nameEs": "Tortle",
+      "nameEn": "Tortle",
+      "id": "tortle",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Tortle_(Race)"
+    },
+    {
+      "nameEs": "Triton",
+      "nameEn": "Triton",
+      "id": "triton",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Triton_(Race)"
+    },
+    {
+      "nameEs": "Troglodyte",
+      "nameEn": "Troglodyte",
+      "id": "troglodyte",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Troglodyte_(Race)"
+    },
+    {
+      "nameEs": "Trollborn",
+      "nameEn": "Trollborn",
+      "id": "trollborn",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Trollborn"
+    },
+    {
+      "nameEs": "Yeti",
+      "nameEn": "Yeti",
+      "id": "yeti",
+      "wiki_url": "https://adnd2e.fandom.com/wiki/Yeti_(Race)"
+    }
+  ]
+}
