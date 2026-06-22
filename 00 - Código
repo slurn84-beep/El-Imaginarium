@@ -1,1 +1,211 @@
-edit
+El-Imaginarium
+App HTML Mesa de Juego y DM
+
+function faIcon(cls, extraStyle='') { // Extract icon name from class like "fas fa-arrow-left" const match = cls.match(/fa-([\w-]+)/); if (!match) return <span style="display:inline-block;width:1em;height:1em${extraStyle?';'+extraStyle:''}"></span>; const name = match[1]; const data = FA_ICONS[name]; if (!data) return <span title="${name}" style="font-size:0.7em;opacity:0.5${extraStyle?';'+extraStyle:''}">?</span>; const [vb, path] = data.split('|'); return <svg xmlns="http://www.w3.org/2000/svg" viewBox="${vb}" style="display:inline-block;height:1em;width:auto;vertical-align:-0.125em;fill:currentColor${extraStyle?';'+extraStyle:''}" aria-hidden="true"><path d="${path}"/></svg>; }
+// Reemplaza todos los  con SVG al cargar function replaceIcons(root){ (root||document).querySelectorAll('i[class*="fa-"]').forEach(el=>{ const match=el.className.match(/fa-([\w-]+)/); if(!match)return; const name=match[1]; const data=FA_ICONS[name]; if(!data)return; const[vb,path]=data.split('|'); const svg=document.createElementNS('http://www.w3.org/2000/svg','svg'); svg.setAttribute('viewBox',vb); svg.setAttribute('aria-hidden','true'); svg.style.cssText='display:inline-block;height:1em;width:auto;vertical-align:-0.125em;fill:currentColor;flex-shrink:0'; const p=document.createElementNS('http://www.w3.org/2000/svg','path'); p.setAttribute('d',path); svg.appendChild(p); // Preserve el color del padre if(el.style.color)svg.style.color=el.style.color; el.parentNode.replaceChild(svg,el); }); } document.addEventListener('DOMContentLoaded',()=>replaceIcons(document)); // MutationObserver para iconos generados dinámicamente const _iconObs=new MutationObserver(muts=>{ muts.forEach(m=>m.addedNodes.forEach(n=>{ if(n.nodeType===1){ if(n.matches&&n.matches('i[class*="fa-"]'))replaceIcons(n.parentNode); else if(n.querySelectorAll)replaceIcons(n); } })); }); document.addEventListener('DOMContentLoaded',()=>{ _iconObs.observe(document.body,{childList:true,subtree:true}); }); 
+
+El Imaginarium
+Advanced Dungeons & Dragons 2nd Edition
+Soy Jugador Crear y gestionar personajes 
+Soy el DM Pantalla, encuentros y tesoros 
+Basado en AD&D 2e — v1.9.0
+
+
+Bienvenido, Maestro
+Tus herramientas para gobernar el mundo.
+Mis CampañasGestiona tus aventuras y sesiones
+SocialAmigos, invitaciones y compartir
+TablasTablas de referencia y actualizaciones
+MiselaneaRazas, clases, conjuros y más
+<!-- DM CAMPAIGNS (NUEVO v1.1.0) -->
+<div class="page dm-page page-content" id="page-dm-campaigns">
+  <div class="page-header">
+    <h1 style="color:var(--accent-bright)"><i class="fas fa-map" style="margin-right:10px"></i>Mis Campañas</h1>
+    <div class="header-actions">
+      <button class="btn btn-primary" onclick="openModal()"><i class="fas fa-plus"></i> Nuevo Imaginarium</button>
+      <button class="btn btn-secondary" onclick="loadExample()"><i class="fas fa-dice-d20"></i> Campaña de Ejemplo</button>
+    </div>
+  </div>
+  <div class="campaign-grid" id="campaignGrid">
+    <!-- Las tarjetas se inyectan aquí vía JS -->
+  </div>
+</div>
+
+<!-- DM SOCIAL -->
+<div class="page dm-page page-content" id="page-dm-social">
+  <div class="page-header">
+    <h1 style="color:var(--teal-bright)"><i class="fas fa-users" style="margin-right:10px"></i>Social</h1>
+  </div>
+  <div class="social-grid">
+    <div class="social-friends">
+      <h3 style="color:var(--gold-bright);font-family:'Cinzel',serif;font-size:16px;margin-bottom:14px"><i class="fas fa-user-group" style="margin-right:8px"></i>Amigos</h3>
+      <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
+        <input class="dm-input" id="friendName" placeholder="Nombre del amigo" style="flex:1;min-width:140px">
+        <button class="dm-btn dm-btn-teal" onclick="addFriend()"><i class="fas fa-plus"></i> Invitar Amigo</button>
+      </div>
+      <div id="friendsList"></div>
+    </div>
+    <div class="social-share">
+      <h3 style="color:var(--gold-bright);font-family:'Cinzel',serif;font-size:16px;margin-bottom:14px"><i class="fas fa-share-nodes" style="margin-right:8px"></i>Compartido</h3>
+      <h4 style="color:var(--teal-bright);font-family:'Cinzel',serif;font-size:13px;margin-bottom:8px"><i class="fas fa-hat-wizard" style="margin-right:6px"></i>Personajes de Amigos</h4>
+      <div id="sharedCharsList" style="margin-bottom:16px"></div>
+      <h4 style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;margin-bottom:8px"><i class="fas fa-map" style="margin-right:6px"></i>Campañas Compartidas</h4>
+      <div id="sharedCampaignsList"></div>
+    </div>
+  </div>
+</div>
+
+<!-- DM TABLAS -->
+<div class="page dm-page page-content" id="page-dm-tablas" style="padding:0;padding-top:0">
+  <div style="padding:16px 20px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+    <h1 style="color:var(--gold-bright);margin:0;font-size:20px"><i class="fas fa-book-skull" style="margin-right:10px"></i>Tablas de Referencia</h1>
+    <button class="dm-btn dm-btn-gold" onclick="showToast('Tablas sincronizadas con el wiki','success')"><i class="fas fa-sync-alt"></i> Actualizar Tablas</button>
+  </div>
+  <div style="padding:10px 20px;font-size:11px;color:var(--muted)">
+    Fuentes: <a href="https://adnd2e.fandom.com/wiki/Calculating_THAC0_(PHB)" target="_blank" style="color:var(--teal-bright)">THAC0</a> ·
+    <a href="https://adnd2e.fandom.com/wiki/The_Saving_Throw_(PHB)" target="_blank" style="color:var(--teal-bright)">Salvación</a> ·
+    <a href="https://adnd2e.fandom.com/wiki/Thief" target="_blank" style="color:var(--teal-bright)">Ladrón</a> ·
+    <a href="https://adnd2e.fandom.com/wiki/Turning_Undead_(PHB)" target="_blank" style="color:var(--teal-bright)">Ahuyentar</a> ·
+    <a href="https://adnd2e.fandom.com/wiki/Master_Weapon_List_(POCT)#Weapons_Tables" target="_blank" style="color:var(--teal-bright)">Armas</a> ·
+    <a href="https://adnd2e.fandom.com/wiki/Armor_(POCT)#Armor_Table" target="_blank" style="color:var(--teal-bright)">Armaduras</a> ·
+    <a href="https://adnd2e.fandom.com/wiki/Magical_Item_Random_Determination_Tables_(EM)" target="_blank" style="color:var(--teal-bright)">Objetos Mágicos</a>
+  </div>
+  <div class="dm-screen">
+    <div class="dm-tabs">
+      <div class="dm-tab active" data-tab="tab-ref" onclick="switchDmTab(this)"><i class="fas fa-book-open"></i> Tablas</div>
+      <div class="dm-tab" data-tab="tab-pcs" onclick="switchDmTab(this)"><i class="fas fa-id-card"></i> PJs</div>
+      <div class="dm-tab" data-tab="tab-combat" onclick="switchDmTab(this)"><i class="fas fa-hand-fist"></i> Combate</div>
+      <div class="dm-tab" data-tab="tab-session" onclick="switchDmTab(this)"><i class="fas fa-feather-alt"></i> Sesión</div>
+      <div class="dm-tab" data-tab="tab-gen" onclick="switchDmTab(this)"><i class="fas fa-dice-d20"></i> Generadores</div>
+    </div>
+    <div class="dm-tab-content active" id="tab-ref"><div id="refAccordion"></div></div>
+    <div class="dm-tab-content" id="tab-pcs">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px">
+        <h3 style="color:var(--gold-bright);font-family:'Cinzel',serif;font-size:16px;margin:0"><i class="fas fa-users" style="margin-right:8px"></i>Panel de Personajes</h3>
+        <button class="dm-btn dm-btn-gold" onclick="togglePcForm()"><i class="fas fa-plus"></i> Añadir PJ</button>
+      </div>
+      <div id="pcFormWrap" style="display:none;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px">
+        <h4 style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;margin-bottom:12px">Nuevo Personaje</h4>
+        <div class="dm-form-row">
+          <div class="dm-form-group"><label class="dm-form-label">Nombre</label><input class="dm-input" id="pcName" placeholder="Ej: Kaelthas"></div>
+          <div class="dm-form-group"><label class="dm-form-label">Raza</label><select class="dm-select" id="pcRace"><option>Humano</option><option>Elfo</option><option>Enano</option><option>Mediano</option><option>Gnomo</option><option>Semielfo</option><option>Semiorco</option></select></div>
+          <div class="dm-form-group"><label class="dm-form-label">Clase</label><select class="dm-select" id="pcClass"><option>Guerrero</option><option>Mago</option><option>Clérigo</option><option>Ladrón</option><option>Paladín</option><option>Ranger</option><option>Bardo</option><option>Druida</option><option>Ilusionista</option><option>Monje</option></select></div>
+          <div class="dm-form-group"><label class="dm-form-label">Nivel</label><input class="dm-input" id="pcLevel" type="number" min="1" max="40" value="1"></div>
+        </div>
+        <div class="dm-form-row">
+          <div class="dm-form-group"><label class="dm-form-label">PG Máx</label><input class="dm-input" id="pcHpMax" type="number" min="1" value="10"></div>
+          <div class="dm-form-group"><label class="dm-form-label">CA</label><input class="dm-input" id="pcAC" type="number" value="10"></div>
+          <div class="dm-form-group"><label class="dm-form-label">GACO</label><input class="dm-input" id="pcThac0" type="number" value="20"></div>
+          <div class="dm-form-group"><label class="dm-form-label">Movimiento</label><input class="dm-input" id="pcMove" type="number" value="12"></div>
+        </div>
+        <div class="dm-form-row">
+          <div class="dm-form-group"><label class="dm-form-label">XP Actual</label><input class="dm-input" id="pcXpCur" type="number" min="0" value="0"></div>
+          <div class="dm-form-group"><label class="dm-form-label">XP Siguiente Nivel</label><input class="dm-input" id="pcXpNext" type="number" min="0" value="2000"></div>
+          <div class="dm-form-group"><label class="dm-form-label">Salvación Parálisis</label><input class="dm-input" id="pcSavePar" type="number" value="14"></div>
+          <div class="dm-form-group"><label class="dm-form-label">Salvación Veneno</label><input class="dm-input" id="pcSavePoi" type="number" value="13"></div>
+        </div>
+        <div class="dm-form-row">
+          <div class="dm-form-group"><label class="dm-form-label">Salvación Varita</label><input class="dm-input" id="pcSaveRod" type="number" value="15"></div>
+          <div class="dm-form-group"><label class="dm-form-label">Salvación Aliento</label><input class="dm-input" id="pcSaveBre" type="number" value="16"></div>
+          <div class="dm-form-group"><label class="dm-form-label">Salvación Hechizo</label><input class="dm-input" id="pcSaveSpe" type="number" value="17"></div>
+          <div class="dm-form-group"><label class="dm-form-label">Estado</label><select class="dm-select" id="pcStatus"><option value="Activo">Activo</option><option value="Inconsciente">Inconsciente</option><option value="Muerto">Muerto</option></select></div>
+        </div>
+        <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:8px">
+          <button class="dm-btn" onclick="togglePcForm()">Cancelar</button>
+          <button class="dm-btn dm-btn-gold" onclick="savePc()"><i class="fas fa-save"></i> Guardar</button>
+        </div>
+      </div>
+      <div class="pc-grid" id="pcGrid"></div>
+    </div>
+    <div class="dm-tab-content" id="tab-combat">
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:20px">
+        <div>
+          <div class="combat-section">
+            <div class="combat-section-title"><i class="fas fa-hourglass-half"></i> Iniciativa y Combatientes</div>
+            <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:flex-end">
+              <div class="dm-form-group" style="margin:0;min-width:120px"><label class="dm-form-label">Nombre</label><input class="dm-input" id="cbName" placeholder="Combatiente"></div>
+              <div class="dm-form-group" style="margin:0;width:60px"><label class="dm-form-label">Inic.</label><input class="dm-input" id="cbInit" type="number" value="10"></div>
+              <div class="dm-form-group" style="margin:0;width:60px"><label class="dm-form-label">PG Máx</label><input class="dm-input" id="cbHpMax" type="number" value="20"></div>
+              <div class="dm-form-group" style="margin:0;width:55px"><label class="dm-form-label">CA</label><input class="dm-input" id="cbAC" type="number" value="10"></div>
+              <div class="dm-form-group" style="margin:0;width:55px"><label class="dm-form-label">GAC0</label><input class="dm-input" id="cbThac0" type="number" value="20"></div>
+              <div class="dm-form-group" style="margin:0;width:90px"><label class="dm-form-label">Tipo</label><select class="dm-select" id="cbType"><option>PC</option><option>Monstruo</option><option>PNC</option></select></div>
+              <button class="dm-btn dm-btn-gold" onclick="addCombatant()"><i class="fas fa-plus"></i> Añadir</button>
+              <button class="dm-btn dm-btn-teal" onclick="addPcsToCombat()" title="Añadir todos los PJs activos"><i class="fas fa-users"></i> PJs</button>
+              <button class="dm-btn dm-btn-teal" onclick="nextRound()"><i class="fas fa-forward"></i> Sig. Ronda</button>
+              <button class="dm-btn dm-btn-gold" onclick="rollInitiatives()"><i class="fas fa-dice"></i> Tirar Inic.</button>
+            </div>
+            <div class="combatant-list" id="combatantList"></div>
+          </div>
+          <div class="combat-section">
+            <div class="combat-section-title"><i class="fas fa-flask"></i> Efectos Activos</div>
+            <div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;align-items:flex-end">
+              <div class="dm-form-group" style="margin:0;min-width:140px"><label class="dm-form-label">Efecto</label><input class="dm-input" id="efName" placeholder="Bendición, Maldición..."></div>
+              <div class="dm-form-group" style="margin:0;width:80px"><label class="dm-form-label">Rondas</label><input class="dm-input" id="efDur" type="number" min="1" value="3"></div>
+              <button class="dm-btn dm-btn-gold" onclick="addEffect()"><i class="fas fa-plus"></i> Añadir</button>
+            </div>
+            <div id="effectsList" style="display:flex;flex-direction:column;gap:4px"></div>
+          </div>
+          <div class="combat-section">
+            <div class="combat-section-title"><i class="fas fa-flag"></i> Chequeo de Moral</div>
+            <div style="display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap">
+              <div class="dm-form-group" style="margin:0;width:80px"><label class="dm-form-label">Moral</label><input class="dm-input" id="moralScore" type="number" min="2" max="20" value="12"></div>
+              <button class="dm-btn dm-btn-gold" onclick="checkMorale()"><i class="fas fa-dice"></i> Chequear Moral (2d10)</button>
+              <span id="moralResult" style="font-family:'Cinzel',serif;color:var(--fg-dim);font-size:13px"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="combat-section">
+            <div class="combat-section-title"><i class="fas fa-dice-d20"></i> Tirada de Dados</div>
+            <div class="dice-grid">
+              <div class="dice-btn" onclick="rollDice(4)">d4</div><div class="dice-btn" onclick="rollDice(6)">d6</div>
+              <div class="dice-btn" onclick="rollDice(8)">d8</div><div class="dice-btn" onclick="rollDice(10)">d10</div>
+              <div class="dice-btn" onclick="rollDice(12)">d12</div><div class="dice-btn" onclick="rollDice(20)">d20</div>
+              <div class="dice-btn" onclick="rollDice(100)">d100</div><div class="dice-btn" onclick="rollDice(6,2)" style="font-size:11px">2d6</div>
+            </div>
+            <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;align-items:flex-end">
+              <div class="dm-form-group" style="margin:0;width:60px"><label class="dm-form-label">N</label><input class="dm-input" id="customN" type="number" min="1" value="2"></div>
+              <div class="dm-form-group" style="margin:0;width:60px"><label class="dm-form-label">Caras</label><input class="dm-input" id="customD" type="number" min="2" value="6"></div>
+              <div class="dm-form-group" style="margin:0;width:60px"><label class="dm-form-label">+Mod</label><input class="dm-input" id="customMod" type="number" value="0"></div>
+              <button class="dm-btn dm-btn-gold" onclick="rollCustom()"><i class="fas fa-dice"></i> Tirar</button>
+            </div>
+            <div class="dice-result" id="diceResult">—</div>
+            <div style="font-size:11px;color:var(--fg-dim);margin-bottom:4px;font-family:'Cinzel',serif">Historial de Tiradas</div>
+            <div class="roll-history" id="rollHistory"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dm-tab-content" id="tab-session">
+      <div style="display:grid;grid-template-columns:1fr 340px;gap:20px">
+        <div>
+          <h3 style="color:var(--gold-bright);font-family:'Cinzel',serif;font-size:16px;margin-bottom:12px"><i class="fas fa-scroll" style="margin-right:8px"></i>Sesión Activa</h3>
+          <div class="dm-form-row" style="margin-bottom:16px">
+            <div class="dm-form-group"><label class="dm-form-label">Fecha</label><input class="dm-input" id="sesDate" readonly></div>
+            <div class="dm-form-group"><label class="dm-form-label">Sesión #</label><input class="dm-input" id="sesNum" type="number" min="1" value="1"></div>
+            <div class="dm-form-group"><label class="dm-form-label">Título</label><input class="dm-input" id="sesTitle" placeholder="Resumen de la sesión..."></div>
+          </div>
+          <div class="dm-form-group"><label class="dm-form-label">Notas de Sesión</label><textarea class="session-note" id="sesNotes" placeholder="Escribe aquí tus notas de la sesión... Se guarda automáticamente."></textarea></div>
+          <h4 style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;margin:16px 0 8px"><i class="fas fa-check-square" style="margin-right:6px"></i>Ganchos y Recordatorios</h4>
+          <div style="display:flex;gap:6px;margin-bottom:8px"><input class="dm-input" id="hookInput" placeholder="Añadir gancho o recordatorio..." style="flex:1"><button class="dm-btn dm-btn-gold" onclick="addHook()"><i class="fas fa-plus"></i></button></div>
+          <div id="hooksList"></div>
+          <h4 style="color:var(--gold);font-family:'Cinzel',serif;font-size:13px;margin:16px 0 8px"><i class="fas fa-coins" style="margin-right:6px"></i>XP Ganada Esta Sesión</h4>
+          <div id="sessionXpList"></div>
+        </div>
+        <div>
+          <h4 style="color:var(--gold);font-family:'Cinzel',serif;font-size:14px;margin-bottom:10px"><i class="fas fa-user-secret" style="margin-right:8px"></i>PNJs Activos</h4>
+          <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap">
+            <input class="dm-input" id="npcName" placeholder="Nombre" style="flex:1;min-width:80px">
+            <select class="dm-select" id="npcAtt" style="width:90px"><option>Amistoso</option><option>Neutral</option><option>Hostil</option><option>Desconocido</option></select>
+            <input class="dm-input" id="npcLoc" placeholder="Lugar" style="width:80px">
+            <input class="dm-input" id="npcHp" type="number" placeholder="PG" style="width:55px">
+            <button class="dm-btn dm-btn-gold dm-btn-sm" onclick="addNpc()"><i class="fas fa-plus"></i></button>
+          </div>
+          <div class="npc-list" id="npcList"></div>
+        </div>
+      </div>
+    </div>
+    <div class="dm-tab-content" id="tab-gen">
+      <h3 style="color:var(--gold-bright);font-family:'Cinzel',serif;font-size:16px;margin-bottom:12px"><i class="fas fa-dice-d20" style="margin-right:8px"></i>Generadores Aleatorios</h3>
+      <div class="gen-row">
+
